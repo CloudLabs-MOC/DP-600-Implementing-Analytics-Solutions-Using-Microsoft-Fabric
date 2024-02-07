@@ -46,6 +46,8 @@
 
    ![Start-trial](./Images/ws/08.png)
 
+   >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
+
 4. Once your trial capacity is ready, you receive a confirmation message. Select **Got it (1)** to begin working in Fabric.
 
    ![Got-it](./Images/ws/09.png)
@@ -60,7 +62,7 @@
 
 Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
-1.  Now, select **Workspaces** and click on **+ New workspace**.
+1.  Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
     ![New Workspace](./Images/ws/11.png)
 
@@ -74,8 +76,3 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
       ![advanced-and-apply](./Images/ws/13.png)
 
-Congratulations! You have successfully learned to create a Fabric workspace.
-
-----
-
-*Continue to page 3 ...*
