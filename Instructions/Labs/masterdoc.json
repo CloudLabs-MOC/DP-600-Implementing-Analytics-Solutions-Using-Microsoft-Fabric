@@ -7,16 +7,20 @@
       "Order": 1
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.1-dataflows-gen2.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/Create-workspace.md",
       "Order": 2
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.2-analyze-spark.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.1-dataflows-gen2.md",
       "Order": 3
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.3-Data-Engineering.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.2-analyze-spark.md",
       "Order": 4
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.3-Data-Engineering.md",
+      "Order": 5
     }
   ]
 }]
