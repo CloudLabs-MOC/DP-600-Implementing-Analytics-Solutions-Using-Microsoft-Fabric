@@ -1,0 +1,22 @@
+[{
+  "Name": "Microsoft Fabric",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ500-AzureSecurityTechnologies/prod/Instructions/Labs/Getting-Started.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ500-AzureSecurityTechnologies/prod/Instructions/Labs/02.1-dataflows-gen2.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ500-AzureSecurityTechnologies/prod/Instructions/Labs/02.2-analyze-spark.md",
+      "Order": 3
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ500-AzureSecurityTechnologies/prod/Instructions/Labs/02.3-Data-Engineering.md",
+      "Order": 4
+    }
+  ]
+}]
