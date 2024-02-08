@@ -1,10 +1,23 @@
 # Module 03: Get started with lakehouses in Microsoft Fabric
 
+## Lab scenario
+
 A data lakehouse is a common analytical data store for cloud-scale analytics solutions. One of the core tasks of a data engineer is to implement and manage the ingestion of data from multiple operational data sources into the lakehouse. In Microsoft Fabric, you can implement *extract, transform, and load* (ETL) or *extract, load, and transform* (ELT) solutions for data ingestion through the creation of *pipelines*.
 
 Fabric also supports Apache Spark, enabling you to write and run code to process data at scale. By combining the pipeline and Spark capabilities in Fabric, you can implement complex data ingestion logic that copies data from external sources into the OneLake storage on which the lakehouse is based and then uses Spark code to perform custom data transformations before loading it into tables for analysis.
 
-This lab will take approximately **60** minutes to complete.
+## Lab objectives
+In this lab, you will perform:
+
+- Create a lakehouse
+- Explore shortcuts
+- Create a pipeline
+- Create a notebook
+- Use SQL to query tables
+- Create a visual query
+- Create a report
+
+## Estimated timing: 60 minutes
 
 ### Task 1: Create a Lakehouse
 
@@ -291,5 +304,15 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
 
+### Review
+ In this lab, you have completed the following :
+- Created a lakehouse
+- Explored shortcuts
+- Created a pipeline
+- Created a notebook
+- Used SQL to query tables
+- Created a visual query
+- Created a report
 
+## You have successfully completed the lab
 
