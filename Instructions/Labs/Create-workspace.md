@@ -48,10 +48,6 @@
 
    >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
 
-4. Once your trial capacity is ready, you receive a confirmation message. Select **Got it (1)** to begin working in Fabric.
-
-   ![Got-it](./Images/ws/09.png)
-
 6. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
 
    ![Verify-trial-status](./Images/ws/10.png)
