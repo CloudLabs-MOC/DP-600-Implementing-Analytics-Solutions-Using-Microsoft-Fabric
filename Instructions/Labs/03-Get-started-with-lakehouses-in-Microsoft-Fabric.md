@@ -1,4 +1,4 @@
-# Module 02.3: Ingest data with a pipeline in Microsoft Fabric
+# Module 03: Get started with lakehouses in Microsoft Fabric
 
 A data lakehouse is a common analytical data store for cloud-scale analytics solutions. One of the core tasks of a data engineer is to implement and manage the ingestion of data from multiple operational data sources into the lakehouse. In Microsoft Fabric, you can implement *extract, transform, and load* (ETL) or *extract, load, and transform* (ELT) solutions for data ingestion through the creation of *pipelines*.
 
@@ -6,7 +6,7 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 
 This lab will take approximately **60** minutes to complete.
 
-## Create a Lakehouse
+### Task 1: Create a Lakehouse
 
 Large-scale data analytics solutions have traditionally been built around a *data warehouse*, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high *volumes*, *variety*, and *velocity* of new data assets) together with the availability of low-cost storage and cloud-scale distributed computing technologies has led to an alternative approach to analytical data storage; the *data lake*. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a *data lakehouse*; in which data is stored in files in a data lake and a relational schema is applied to them as a metadata layer so that they can be queried using traditional SQL semantics.
 
@@ -33,7 +33,7 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
-## Explore shortcuts
+### Task 2: Explore shortcuts
 
 In many scenarios, the data you need to work within your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
 
@@ -42,7 +42,7 @@ In many scenarios, the data you need to work within your lakehouse may be stored
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
 
-## Create a pipeline
+### Task 3: Create a pipeline
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
@@ -101,21 +101,21 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![05](./Images/fabric8.png)
 
-11. Set the following data destination options, and then select **Next (4)**:
+1. Set the following data destination options, and then select **Next (4)**:
     - **Root folder (1)**: Files
     - **Folder path (2)**: new_data
     - **File name (3)**: sales.csv
    
         ![08](./Images/fabric9.png)
 
-12. Set the following file format options and then select **Next (4)**:
+1. Set the following file format options and then select **Next (4)**:
     - **File format (1)**: DelimitedText
     - **Column delimiter (2)**: Comma (,)
     - **Row delimiter (3)**: Line feed (\n)
    
       ![09](./Images/fabric10.png)
 
-13. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+1. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
     ![09](./Images/fabric11.png)
 
@@ -123,17 +123,17 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
 
-14. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
+1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
 
-15. In the menu bar on the left, select your lakehouse i.e., **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**.
+1. In the menu bar on the left, select your lakehouse i.e., **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
-16. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
+1. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
     ![10](./Images/01/10.png)
 
-## Create a notebook
+### Task 4: Create a notebook
 
 1. On the **Home** page for your lakehouse, in the **Open notebook (1)** menu, select **New notebook (2)**.
 
@@ -208,7 +208,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
 
-## Use SQL to query tables
+### Task 5: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, an SQL analytics endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements.
 
@@ -229,7 +229,7 @@ When you create a lakehouse and define tables in it, an SQL analytics endpoint i
 
     ![Screenshot of a SQL query with results.](./Images/sql-query.png)
 
-## Create a visual query
+### Task 6: Create a visual query
 
 While many data professionals are familiar with SQL, data analysts with Power BI experience can apply their Power Query skills to create visual queries.
 
@@ -260,7 +260,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     ![Screenshot of a Visual query with results.](./Images/visual-query-results.png)
 
-## Create a report
+### Task 7: Create a report
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 

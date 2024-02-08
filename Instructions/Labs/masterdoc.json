@@ -11,16 +11,60 @@
       "Order": 2
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.1-dataflows-gen2.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.1-Ingest-Data-in-Data-Flows-(Gen2)-in-MS-Fabric.md",
       "Order": 3
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.2-analyze-spark.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.2-Ingest-data-with-Spark-and-Microsoft-Fabric-notebooks.md",
       "Order": 4
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.3-Data-Engineering.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/02.3-Use-Data-Factory-pipelines-in-Microsoft-Fabric.md",
       "Order": 5
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/03-Get-started-with-lakehouses-in-Microsoft-Fabric.md",
+      "Order": 6
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/04.1-Use-Apache-Spark-in-Microsoft-Fabric.md",
+      "Order": 7
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/04.2-Work-with-Delta-Lake-tables-in-Microsoft-Fabric.md",
+      "Order": 8
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/05.1-Get-started-with-data-warehouses-in-Microsoft-Fabric.md",
+      "Order": 9
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/05.2-Load-data-into-a-Microsoft-Fabric-data-warehouse.md",
+      "Order": 10
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/06.1-Query-a-data-warehouse-in-Microsoft-Fabric.md",
+      "Order": 11
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/06.2-Monitor-a-Microsoft-Fabric-data-warehouse.md",
+      "Order": 12
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/06.3-Secure-your-Fabric-data-warehouse.md",
+      "Order": 13
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/07.1-Understand-scalability-in-Power-BI.md",
+      "Order": 14
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/07.2-Use-tools-to-optimize-Power-BI-performance.md",
+      "Order": 15
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric/prod/Instructions/Labs/08-Enforce-semantic-model-security.md",
+      "Order": 16
     }
   ]
 }]
