@@ -41,12 +41,12 @@ In this task, you will set up Power BI Desktop.
 1. Enter the Lab username in the **Enter your email address** and click on **Continue**
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    ![](Images/dp-up1.png)
+      ![](Images/dp-up1.png)
 	
-1. Complete the sign up process by selecting the username and entering the password provided in the environment details tab.'
+1. Complete the sign up process by selecting the username and entering the password provided in the environment details tab.
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../images/dp-up(2).png)
+      ![](Images/dp-up(2).png)
 
 1. You will be redirected to the Power BI sign-up page in Microsoft Edge. Select **Sign-in**.
 
