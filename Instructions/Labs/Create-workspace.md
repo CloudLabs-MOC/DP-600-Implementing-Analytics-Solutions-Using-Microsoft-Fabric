@@ -66,9 +66,9 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
    - **Name:** Enter **Fabric-<inject key="DeploymentID" enableCopy="false"/>**
 
-      ![name-and-desc-of-workspc](./Images/ws/12.png)
+      ![name-and-desc-of-workspc](Images/fabric.png)
 
    - **Advanced:** Expand it and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
 
-      ![advanced-and-apply](./Images/ws/13.png)
+      ![advanced-and-apply](Images/fabric(2).png)
 

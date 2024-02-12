@@ -59,7 +59,7 @@ In many scenarios, the data you need to work within your lakehouse may be stored
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. Select **Data Engineering**, and on the **Synapse Data Engineering**, select **Data pipeline**.
+1. Select **Data Engineering**, and select **Data Engineering** again. On the **Synapse Data Engineering**, select **Data pipeline**.
 
     ![03](./Images/fabric21.png)
 
