@@ -10,7 +10,7 @@
 
    ![Roles-and-Administrator](./Images/ws/entraa02.png)
 
-3. In the **Roles and administrators** page, type **Fabric Administrators (1)** in the search box and select **Fabric Administrators (2)** from the results.
+3. In the **Roles and administrators** page, type **Fabric Administrator (1)** in the search box and select **Fabric Administrator (2)** from the results.
 
    ![search-fabric-admin](./Images/ws/entra02.png)
 
