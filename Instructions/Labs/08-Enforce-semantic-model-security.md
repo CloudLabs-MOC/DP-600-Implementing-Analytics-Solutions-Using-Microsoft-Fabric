@@ -1,4 +1,4 @@
-## Module 08: Enforce model security
+# Module 08: Enforce model security
 
 ## Lab scenario
 
