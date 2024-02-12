@@ -48,7 +48,7 @@ In this task, you will set up Power BI Desktop.
 
       ![](Images/dp-up(2).png)
 
-1. You will be redirected to the Power BI sign-up page in Microsoft Edge. Select **Sign-in**.
+1. When prompted, on the Power BI sign-up page in Microsoft Edge. Select **Sign-in**.
 
    ![](Images/dp-up3.png)
 
@@ -58,37 +58,19 @@ In this task, you will set up Power BI Desktop.
 
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../images/dp-up(4).png)
+      ![](Images/dp-up(4).png)
 	
 1. If stay signed in window Pops-up, select **No**
 
-1. Enter a 10 digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI.
+1. At top-right corner, select the profile icon, select **Power BI service**.
 
-1. At the top-right, select the profile icon, and then select **Start trial**.
-
-   ![](Images/dp-up5.png)
-
-1. When prompted, select **Start trial**.
-
-   ![](Images/dp-up6.png)
+1. Enter the Lab username:- * Email/Username: <inject key="AzureAdUserEmail"></inject>.
 
 1. Do any remaining tasks to complete the trial setup.
 
    >**Note**: The Power BI web browser experience is known as the **Power BI service**.
 
-### Task 2: Create a workspace
-
-In this task, you will create a workspace.
-
-1. In the Power BI service, to create a workspace, in the **Navigation** pane (located at the left), select **Workspaces**, and then select **New workspace**.
-
-	![](Images/dp9-4.png)
-
-2. In the **Create a workspace** pane (located at the right), in the **Workspace name** box, enter a name for the workspace as **DP500-<inject key="Deployment ID" enableCopy="false" />** and select **Save**.
-
-	>**Note**: The workspace name must be unique within the tenant. If you are getting an error, update the workspace name.
-
-### Task 3: Review the data model
+### Task 2: Review the data model
 
 In this task, you will review the data model.
 
@@ -327,7 +309,7 @@ In this task, you will add the **Salesperson** table to the model.
 
      ![](Images/dp500_09-51.png)
 
-13. Check the following three columns:
+13. Check the following three columns, and select **OK**:
 
 	- EmployeeKey
 
@@ -335,12 +317,7 @@ In this task, you will add the **Salesperson** table to the model.
 
 	- EmailAddress
 
-	![](Images/dp9-33.png)
-
-
-14. Select **OK**.
-
-     ![](Images/dp500_09-52.png)
+	   ![](Images/dp9-33.png)
 
 15. To rename the **EmailAddress** column, double-click the **EmailAddress** column header.
 
@@ -364,13 +341,9 @@ In this task, you will configure properties of the new relationship.
 
    ![](Images/dp500_09-55.png)
 
-2. In the **Edit relationship** window, in the **Cross filter direction** dropdown list, select **Both**.
+2. In the **Edit relationship** window, in the **Cross filter direction** dropdown list, select **Both (1)**. Check the **Apply security filter in both directions (2)** checkbox.
 
    ![](Images/dp9-37.png)
-
-3. Check the **Apply security filter in both directions** checkbox.
-
-   ![](Images/dp500_09-56.png)
 
    >**Note**: Because there' a one-to-many relationship from the **Sales Territory** table to the **Salesperson** table, filters propagate only from the **Sales Territory** table to the **Salesperson** table. To force propagation in the other direction, the cross filter direction must be set to both.
 	
@@ -414,7 +387,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
    ![](Images/dp500_09-63.png)
 
-6. In the **Table filter DAX expression** box, replace **"Value"** with **USERPRINCIPALNAME()**.
+6. In the **Table filter DAX expression** box, replace **"Value"** with **USERPRINCIPALNAME()**, and select **Save**.
 
    ![](Images/dp500_09-64.png)
 
