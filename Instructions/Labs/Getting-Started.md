@@ -1,14 +1,32 @@
 # Getting Started with Lab
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the **Lab guide** to switch to different exercises of the lab guide.
+1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
    ![07](Images/labvm(1).png)
 
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide on separate and full windows by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
+## Exploring Your Lab Resources
+ 
+1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
    ![08](Images/env.png)
  
-    > You will see the DeploymentID value on the **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+    >**Note:** You will see the DeploymentID value on the **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+
+   ![08](Images/splitwindow.png)
+
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+   ![08](Images/resources.png)
 
 
 ## Login to Azure Portal
