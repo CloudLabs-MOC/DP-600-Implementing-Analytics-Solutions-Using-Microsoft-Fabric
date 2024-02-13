@@ -28,7 +28,7 @@ In this task, you will set up Power BI Desktop.
 
 	![](Images/dp9-1new.png)
 
-1. Go to the **C:\LabFiles\DP-500-Azure-Data-Analyst\Allfiles\09\Starter** folder.
+1. Go to the **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\09\Starter** folder.
 
 1. To open a pre-developed Power BI Desktop file, double-click the **Sales Analysis - Enforce model security.pbix** file.
 	
@@ -41,27 +41,20 @@ In this task, you will set up Power BI Desktop.
 1. Enter the Lab username in the **Enter your email address** and click on **Continue**
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-      ![](Images/dp-up1.png)
+      >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
 	
-1. Complete the sign up process by selecting the username and entering the password provided in the environment details tab.
-   * Password: <inject key="AzureAdUserPassword"></inject>
+1. Complete the sign up process by entering the **Email**, and select **Next**. 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-      ![](Images/dp-up(2).png)
-
-1. When prompted, on the Power BI sign-up page in Microsoft Edge. Select **Sign-in**.
-
-   ![](Images/dp-up3.png)
-
-   >**Note**: On the Welcome to Microsoft Edge page, select  **Start without your data**  and on the help for importing Google browsing data page, select the **Continue without this data** button. Then, proceed to select  **Confirm and start browsing**  on the next page.
+      ![](Images/dp-up1.png)
 
 1. Enter the Password provided in the Environment Details tab and click on **Sign-in**
 
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-      ![](Images/dp-up(4).png)
-	
-1. If stay signed in window Pops-up, select **No**
+        ![](Images/dp-up(4).png)
 
+    >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
 1. At top-right corner, select the profile icon, select **Power BI service**.
 
 1. Enter the Lab username:- * Email/Username: <inject key="AzureAdUserEmail"></inject>.
@@ -74,9 +67,7 @@ In this task, you will set up Power BI Desktop.
 
 In this task, you will review the data model.
 
-1. Navigate back to Power BI Desktop. If you see **Sign in** in the top right corner of the screen, sign in again using the credentials provided on the Resources tab of the lab environment. If you are already signed in, proceed to the next step.
-
-   ![](Images/dp-sign.png)
+1. Navigate back to Power BI Desktop.
 
 1. In Power BI Desktop, at the left, switch to the **Model** view.
 
@@ -88,7 +79,7 @@ In this task, you will review the data model.
 
    >**Note**: The model comprises six dimension tables and one fact table. The **Sales** fact table stores sales order details. It's a classic star schema design.
 
-1. Expand open the **Sales Territory** table.
+1. Expand the **Sales Territory** table.
 
    ![](Images/dp500_09-11.png)
 
@@ -130,7 +121,7 @@ In this task, you will create two static roles.
 
    ![](Images/dp9-12.png)
 
-7. In the **Table filter DAX expression** box, replace **Value** with **Australia**.
+7. In the **Table filter DAX expression** box, replace **Value** with **Australia (1)**.
 
    ![](Images/dp9-13.png)
 
@@ -191,7 +182,7 @@ In this task, you will publish the report.
 
    ![](Images/dp9-19.png)
 
-3. In the **Publish to Power BI** window, select your workspace, and then select **Select**.
+3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/>**, and then select **Select**.
    
 4. When the publishing succeeds, select **Got it**.
 
@@ -347,7 +338,7 @@ In this task, you will configure properties of the new relationship.
 
    >**Note**: Because there' a one-to-many relationship from the **Sales Territory** table to the **Salesperson** table, filters propagate only from the **Sales Territory** table to the **Salesperson** table. To force propagation in the other direction, the cross filter direction must be set to both.
 	
-   >**Note**: In case you encounter this error: `Table 'Sales Territory' is configured for row-level security, introducing constraints on how security filters are specified.` Uncheck the **Apply security filter in both directions** box and continue.
+   >**Note**: In case you encounter this error: `Table 'Sales Territory' is configured for row-level security, introducing constraints on how security filters are specified.` Uncheck the **Apply security filter in both directions** box.
 
    ![](Images/dp500-m09-note10a.png)
 	
@@ -375,11 +366,11 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
 3. In the **Manage roles** window, select **Create**.
 
-   ![](Images/dp500_09-61.png)
+   ![](Images/create.png)
 
 4. To name the role, replace the selected text with **Salespeople**.
 
-   ![](Images/dp500_09-62.png)
+   ![](Images/salespeople.png)
 
    >**Note**: This time, only one role needs to be created.
 
@@ -395,7 +386,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
 7. Now, being under the **Salespeople** role, add a filter to the **Region** column of the **Sales Territory** table.
 
-   ![](Images/dp500_09-65.png)
+   ![](Images/salespeople1.png)
 
 8. In the **Table filter DAX expression** box, replace **"Value"** with **Northeast**.
 
@@ -415,29 +406,25 @@ In this task, you will validate the dynamic role.
 
    ![](Images/dp9-44.png)
 
-2. In the **View as roles** window, check **Other user**, and then in the corresponding box, enter: **michael9@adventure-works.com**
+1. In the **View as roles** window, check **Other user**, and then in the corresponding box, enter: **michael9@adventure-works.com**
 
    ![](Images/dp500_09-69.png)
 	
    >**Note**: For testing purposes, **Other user** is the value that will be returned by the USERPRINCIPALNAME function. Note that this salesperson is assigned to the **Northeast** region.
 
-3. Check the **Salespeople** role.
+1. Check the **Salespeople** role, and select **OK**.
 
    ![](Images/dp9-46.png)
 
-4. Select **OK**.
-
-   ![](Images/dp500_09-71.png)
-
-5. On the report page, notice that the stacked column chart visual shows only data for Northeast.
+1. On the report page, notice that the stacked column chart visual shows only data for Northeast.
 
    ![](Images/dp9-47.png)
 
-6. Across the top of the report, notice the yellow banner that confirms the enforced role.
+1. Across the top of the report, notice the yellow banner that confirms the enforced role.
 
    ![](Images/dp500_09-73.png)
 
-7. To stop viewing by using the role, at the right of the yellow banner, select **Stop viewing**.
+1. To stop viewing by using the role, at the right of the yellow banner, select **Stop viewing**.
 
    ![](Images/dp500_09-74.png)
 
@@ -468,12 +455,6 @@ In this task, you will finalize the design by publishing the report and mapping 
    >**Note**: Now all members of the **Salespeople** security group are mapped to the **Salespeople** role. Providing the authenticated user is represented by a row in the **Salesperson** table, the assigned sales territory will be used to filter the sales table.
 
    >**Note**: This design approach is simple and effective when the data model stores the user principal name values. When salespeople are added or removed, or are assigned to different sales territories, this design approach will simply work.
-   
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-   > - Hit the Validate button for the corresponding task.
-   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
    
 ### Review
 In this lab, you have completed:

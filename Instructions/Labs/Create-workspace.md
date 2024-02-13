@@ -36,19 +36,29 @@
    https://powerbi.com
    ```
 
-   >**Note**: In case a sign-up page asks for a phone number, you can enter a dummy phone number to proceed.
+1. Complete the sign in process by clicking on **Continue**
 
-2. Select **Account manager (1)**, and click on **Start trial (2)**.
+   ![](Images/lab6-image-T01.png)
+   
+1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
+   
+   ![](Images/lab6-image-(T02).png)
+   
+   ![](Images/lab6-image-(T003).png)
+   
+1. Leave the Microsoft Edge browser window open.
+
+1. Select **Account manager (1)**, and click on **Start trial (2)**.
 
    ![Account-manager-start](./Images/ws/07.png)
 
-3. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
+1. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
 
    ![Start-trial](./Images/ws/08.png)
 
    >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
 
-6. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
+1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
 
    ![Verify-trial-status](./Images/ws/10.png)
 
