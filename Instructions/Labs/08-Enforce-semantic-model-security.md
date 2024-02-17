@@ -455,6 +455,12 @@ In this task, you will finalize the design by publishing the report and mapping 
    >**Note**: Now all members of the **Salespeople** security group are mapped to the **Salespeople** role. Providing the authenticated user is represented by a row in the **Salesperson** table, the assigned sales territory will be used to filter the sales table.
 
    >**Note**: This design approach is simple and effective when the data model stores the user principal name values. When salespeople are added or removed, or are assigned to different sales territories, this design approach will simply work.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
    
 ### Review
 In this lab, you have completed:

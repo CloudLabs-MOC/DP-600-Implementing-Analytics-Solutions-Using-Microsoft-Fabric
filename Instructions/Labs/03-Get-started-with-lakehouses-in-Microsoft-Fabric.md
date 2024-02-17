@@ -302,11 +302,18 @@ The tables in your lakehouse are automatically added to a default dataset that d
     ![Screenshot of a report containing a clustered bar chart.](./Images/clustered-bar-chart.png)
 
 5. On the **File** menu, select **Save**. Then save the report as **Item Sales Report** in the workspace you created previously.
+
 6. Close the browser tab containing the report to return to the SQL analytics endpoint for your lakehouse. Then, in the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
     - The SQL analytics endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
 
 ### Review
  In this lab, you have completed the following :
