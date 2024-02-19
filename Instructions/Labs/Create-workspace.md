@@ -1,6 +1,12 @@
 # Before Hands-on Lab 
 
-### Exercise 1: Create a Fabric workspace
+## Lab objectives
+
+In this lab, you will complete the following tasks:
+
+- Task 1: Assign Fabric Administrator Role
+- Task 2: Sign up for Microsoft Fabric Trial
+- Task 3: Create a workspace
 
 #### Task 1: Assign Fabric Administrator Role
 
