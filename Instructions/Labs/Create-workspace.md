@@ -90,4 +90,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
       ![advanced-and-apply](Images/fabric(2).png)
 
-<validation step= "68fb556e-9393-4710-a980-c5c23566c4c2" />
+
+<validation step="68fb556e-9393-4710-a980-c5c23566c4c2" />
+
+
