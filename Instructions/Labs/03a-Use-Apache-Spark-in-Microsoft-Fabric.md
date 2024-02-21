@@ -58,6 +58,12 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+
 ### Task 2: Create a notebook
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.

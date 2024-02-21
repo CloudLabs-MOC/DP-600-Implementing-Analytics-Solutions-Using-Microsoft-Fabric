@@ -57,6 +57,12 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/productsfile(1).png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+
 ### Task 2: Explore data in a dataframe
 
 1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
@@ -331,12 +337,6 @@ Delta lake supports streaming data. Delta tables can be a sink or a source for d
     ```
 
     >**Note:** This code stops the stream.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :

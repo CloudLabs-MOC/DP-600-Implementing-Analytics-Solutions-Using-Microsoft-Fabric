@@ -45,9 +45,13 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
     ![New dataflow](./Images/lakehousefiles(1).png)
 
-1. From the Lakehouse Explorer within the lakehouse, select **Files** > **…** > **Properties**.
+1. Select **RawData** > **...** > **Properties** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**
 
-1. Now, select **RawData** > **...** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 2: Create a Fabric notebook and load external data
 
@@ -223,12 +227,6 @@ This lab is focused on data ingestion, which really explains the extract, transf
 1. Now, select the **▼** arrow next to the **Run Cell** button for the first of these two queries, and from the drop-down select **Run this cell and all below**.
 
     >**Note:** This will run the last two code cells. Notice the execution time difference between querying the table with non optimized data and a table with optimized data.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :

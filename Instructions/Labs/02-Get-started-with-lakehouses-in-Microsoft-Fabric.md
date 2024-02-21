@@ -50,6 +50,12 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+
 ### Task 2: Explore shortcuts
 
 In many scenarios, the data you need to work within your lakehouse may be stored in some other location. While there are many ways to ingest data into the OneLake storage for your lakehouse, another option is to instead create a *shortcut*. Shortcuts enable you to include externally sourced data in your analytics solution without the overhead and risk of data inconsistency associated with copying it.
@@ -149,6 +155,12 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 1. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
     ![10](./Images/01/10.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 4: Create a notebook
 
@@ -308,12 +320,6 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - The SQL analytics endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :

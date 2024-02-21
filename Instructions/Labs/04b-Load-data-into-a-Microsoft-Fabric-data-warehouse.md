@@ -37,7 +37,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    - Click on **Create**
 
-1. Open a new tab and download the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**.
+1. Open a new tab and download the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**, and name the file as **sales.csv**.
 
 1. Return to the web browser tab containing your lakehouse, select **…** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload files**, then upload the **sales.csv** file from your lab VM to the lakehouse, and select **Upload**.
 
@@ -46,6 +46,12 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 1. After the files have been uploaded, select **Files**. Verify that the CSV file has been uploaded, as shown here:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/salesfileupload.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 2: Create a table in the lakehouse
 
@@ -70,6 +76,12 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     >**Note:** After a minute or so, a new warehouse will be created:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/warehouse1.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 4: Create fact table, dimensions and view
 
@@ -260,12 +272,6 @@ Let’s run some analytical queries to validate the data in the warehouse.
     > The category information was extracted from the ItemName column using string manipulation, as there is no separate category column in the dimension table. This approach assumes that the item names follow a consistent naming convention. If the item names do not follow a consistent naming convention, the results may not accurately reflect the true category of each item.
 
     > In this exercise, you have created a lakehouse and a data warehouse with multiple tables. You have ingested data and used cross-database queries to load data from the lakehouse to the warehouse. Additionally, you have used the query tool to perform analytical queries.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :

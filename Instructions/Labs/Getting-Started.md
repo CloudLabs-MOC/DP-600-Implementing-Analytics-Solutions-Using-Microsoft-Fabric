@@ -18,13 +18,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
    ![08](Images/splitwindow.png)
 
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
    ![08](Images/resources.png)
 

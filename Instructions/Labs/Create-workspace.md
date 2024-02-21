@@ -48,7 +48,7 @@ In this lab, you will complete the following tasks:
 
    ![](Images/lab6-image-T01.png)
    
-1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
+1. Enter a 10 digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI.
    
    ![](Images/lab6-image-(T02).png)
    
@@ -89,4 +89,10 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
    - **Advanced:** Expand it and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
 
       ![advanced-and-apply](Images/fabric(2).png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
