@@ -33,6 +33,12 @@ Now that you have a workspace, it’s time to create a data warehouse.
 
     ![02](./Images/sampledatawarehouse.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
+      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+
 
 <!-- <validation step= "dadd5e78-815d-4a48-9483-5a08ef4b6cc6" /> -->
 
@@ -181,12 +187,6 @@ Let’s create a view based on the query we used earlier, and add a filter to it
     ![02](./Images/sqlqueryresult.png)
 
 1. Close all query tabs.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :
