@@ -33,7 +33,8 @@ Now that you have a workspace, it’s time to create a data warehouse.
 
     ![02](./Images/sampledatawarehouse.png)
 
-<validation step= "dadd5e78-815d-4a48-9483-5a08ef4b6cc6" />
+
+<!-- <validation step= "dadd5e78-815d-4a48-9483-5a08ef4b6cc6" /> -->
 
 ### Task 2: Query the data warehouse
 
