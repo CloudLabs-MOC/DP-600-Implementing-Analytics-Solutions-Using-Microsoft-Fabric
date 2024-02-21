@@ -39,9 +39,6 @@ Now that you have a workspace, it’s time to create a data warehouse.
       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
-
-<!-- <validation step= "dadd5e78-815d-4a48-9483-5a08ef4b6cc6" /> -->
-
 ### Task 2: Query the data warehouse
 
 The SQL query editor provides support for IntelliSense, code completion, syntax highlighting, client-side parsing, and validation. You can run Data Definition Language (DDL), Data Manipulation Language (DML) and Data Control Language (DCL) statements.
