@@ -185,8 +185,6 @@ Let’s create a view based on the query we used earlier, and add a filter to it
 
 1. Close all query tabs.
 
-<validation step="dadd5e78-815d-4a48-9483-5a08ef4b6cc6" />
-
 ### Review
  In this lab, you have completed the following :
 - Created a sample data warehouse
