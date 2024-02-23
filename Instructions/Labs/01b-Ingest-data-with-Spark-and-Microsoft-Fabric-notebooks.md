@@ -89,15 +89,15 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 1. Insert the following code into a new code cell:
 
     ```python
-        # Declare file name    
-        file_name = "yellow_taxi"
-    
-        # Construct destination path
-        output_parquet_path = f"**InsertABFSPathHere**/{file_name}"
-        print(output_parquet_path)
+    # Declare file name    
+    file_name = "yellow_taxi"
+
+    # Construct destination path
+    output_parquet_path = f"**InsertABFSPathHere**/{file_name}"
+    print(output_parquet_path)
         
-        # Load the first 1000 rows as a Parquet file
-        blob_df.limit(1000).write.mode("overwrite").parquet(output_parquet_path)
+    # Load the first 1000 rows as a Parquet file
+    blob_df.limit(1000).write.mode("overwrite").parquet(output_parquet_path)
     ```
 
      >**Note:** In the **InsertABFSPathHere**, paste the ABFS path that you copied.
