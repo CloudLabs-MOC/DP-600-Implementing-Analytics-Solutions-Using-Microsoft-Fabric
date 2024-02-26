@@ -33,6 +33,8 @@ Now that you have a workspace, it’s time to create a data warehouse.
 
     ![02](./Images/sampledatawarehouse.png)
 
+    >**Note:** If the Sample Warehouse option does not appear, please wait for at least 15 minutes and ensure that you have not selected the Warehouse option.
+    
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
