@@ -62,6 +62,9 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 1. In the default cell, notice that the code is set to **PySpark (Python)**.
 
 1. Insert the following code into the code cell, which will:
+
+Note: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
+
     - Declare parameters for connection string
     - Build the connection string
     - Read data into a DataFrame
