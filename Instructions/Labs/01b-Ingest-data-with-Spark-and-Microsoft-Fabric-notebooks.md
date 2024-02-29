@@ -63,7 +63,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 1. Insert the following code into the code cell, which will:
 
-Note: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
+**Note**: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
 
     - Declare parameters for connection string
     - Build the connection string
@@ -90,6 +90,7 @@ Note: If an unexpected indent error occurs while declaring the file name, it may
 1. To write the data to a file, you now need that **ABFS Path** for your **RawData** folder.
 
 1. Insert the following code into a new code cell:
+**Note**: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
 
     ```python
     # Declare file name    
