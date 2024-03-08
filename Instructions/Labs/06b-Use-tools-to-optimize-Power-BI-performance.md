@@ -94,7 +94,7 @@ In this task, you will open a pre-developed Power BI Desktop solution.
 
 1. Notice that you can launch Tabular Editor from this ribbon tab.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image9.png)
+    ![](Images/tabularformat.png)
 
     >**Note:** Later in this exercise, you will use Tabular Editor to work with BPA.
 
@@ -281,21 +281,21 @@ In this exercise, you'll use DAX Studio to optimize DAX queries in the Power BI 
 
 In this task, you will download DAX Studio.
 
-1. On the Lab-VM Desktop, select **DAX Studio** shortcut.
+1. On the Lab-VM Desktop, double click on the **DAX Studio** shortcut.
 
-    ![](Images/daxstudio30.png)
+    ![](Images/daxstudio.png)
 
 1. In the **Connect** window, select the **Power BI / SSDT Model** option.
 
 1. In the corresponding dropdown list, ensure the **Sales Analysis - Use tools to optimize Power BI performance** model is selected.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image30.png)
+    ![](Images/connect-01.png)
 
     >**Note:** If you do not have the **Sales Analysis - Use tools to optimize Power BI performance** starter file open, you will not be able to connect. Be sure the file is open.
 
 1. Select **Connect**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image31.png)
+    ![](Images/connect-02.png)
 
 1. Select **OK** on the **Start typing your query in this area**.
 
@@ -374,12 +374,6 @@ In this task, you will optimize a query by using an improved measure formula.
 ### Task 3: Finish up
 
 To conclude this exercise, close all applications - there's no need to save the files.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Review
  In this lab, you have completed the following :

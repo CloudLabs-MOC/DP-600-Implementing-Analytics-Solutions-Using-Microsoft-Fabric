@@ -63,26 +63,26 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 4. Insert the following code into the code cell, which will:
 
-**Note**: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
+    > **Note**: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
 
-- Declare parameters for connection string
-- Build the connection string
-- Read data into a DataFrame
+    - Declare parameters for connection string
+    - Build the connection string
+    - Read data into a DataFrame
 
 
-    ```python
-    # Azure Blob Storage access info
-    blob_account_name = "azureopendatastorage"
-    blob_container_name = "nyctlc"
-    blob_relative_path = "yellow"
+        ```python
+        # Azure Blob Storage access info
+        blob_account_name = "azureopendatastorage"
+        blob_container_name = "nyctlc"
+        blob_relative_path = "yellow"
+            
+        # Construct connection path
+        wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
+        print(wasbs_path)
         
-    # Construct connection path
-    wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
-    print(wasbs_path)
-    
-    # Read parquet data from Azure Blob Storage path
-    blob_df = spark.read.parquet(wasbs_path)
-    ```
+        # Read parquet data from Azure Blob Storage path
+        blob_df = spark.read.parquet(wasbs_path)
+        ```
 
 5. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
 

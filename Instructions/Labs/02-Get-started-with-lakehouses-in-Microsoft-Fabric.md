@@ -50,6 +50,8 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
+   >**Note:** If the **sales.csv** file doesn't show up, refresh the **new_data** subfolder and verify.
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
@@ -225,16 +227,15 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     ```
     > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
 
+1. In the hub menu bar on the left, select your lakehouse.
 
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+1. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-8. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
+1. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
    ![.](./Images/01/Pg3-Notebook-S10.png)
- 
-9. In the hub menu bar on the left, select your lakehouse.
 
-10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+1. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
 
 ### Task 5: Use SQL to query tables
@@ -300,6 +301,8 @@ The tables in your lakehouse are automatically added to a default dataset that d
     > **Note**: In this exercise, the data model consists of a single table. In a real-world scenario, you would likely create multiple tables in your lakehouse, each of which would be included in the model. You could then define relationships between these tables in the model.
 
 2. In the menu ribbon, select the **Reporting** tab. Then select **New report**. A new browser tab opens in which you can design your report.
+
+    >**Note:** On the **New report with all available data** pop-up, select **Continue**.
 
 3. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
     - **Item**

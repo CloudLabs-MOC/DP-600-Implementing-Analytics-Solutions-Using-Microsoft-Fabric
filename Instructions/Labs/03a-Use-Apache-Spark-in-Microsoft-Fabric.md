@@ -96,6 +96,8 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 > **Note**: Spark supports multiple coding languages, including Scala, Java, and others. In this exercise, we'll use *PySpark*, which is a Spark-optimized variant of Python. PySpark is one of the most commonly used languages on Spark and is the default language in Fabric notebooks.
 
+1. In the hub menu bar on the left, select your lakehouse.
+
 1. With the notebook visible, expand the **Files** list and select the **orders** folder so that the CSV files are listed next to the notebook editor, like this:
 
     ![Screenshot of a notebook with a Files pane.](./Images/notebook-files.png)

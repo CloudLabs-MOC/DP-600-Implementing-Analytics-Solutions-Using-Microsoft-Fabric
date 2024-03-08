@@ -55,7 +55,7 @@ Now that you have a workspace, it’s time to create a data lakehouse into which
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. At the bottom left of the Power BI portal, select **Data Engineering** again.
+1. At the bottom left of the Power BI portal, select **Data Engineering** icon , and select **Data Engineering** again.
 
 1. On the **Home** page for your lakehouse, select **Data pipeline**.
 
@@ -96,21 +96,19 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **File format (1)**: DelimitedText
     - **Column delimiter (2)**: Comma (,)
     - **Row delimiter (3)**: Line feed (\n)
-    - Select **Preview data (4)** to see a sample of the data that will be ingested.
+    - Select **Preview data (4)** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
       ![05](./Images/fabric5.png)
 
-9. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+        ![06](./Images/fabric6.png)
 
-     ![06](./Images/fabric6.png)
-
-10. On the **Choose data destination** page, select **Lakehouse (1)**. Then select **Next (2)**.
+9. On the **Choose data destination** page, select **Lakehouse (1)**. Then select **Next (2)**.
 
      ![07](./Images/fabric7.png)
 
-1. On the **Choose data destination** page, select your **Existing Lakehouse (1)** and from the drop-down select **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**, select **Next (3)**.
+10. On the **Choose data destination** page, select your **Existing Lakehouse (1)** and from the drop-down select **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**, select **Next (3)**.
 
-   ![05](./Images/fabric8.png)
+    ![05](./Images/fabric8.png)
 
 11. Set the following data destination options, and then select **Next (4)**:
     - **Root folder (1)**: Files
@@ -130,9 +128,9 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     ![09](./Images/fabric11.png)
 
-    A new pipeline containing a **Copy data** activity is created, as shown here:
+    - A new pipeline containing a **Copy data** activity is created, as shown here:
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
+        ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline.png)
 
 14. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
@@ -261,12 +259,12 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
     - **General**:
         - **Name**: Load Sales notebook
     - **Settings**:
-        - **Notebook**: Load Sales
+        - **Notebook**: Load Sales Notebook
         - **Base parameters**: Add a new parameter with the following properties:
 
-    |Name|	Type	|Value|
-    |----|----------|-----|
-    |table_name|	String|	new_sales|
+            |Name|	Type	|Value|
+            |----|----------|-----|
+            |table_name|	String|	new_sales|
 
     >**Note:** The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
