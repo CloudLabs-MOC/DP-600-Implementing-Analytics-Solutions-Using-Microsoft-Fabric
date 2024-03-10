@@ -84,9 +84,15 @@ A warehouse is a relational database in which you can define tables and other ob
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/dimproduct.png)
 
-1. On the Home menu tab, use the New SQL Query button to create a new query for table. Open the first text file, from **C:\LabFiles\Files\create-dw-01.txt**, and copy the Transact-SQL code related to the 'DimProduct' and paste it inside the table. Open the second text file, from **C:\LabFiles\Files\create-dw-02.txt**, copy the code and paste the code into the query pane. Now, open the third text file, from **C:\LabFiles\Files\create-dw-03.txt**, copy the code and paste the code into the query pane. Please ensure that each query pasted in a sequence.
+1. On the Home menu tab, use the New SQL Query button to create a new query for table. Open the first text file, from **C:\LabFiles\Files\create-dw-01.txt**, and copy the Transact-SQL code related to the 'DimProduct' and paste it inside the table. 
+
+1. Open the second text file, from **C:\LabFiles\Files\create-dw-02.txt**, copy the code and paste the code into the same query pane, where you pasted the above code. 
+
+1. Now, open the third text file, from **C:\LabFiles\Files\create-dw-03.txt**, copy the code and paste the code into the query pane, where you pasted the above codes. Please ensure that each query pasted in a sequence.
 
     ![01](./Images/02/Pg4-T2-S7.png)
+
+    >**Important**: Please ensure that each query pasted in a sequence.
 
 1. Run the query, which creates a simple data warehouse schema and loads some data. The script should take around 30 seconds to run.
 
