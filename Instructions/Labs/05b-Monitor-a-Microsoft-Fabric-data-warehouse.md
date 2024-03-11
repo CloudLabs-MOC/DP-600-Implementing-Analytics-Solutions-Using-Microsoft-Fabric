@@ -53,6 +53,8 @@ Microsoft Fabric data warehouses include dynamic management views (DMVs), which 
 
 1. Use the **▷ Run** button to run the SQL script and view the results, which include details of all connections to the data warehouse.
 
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
+
 1. Modify the SQL code to query the **sys.dm_exec_sessions** DMV, like this:
 
     ```Sql
@@ -61,6 +63,8 @@ Microsoft Fabric data warehouses include dynamic management views (DMVs), which 
 
 1. Run the modified query and view the results, which show details of all authenticated sessions.
 
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
+
 1. Modify the SQL code to query the **sys.dm_exec_requests** DMV, like this:
 
     ```Sql
@@ -68,6 +72,8 @@ Microsoft Fabric data warehouses include dynamic management views (DMVs), which 
     ```
 
 1. Run the modified query and view the results, which show details of all requests being executed in the data warehouse.
+
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
 
 1. Modify the SQL code to join the DMVs and return information about currently running requests in the same database, like this:
 
@@ -85,7 +91,9 @@ Microsoft Fabric data warehouses include dynamic management views (DMVs), which 
     ORDER BY requests.total_elapsed_time DESC;
     ```
 
-1. Run the modified query and view the results, which show details of all running queries in the database (including this one).
+1. Run the modified query and view the results, which show details of all running queries in the database.
+
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
 
 1. In the **New SQL query** drop-down list, select **New SQL query** to add a second query tab. Then in the new empty query tab, run the following code:
 
@@ -119,6 +127,8 @@ Microsoft Fabric data warehouses provide query insights - a special set of views
 
 1. Use the **▷ Run** button to run the SQL script and view the results, which include details of previously executed queries.
 
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
+
 1. Modify the SQL code to query the **frequently_run_queries** view, like this:
 
     ```Sql
@@ -126,6 +136,8 @@ Microsoft Fabric data warehouses provide query insights - a special set of views
     ```
 
 1. Run the modified query and view the results, which show details of frequently run queries.
+
+    >**Note:** If the result is not as expected, select the **Messages** tab, and then choose **Results**; it will be displayed.
 
 1. Modify the SQL code to query the **long_running_queries** view, like this:
 
