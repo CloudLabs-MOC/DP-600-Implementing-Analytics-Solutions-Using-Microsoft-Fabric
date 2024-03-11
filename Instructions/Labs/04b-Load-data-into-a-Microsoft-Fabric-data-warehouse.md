@@ -37,9 +37,11 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    - Click on **Create**
 
-1. Open a new tab and download the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**, and name the file as **sales.csv**.
+1. Open a new tab and click on download icon to save the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**, and name the file as **sales.csv**.
 
-1. Return to the web browser tab containing your lakehouse, select **…** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload files**, then upload the **sales.csv** file from your lab VM to the lakehouse, and select **Upload**.
+![](Images/4bT1S3.png)
+
+1. Return to the web browser tab containing your lakehouse, select **ellipsis (…)** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload files**, then upload the **sales.csv** file from your lab VM to the lakehouse, and select **Upload**.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-4.png)
 
@@ -55,7 +57,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 ### Task 2: Create a table in the lakehouse
 
-1. Select **…** menu for the **sales.csv** file in the **Explorer** pane, select **Load to tables**, and then **New table**.
+1. Select **ellipsis (…)** menu for the **sales.csv** file in the **Explorer** pane, select **Load to tables**, and then **New table**.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-6.png)
 
