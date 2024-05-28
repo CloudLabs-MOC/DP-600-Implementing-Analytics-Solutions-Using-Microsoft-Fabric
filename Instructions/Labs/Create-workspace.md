@@ -70,6 +70,8 @@ In this lab, you will complete the following tasks:
 
    ![Verify-trial-status](./Images/ws/10.png)
 
+   >**Note:** If the **Welcome to Power BI** pop-up appears, close it.
+
 ----
 
 #### Task 3: Create a workspace
@@ -89,6 +91,8 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
    - **Advanced:** Expand it and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
 
       ![advanced-and-apply](Images/fabric(2).png)
+
+      >**Note:** On the **Introducing task flows** select **Got it**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>

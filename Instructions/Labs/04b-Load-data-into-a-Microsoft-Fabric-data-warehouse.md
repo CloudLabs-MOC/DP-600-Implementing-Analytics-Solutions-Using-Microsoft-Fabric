@@ -37,11 +37,11 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
    - Click on **Create**
 
-1. Open a new tab and click on download icon to save the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**, and name the file as **sales.csv**.
+1. Open a new tab and click on download icon to save the file for this exercise from **https://github.com/MicrosoftLearning/dp-data/blob/main/sales.csv**, it will download the file as **sales.csv**.
 
-![](Images/4bT1S3.png)
+    ![](Images/4bT1S3.png)
 
-1. Return to the web browser tab containing your lakehouse, select **ellipsis (…)** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload files**, then upload the **sales.csv** file from your lab VM to the lakehouse, and select **Upload**.
+1. Return to the web browser tab containing your lakehouse, select **ellipsis (…)** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload files**, then upload the **sales.csv** file from your lab VM to the lakehouse, and select **Upload**, after uploading close the pane.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-4.png)
 
@@ -61,13 +61,14 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-6.png)
 
-1. Provide the following information in the **Load file to new table** dialog. Select **Load**.
+1. Provide the following information in the **Load file to new table** dialog. Select **Load (4)**.
 
-    - **New table name**: staging_sales
-    - **Use header for columns names**: Selected
-    - **Separator**: **,**
+    - **New table name (1)**: staging_sales
+    - **Use header for columns names (2)**: Selected
+    - **Separator (3)**: **,**
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-7.png)
+        ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-7.png)
+
 
 ### Task 3: Create a warehouse
 
