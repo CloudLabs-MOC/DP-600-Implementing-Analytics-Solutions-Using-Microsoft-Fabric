@@ -46,13 +46,13 @@ In this lab, you will complete the following tasks:
 
 1. Complete the sign in process by clicking on **Continue**
 
-   ![](Images/lab6-image-T01.png)
+   ![](Images/dp-600-lab01-2.png)
    
 1. Enter a 10 digit phone number and select **Get started**. Select **Get started** once more. You will be redirected to Power BI.
    
-   ![](Images/lab6-image-(T02).png)
+   ![](Images/dp-600-lab01-4.png)
    
-   ![](Images/lab6-image-(T003).png)
+   ![](Images/dp-600-lab01-5.png)
    
 1. Leave the Microsoft Edge browser window open.
 
