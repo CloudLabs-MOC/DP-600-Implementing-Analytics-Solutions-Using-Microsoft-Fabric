@@ -25,7 +25,7 @@ Now that you have a workspace, it’s time to create a data warehouse.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Warehouse (2)** experience.
 
-   ![02](./Images/powerwarehouse.png)
+   ![02](./Images/data-warehouse.png)
 
 1. On the Home page, select **Sample warehouse** and create a new data warehouse named **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -62,7 +62,7 @@ The SQL query editor provides support for IntelliSense, code completion, syntax 
 
 1. Use the **▷ Run** button to run the SQL script and view the results, which show the total number of trips and total revenue by month.
 
-1. Enter the following Transact-SQL code:
+1. In the **New SQL query** drop-down list, select **New SQL query** and enter the following Transact-SQL code:
 
     ```Sql
     SELECT 
@@ -79,7 +79,7 @@ The SQL query editor provides support for IntelliSense, code completion, syntax 
 
     ![02](./Images/output(6).png)
 
-1. Enter the following Transact-SQL code:
+1. In the **New SQL query** drop-down list, select **New SQL query** and enter the following Transact-SQL code:
 
     ```Sql
     SELECT TOP 10 
@@ -131,7 +131,7 @@ Let’s query your data warehouse to check for consistency.
     SELECT COUNT(*) FROM dbo.Trip WHERE TripDurationSeconds < 0;
     ```
 
-1. In the new blank query pane, enter and run the following Transact-SQL code:
+1. In the **New SQL query** drop-down list, select **New SQL query**. In the new blank query pane, enter and run the following Transact-SQL code:
 
     ```Sql
     -- Remove trips with negative trip duration
@@ -179,7 +179,7 @@ Let’s create a view based on the query we used earlier, and add a filter to it
 
 1. Select the text of the SELECT statement in your query. Then next to the **▷ Run** button, select **Save as view**.
 
-1. Create a new view named **vw_JanTrip**.
+1. Create a new view named **vw_JanTrip**, and select **OK**.
 
 1. In the **Explorer**, navigate to **Schemas » dbo » Views**. Note the vw_JanTrip view you just created.
 

@@ -28,7 +28,7 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Warehouse (2)** experience.
 
-   ![02](./Images/powerwarehouse.png)
+   ![02](./Images/data-warehouse.png)
 
 1. In the **Synapse Data Warehouse** home page, create a new **Warehouse** with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
 

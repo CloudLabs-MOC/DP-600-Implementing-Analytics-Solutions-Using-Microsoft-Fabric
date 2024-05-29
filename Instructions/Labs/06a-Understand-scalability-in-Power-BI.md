@@ -24,9 +24,7 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 ### Task 1: Download starter file
 
-1. Open Microsoft Edge.
-
-1. Download the **[Sales Analysis starter](https://aka.ms/fabric-relationships-starter)** file and save it on the Lab-VM (in any folder).
+1. Open a new tab, open and download the **[Sales Analysis starter](https://aka.ms/fabric-relationships-starter)** file and save it on the Lab-VM (in any folder).
 
 1. Navigate to the downloaded file and open it in Power BI Desktop.
 
@@ -111,8 +109,6 @@ In this task, you will visualize sales data by date and switch the active status
 	![Picture 8](Images/discard-changes-(1).png)
 
 1. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Images/discard-changes-(2).png)
 
 1. Review the table visual.
 
