@@ -69,7 +69,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![03](./Images/01/03.png)
 
-4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
+4. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **HTTP**.
 
    ![Screenshot of the Choose data source page.](./Images/fabric2.png)
 
@@ -238,8 +238,7 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
     - **General**: 
         - Name: Delete old files
     - **Source**:
-        - **Data store type**: Workspace
-        - **Workspace data store**: Your lakehouse
+        - **Connection**: Your lakehouse
         - **File path type**: Wildcard file path
         - **Folder path**: Files / new_data
         - **Wildcard file name**: *.csv
