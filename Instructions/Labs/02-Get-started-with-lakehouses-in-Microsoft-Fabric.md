@@ -83,7 +83,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![03](./Images/01/03.png)
 
-4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
+4. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **HTTP**.
 
    ![Screenshot of the Choose data source page.](./Images/fabric2.png)
 
@@ -92,6 +92,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **Connection (3)**: Create new connection
     - **Connection name (4)**: *Specify a unique name*
     - **Authentication kind (5)**: Basic (*Leave the username and password blank*)
+    - **Username**: Provide the username
     - Click on **Next (6)**
   
         ![04](./Images/fabric3.png)
