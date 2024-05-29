@@ -70,7 +70,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
     - Read data into a DataFrame
 
 
-        ```python
+        ```
         # Azure Blob Storage access info
         blob_account_name = "azureopendatastorage"
         blob_container_name = "nyctlc"
@@ -92,12 +92,12 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 7. Insert the following code into a new code cell:
 
-    ```python
+    ```
     # Declare file name    
     file_name = "yellow_taxi"
 
     # Construct destination path
-    output_parquet_path = f"**InsertABFSPathHere**/{file_name}"
+    output_parquet_path = f"InsertABFSPathHere/{file_name}"
     print(output_parquet_path)
         
     # Load the first 1000 rows as a Parquet file
@@ -140,7 +140,7 @@ Likely, your data ingestion task doesn’t end with only loading a file. Delta t
     display(filtered_df.limit(1))
     ```
 
-1. Select **▷ Run Cell** next to the code cell.
+2. Select **▷ Run Cell** next to the code cell.
 
     - This will add a timestamp column **dataload_datetime** to log when the data was loaded to a Delta table.
     - Filter NULL values in **storeAndFwdFlag**.
@@ -148,7 +148,7 @@ Likely, your data ingestion task doesn’t end with only loading a file. Delta t
     - Display a single row for validation.
 
 
-1. Review and confirm the displayed results, something similar to the following image:
+3. Review and confirm the displayed results, something similar to the following image:
 
     ![New dataflow.](./Images/notebook-transform-result.png)
 
