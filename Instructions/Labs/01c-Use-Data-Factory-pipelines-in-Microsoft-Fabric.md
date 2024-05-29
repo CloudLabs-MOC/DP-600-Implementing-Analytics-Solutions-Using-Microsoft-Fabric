@@ -78,6 +78,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **Connection (3)**: Create new connection
     - **Connection name (4)**: *Specify a unique name*
     - **Authentication kind (5)**: Basic (*Leave the username and password blank*)
+    - **Username**: Provide the username
     - Click on **Next (6)**
   
         ![04](./Images/fabric3.png)
