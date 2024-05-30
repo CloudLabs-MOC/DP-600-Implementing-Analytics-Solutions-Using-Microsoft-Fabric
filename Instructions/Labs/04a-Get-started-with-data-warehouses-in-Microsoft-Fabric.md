@@ -115,7 +115,8 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
     ![02](./Images/modeldw(1).png)
 
-1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details and click on **Ok**.
+1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details and click on **Save**.
+
     - **Table 1**: FactSalesOrder
     - **Column**: ProductKey
     - **Table 2**: DimProduct
@@ -125,11 +126,11 @@ A relational data warehouse typically consists of fact and dimension tables. The
     - **Make this relationship active**: Selected
     - **Assume referential integrity**: Unselected
 
-1. Repeat the process to create many-to-one relationships between the following tables and click on **Ok**.
+1. Repeat the process to create many-to-one relationships between the following tables and click on **Save**.
 
     - **FactSalesOrder.CustomerKey** &#8594; **DimCustomer.CustomerKey**
 
-      ![Screenshot of the data warehouse model page.](./Images/fabric12.png)
+      ![Screenshot of the data warehouse model page.](./Images/save.png)
 
     - **FactOrderSales.SalesOrderDateKey** &#8594; **DimDate.DateKey**
 

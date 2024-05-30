@@ -31,7 +31,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![02](./Images/01/Pg3-T1-S1.png)
+   ![02](./Images/dataeng.png)
    
 1. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
 
@@ -43,7 +43,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-1. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)** and create a subfolder named **new_data**
+1. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)** and create a subfolder named **new_data**.
 
    ![02](./Images/01/01.png)
 

@@ -38,7 +38,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![02](./Images/01/Pg3-T1-S1.png)
+   ![02](./Images/dataeng.png)
 
 1. In the **Synapse Data Engineering** home page, select **Lakehouse**.
 
@@ -412,7 +412,7 @@ A picture is proverbially worth a thousand words, and a chart is often better th
 
 3. In the results section beneath the cell, change the **View** option from **Table** to **Chart**.
 
-4. Use the **View options** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
+4. Use the **Customize chart** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**:
     - **Chart type**: Bar chart
     - **Key**: Item
     - **Values**: Quantity
