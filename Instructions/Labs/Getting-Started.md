@@ -67,6 +67,6 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
       
 1. Now, click on the **Next** from the lower right corner to move to the next page.

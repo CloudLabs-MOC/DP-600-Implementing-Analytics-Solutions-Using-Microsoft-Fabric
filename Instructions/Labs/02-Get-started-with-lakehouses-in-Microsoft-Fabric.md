@@ -79,20 +79,21 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
    
    ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
    
-3. If the **Copy data** wizard doesn't open automatically, select **Copy data (1)** in the pipeline editor page.
+3. If the **Copy data** wizard doesn't open automatically, select **Copy data assistant** in the pipeline editor page.
 
-   ![03](./Images/01/03.png)
+   ![03](./Images/dp-600-lab03-1.png)
 
-4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
+4. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **Http**.
 
-   ![Screenshot of the Choose data source page.](./Images/fabric2.png)
+   ![Screenshot of the Choose data source page.](./Images/dp-600-lab03-2.png)
 
 5. Select **Next** and then select **Create new connection (1)** and enter the following settings for the connection to your data source:
     - **URL (2)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection (3)**: Create new connection
     - **Connection name (4)**: *Specify a unique name*
     - **Authentication kind (5)**: Basic (*Leave the username and password blank*)
-    - Click on **Next (6)**
+    - **Username (6)**: Provide the username 
+    - Click on **Next (7)**
   
         ![04](./Images/fabric3.png)
     
@@ -118,13 +119,9 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
      ![06](./Images/fabric6.png)
 
-10. On the **Choose data destination** page, select **Lakehouse (1)**. Then select **Next (2)**.
+1. On the **Choose data destination** page, search **(1)** and select your lakehouse **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-     ![07](./Images/fabric7.png)
-
-1. On the **Choose data destination** page, select your **Existing Lakehouse (1)** and from the drop-down select **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**, select **Next (3)**.
-
-   ![05](./Images/fabric8.png)
+   ![05](./Images/dp-600-lab03-4.png)
 
 1. Set the following data destination options, and then select **Next (4)**:
     - **Root folder (1)**: Files
