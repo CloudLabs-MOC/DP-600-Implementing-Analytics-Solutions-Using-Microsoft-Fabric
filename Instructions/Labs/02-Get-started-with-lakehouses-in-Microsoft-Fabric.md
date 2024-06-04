@@ -50,8 +50,6 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
-   >**Note:** If the **sales.csv** file doesn't show up, refresh the **new_data** subfolder and verify.
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
