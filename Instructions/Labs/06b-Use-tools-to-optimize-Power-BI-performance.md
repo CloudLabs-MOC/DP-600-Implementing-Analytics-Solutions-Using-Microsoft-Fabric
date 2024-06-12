@@ -73,7 +73,7 @@ In this task, you will open a pre-developed Power BI Desktop solution.
 
       ![](Images/dp-up1.png)
 
-    >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
+        >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
 	
 1. Complete the sign up process by entering the **Email**, and select **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
@@ -86,7 +86,7 @@ In this task, you will open a pre-developed Power BI Desktop solution.
 
         ![](Images/dp-up(4).png)
 
-    >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
+        >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
 
 1. Select the **External Tools** ribbon tab.
 
@@ -97,6 +97,10 @@ In this task, you will open a pre-developed Power BI Desktop solution.
     ![](Images/tabularformat.png)
 
     >**Note:** Later in this exercise, you will use Tabular Editor to work with BPA.
+
+1. On the **There are pending changes in your queries that haven't been applied** pop-up, select **Discard changes**. On the **Discard your changes?** select **Discard**.
+
+    ![](Images/pendingchanges.png)
 
 ### Task 3: Review the data model
 
@@ -128,7 +132,7 @@ In this task, you will load BPA rules.
 
 2. To load the BPA rules, select the **C# Script** tab.
 
-    **Note:** This may be called the Advanced Scripting tab in older versions of Tabular Editor.
+    >**Note:** This may be called the Advanced Scripting tab in older versions of Tabular Editor.
 
     ![](Images/use-tools-to-optimize-power-bi-performance-image13.png)
 
@@ -268,8 +272,6 @@ In this task, you will open BPA and review the results of the checks.
     ![](Images/use-tools-to-optimize-power-bi-performance-image29.png)
 
     >**Note:** You must also save the Power BI Desktop file to ensure the Tabular Editor changes are saved.
-
-    > **Note:** In the message about pending changes, select **Apply later**.
 
 ## Exercise 2: Use DAX Studio
 
