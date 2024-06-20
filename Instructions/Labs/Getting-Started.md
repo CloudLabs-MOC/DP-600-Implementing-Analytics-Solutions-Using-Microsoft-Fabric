@@ -70,3 +70,5 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
       
 1. Now, click on the **Next** from the lower right corner to move to the next page.
+
+1. Avoid closing any logon script running in the background, as it will cause issues with lab performance.
