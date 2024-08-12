@@ -59,9 +59,9 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
    
      ![05](./Images/gs/05.png)
      
-   > If you see the **Help us protect your account** dialog box, then select the **Skip for now** option.
+   > If you see the **Action Required** dialog box, then select the **Ask Later** option.
 
-      ![06](./Images/gs/06.png)
+      ![06](./Images/gs/06-1.png)
   
 1. If you see the pop-up **Stay Signed in?**, click No
 
