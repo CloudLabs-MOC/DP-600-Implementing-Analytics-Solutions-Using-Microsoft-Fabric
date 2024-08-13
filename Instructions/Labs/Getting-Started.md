@@ -59,7 +59,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
    
      ![05](./Images/gs/05.png)
      
-   > If you see the **Action Required** dialog box, then select the **Ask Later** option.
+   > **Note**: If you see the **Action Required** dialog box, then select the **Ask Later** option.
 
       ![06](./Images/gs/06-1.png)
   
