@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ![](Images/lab9-archy.png)
 
-## Exercise 0: set up the prerequisites
+## Exercise 0: Set up the prerequisites
 
 ### Task 1: Set up Power BI Desktop
 
@@ -196,9 +196,9 @@ This task relies on the existence of a **Salespeople_Australia** security group 
 
 1. Switch to the Power BI service (web browser).
 
-2. In the workspace landing page, notice the **Sales Analysis - Enforce model security** dataset.
+2. In the workspace landing page, notice the **Sales Analysis - Enforce model security** Semantic model.
 
-   ![](Images/dp500_09-32.png)
+   ![](Images/dp6003.png)
 
 3. Hover the cursor over the dataset, and when the ellipsis appears, select the ellipsis, and then select **Security**.
 
