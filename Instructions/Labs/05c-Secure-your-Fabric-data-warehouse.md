@@ -103,7 +103,6 @@ In this task you will setup the environment for the lab.
 	
 1. If prompted to apply changes, click **Apply Later**.
 
-
 1. In the **Save As** window, navigate to the **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\MySolution** folder.
 
 1. Click **Save**.
