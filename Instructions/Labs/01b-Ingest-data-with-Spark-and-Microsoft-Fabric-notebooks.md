@@ -71,6 +71,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 
         ```
+        
         # Azure Blob Storage access info
         blob_account_name = "azureopendatastorage"
         blob_container_name = "nyctlc"
@@ -82,6 +83,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
             
         # Read parquet data from Azure Blob Storage path
         blob_df = spark.read.parquet(wasbs_path)
+        
         ```
 
 5. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
