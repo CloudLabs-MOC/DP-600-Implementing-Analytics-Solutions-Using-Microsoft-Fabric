@@ -37,6 +37,8 @@ Download and install Tabular Editor 2 to enable the creation of calculation grou
     ```https://github.com/TabularEditor/TabularEditor/releases```
 
 1. Scroll down to the **Assets** section and select the **TabularEditor.Installer.msi** file. This will initiate the file install.
+   
+    ![](Images/dp6004.png)
 
 1. Upon completion, select **Open file** to run the installer.
 
@@ -61,6 +63,8 @@ Download and install Tabular Editor 2 to enable the creation of calculation grou
 In this task, you will open a pre-developed Power BI Desktop solution.
 
 1. Download the [Sales Analysis starter file](https://aka.ms/fabric-optimize-starter) from `https://aka.ms/fabric-optimize-starter` and save it to a location you will remember.
+   
+   ![](Images/dp6005.png)
 
 1. Navigate to the downloaded file and open it in Power BI Desktop.
 
@@ -313,7 +317,7 @@ In this task, you will optimize a query by using an improved measure formula.
 
 3. Switch to the Dax Studio window and from the **File** menu, select **Browse** to navigate to the **Monthly Profit Growth.dax** file and **Open** the file.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image33.png)
+    ![](Images/dp6006.png)
 
 6. Read the comments at the top of the file, and then review the query that follows.
 
