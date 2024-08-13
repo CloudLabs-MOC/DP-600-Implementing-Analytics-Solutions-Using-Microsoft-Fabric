@@ -27,9 +27,9 @@ In this lab, you will complete the following tasks:
    
 1. Leave the Microsoft Edge browser window open.
 
-1. Select **Account manager (1)**, and click on **Start trial (2)**.
+1. Select **Account manager (1)**, and click on **Free trial (2)**.
 
-   ![Account-manager-start](./Images/ws/07.png)
+   ![Account-manager-start](./Images/dp6001.png)
 
 1. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
 
