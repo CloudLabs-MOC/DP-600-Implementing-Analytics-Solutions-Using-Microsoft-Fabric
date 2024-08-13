@@ -47,7 +47,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
    ![02](./Images/01/01.png)
 
-1. Open a new tab, and download the **[data file](https://github.com/MicrosoftLearning/dp-data/raw/main/products.csv)**, saving it as **products.csv** on your lab VM.
+1. Open a new tab, and download the **[data file](https://github.com/MicrosoftLearning/dp-data/blob/main/products.csv)**, saving it as **products.csv** on your lab VM.
 
 1. Return to the web browser tab containing your lakehouse, and in the **…** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
 
