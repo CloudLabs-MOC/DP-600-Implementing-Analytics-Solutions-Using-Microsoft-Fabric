@@ -53,6 +53,8 @@ Now that you have created a workspace in the previous step, it's time to switch 
       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
+      <validation step="89ea37a7-e342-4b93-a9bf-15272721afea" />
+
 ### Task 2: Create a Dataflow (Gen2) to ingest data
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
