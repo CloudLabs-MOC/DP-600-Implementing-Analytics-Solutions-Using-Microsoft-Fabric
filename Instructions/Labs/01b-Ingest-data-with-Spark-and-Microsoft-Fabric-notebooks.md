@@ -69,22 +69,19 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
     - Build the connection string
     - Read data into a DataFrame
 
+    ```
+    # Azure Blob Storage access info
+    blob_account_name = "azureopendatastorage"
+    blob_container_name = "nyctlc"
+    blob_relative_path = "yellow"
 
-        ```
-        
-        # Azure Blob Storage access info
-        blob_account_name = "azureopendatastorage"
-        blob_container_name = "nyctlc"
-        blob_relative_path = "yellow"
-                
-        # Construct connection path
-        wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
-        print(wasbs_path)
-            
-        # Read parquet data from Azure Blob Storage path
-        blob_df = spark.read.parquet(wasbs_path)
-        
-        ```
+    # Construct connection path
+    wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
+    print(wasbs_path)
+
+    # Read parquet data from Azure Blob Storage path
+    blob_df = spark.read.parquet(wasbs_path)
+    ```
 
 5. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
 
