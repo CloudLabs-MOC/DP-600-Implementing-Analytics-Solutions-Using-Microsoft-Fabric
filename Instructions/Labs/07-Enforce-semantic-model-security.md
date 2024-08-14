@@ -200,7 +200,7 @@ This task relies on the existence of a **Salespeople_Australia** security group 
 
    ![](Images/dp6003.png)
 
-3. Hover the cursor over the dataset, and when the ellipsis appears, select the ellipsis, and then select **Security**.
+3. Hover the cursor over the Semantic model, and when the ellipsis appears, select the ellipsis, and then select **Security**.
 
    ![](Images/dp500_09-33.png)
 	
