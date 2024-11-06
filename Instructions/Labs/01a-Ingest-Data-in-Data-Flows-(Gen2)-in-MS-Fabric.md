@@ -39,7 +39,9 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
     - Click on **Create**.
 
-      ![02](./Images/fabric20.png)
+      ![02](./Images/01/dp-600-newimage4.png)
+  
+      ![02](./Images/01/dp-600-newimage5.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
@@ -47,35 +49,41 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
 
+<validation step="89ea37a7-e342-4b93-a9bf-15272721afea" />
 
 ### Task 2: Create a Dataflow (Gen2) to ingest data
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
-1. In the home page for your workspace, select **+New** > **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
+1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown in second image.
 
-   ![New dataflow.](./Images/new-dataflow.png)
+    ![02](./Images/01/dp-600-newimage6.png)
 
-2. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
- - **Link to file**: *Selected*
- - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
- - **Connection**: Create new connection
- - **data gateway**: (none)
- - **Authentication kind**: Anonymous
+    ![New dataflow.](./Images/new-dataflow.png)
 
-3. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
+1. Select **Import from a Text/CSV file**, and create a new data source with the following settings and click on **Next**:
+    - **Link to file**: *Selected*
+    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
+    - **Connection**: Create new connection
+    - **data gateway**: (none)
+    - **Authentication kind**: Anonymous
 
-   ![Query in the Power Query editor.](./Images/fabric23.png)
+    ![02](./Images/01/dp-600-newimage7.png)
 
-4. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])`, and select **OK** - as shown here:
+1. Click on **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
 
-   ![Custom column in Power Query editor.](./Images/fabric24.png)
+   ![02](./Images/01/dp-600-newimage8.png)
+
+1. On the toolbar ribbon, select the **Add column** tab. Then select **Custom column** and create a new column named **MonthNo** that contains a number based on the formula `Date.Month([OrderDate])`, and select **OK** - as shown here:
+
+    ![02](./Images/01/dp-600-newimage9.png)
+
+    ![02](./Images/01/dp-600-newimage10.png)
 
     >**Note:** The step to add the custom column is added to the query and the resulting column is displayed in the data pane:
 
@@ -89,26 +97,38 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    > **Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. Select settings option data destination at the bottom of the Query settings pane. In the **Connect to data destination** dialog box, edit the connection and sign in using your Power BI organizational account to set the identity that the dataflow uses to access the lakehouse.
+     ![02](./Images/01/dp-600-newimage11.png)
 
-   ![Data destination configuration page.](./Images/dataflow-connection.png)
+1. Select settings option data destination at the bottom of the Query settings pane. In the **Connect to data destination** dialog box, select **Edit the connection** and sign in using your Power BI organizational account if already signed in click on **Next** to set the identity that the dataflow uses to access the lakehouse.
 
-3. In the list of available workspaces, find your workspace and select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** you created in it at the start of this exercise. Then specify a new table named **orders (2)** Select **Next (3)** and :
+   ![02](./Images/01/dp-600-newimage15.png)
+
+   ![02](./Images/01/dp-600-newimage16.png)
+
+1. In the list of available workspaces, find your workspace and select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** you created in it at the start of this exercise. Then specify a new table named **orders (2)** Select **Next (3)** and :
 
    ![Data destination configuration page.](./Images/lakehouse.png)
 
-1. If the **Use automatic settings** is On, toggle button to switch it off. Select the OrderDate and MonthNo columns in Power Query online. Now, change the **Source type** by selecting the drop-down, follow these instructions:
+1. If the Use automatic settings is On, toggle button to switch it off. Select the OrderDate and MonthNo columns in Power Query online. Now, change the Source type by selecting the drop-down, follow these instructions:
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
 
-8. On the **Choose destination settings** page, select **Append** under Update method, and then select **Save settings**.
+    >**Note**: MonthNo option is greyed out first select  **Source type** by Whole number.
 
-9. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
+1. On the **Choose destination settings** page, select **Append** under Update method, and then select **Save settings**.
+
+     ![02](./Images/01/dp-600-newimage14.png)
+
+1. Select **Publish** to publish the dataflow. Then wait for the **Dataflow 1** dataflow to be created in your workspace.
 
     ![Query with a lakehouse destination.](./Images/publish.png)
 
 1. Once published, select the **ellipses (...)**, select **Properties**, and rename your dataflow as **Transform Orders Dataflow**, select **Save**.
+
+     ![02](./Images/01/dp-600-newimage12.png)
+
+     ![02](./Images/01/dp-600-newimage13.png)
 
 ### Task 4: Add a dataflow to a pipeline
 
@@ -118,27 +138,31 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    The pipeline editor opens.
 
-   ![Empty data pipeline.](./Images/datapipeline.png)
+   ![02](./Images/01/dp-600-newimage17.png)
 
+   ![02](./Images/01/dp-600-newimage18.png)
+
+   >**Note** : If your not able to see **Data pipeline** use > button to see **Data pipeline** option 
+   
    > **Tip**: If the Copy Data wizard opens automatically, close it!
 
-2. Select **Pipeline activity**, and add a **Dataflow** activity to the pipeline.
+1. Select **Pipeline activity**, and add a **Dataflow** activity to the pipeline.
 
     ![Pipeline with a dataflow activity.](./Images/dp-600-lab01-21.png)
 
-3. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Transform Orders Dataflow** (the data flow you created previously)
+1. With the new **Dataflow1** activity selected, on the **Settings** tab, in the **Dataflow** drop-down list, select **Transform Orders Dataflow** (the data flow you created previously)
 
-   ![Pipeline with a dataflow activity.](./Images/dp-600-lab01-22.png)
+   ![02](./Images/01/dp-600-newimage19.png)
 
-4. On the **Home** tab, save the pipeline using the **&#128427;** **Save** icon.
+1. On the **Home** tab, save the pipeline using the **&#128427;** **Save** icon.
 
-5. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
+1. Use the **&#9655; Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded.png)
 
-6. In the menu bar on the left edge, select your lakehouse.
+1. In the menu bar on the left edge, select your lakehouse.
 
-7. In the **...** menu for **Tables**, select **Refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
+1. In the **...** menu for **Tables**, select **Refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/lakehouse(1).png)
 
