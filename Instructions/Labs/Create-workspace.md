@@ -35,7 +35,13 @@ In this lab, you will complete the following tasks:
 
    ![Start-trial](./Images/ws/08.png)
 
-   >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
+1. On **Activate your 60-day free Fabric trial capacity** click on **Activate**.
+
+    ![02](./Images/01/dp-600-newimage1.png)
+
+    >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
+
+      ![02](./Images/01/dp-600-newimage2.png)
 
 1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
 
@@ -51,7 +57,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
 1.  Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
-    ![New Workspace](./Images/ws/11.png)
+    ![02](./Images/01/dp-600-newimage3.png)
 
 2. Fill out the **Create a workspace** form with the following details:
 
