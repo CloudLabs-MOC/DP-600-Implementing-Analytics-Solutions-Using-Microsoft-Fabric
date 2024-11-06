@@ -109,8 +109,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    ![Data destination configuration page.](./Images/lakehouse.png)
 
-1. If the **Use automatic settings** is On, toggle button to switch it off. Unselect the checkbox next to source to uncheck all the option then select 
-   OrderDate and MonthNo columns in Power Query online. Now, change the **Source type** by selecting the drop-down, follow these instructions:
+1. If the Use automatic settings is On, toggle button to switch it off. Select the OrderDate and MonthNo columns in Power Query online. Now, change the Source type by selecting the drop-down, follow these instructions:
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
