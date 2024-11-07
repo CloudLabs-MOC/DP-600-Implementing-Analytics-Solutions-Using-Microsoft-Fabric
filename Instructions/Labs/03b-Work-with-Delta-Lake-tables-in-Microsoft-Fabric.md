@@ -35,11 +35,13 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
    
 1. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
 
-    - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
+    - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
 
-    - Click on **Create**.
+    - Click on **Create (2)**.
 
-      ![02](./Images/fabric20.png)
+      ![02](./Images/dp5.png)
+  
+      ![02](./Images/dp6.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
@@ -49,13 +51,19 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. Open a new tab, and download the **[data file](https://github.com/MicrosoftLearning/dp-data/blob/main/products.csv)**, saving it as **products.csv** on your lab VM.
 
-1. Return to the web browser tab containing your lakehouse, and in the **…** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and create a folder named **products**.
+1. Return to the web browser tab containing your lakehouse, and in the **…** menu for the **Files** folder in the **Explorer** pane, select **New subfolder** and **create (2)** a folder named **products (1)**.
 
-1. In the **…** menu for the **products** folder, select **Upload** and **Upload files**, then upload the **products.csv** file from your lab VM to the lakehouse, and again select **Upload**. Close the **Upload files** pane.
+   ![02](./Images/dp-5.1.png)
+
+1. In the **… (1)** menu for the **products** folder, select **Upload (2)** and **Upload files (2)**, then upload the **products.csv** file from your lab VM to the lakehouse, and again select **Upload**. Close the **Upload files** pane.
+
+   ![02](./Images/dp-5.2.png)
+
+   ![02](./Images/dp-5.3.png)
 
 1. After the file has been uploaded, select the **products (1)** folder, and verify that the **products.csv (2)** file has been uploaded, as shown here:
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/productsfile(1).png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/dp8.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
@@ -65,17 +73,35 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 ### Task 2: Explore data in a dataframe
 
-1. On the **Home** page while viewing the contents of the **products** folder in your datalake, in the **Open notebook** menu, select **New notebook**.
+1. Navigate to the **Home (1)** and then select **Notebook (2)**.
+
+   ![02](./Images/dp10.png)
+
+    >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
     >**Note:** After a few seconds, a new notebook containing a single cell will open. Notebooks are made up of one or more cells that can contain code or markdown (formatted text).
 
-2. Select the existing cell in the notebook, which contains some simple code, and then use its **🗑 (Delete)** icon at its top-right to remove it - you will not need this code.
+3. Select the existing cell in the notebook, which contains some simple code, and then use its **🗑 (Delete)** icon at its top-right to remove it - you will not need this code.
 
-1. In the **Lakehouse explorer** pane on the left, expand **Files** and select **products** to reveal a new pane showing the **products.csv** file you uploaded previously:
+   ![02](./Images/dp11.png)
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/notebookproducts(1).png)
+1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
 
-1. In the **…** menu for **products.csv**, select **Load data** > **Spark**. A new code cell containing the following code should be added to the notebook:
+   ![02](./Images/dp12.png)
+
+   ![02](./Images/dp13.png)
+
+1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
+
+   ![02](./Images/dp14.png)
+
+1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
+
+   ![02](./Images/dp15.png)
+   
+1. Expand **Files** > **products** ,In the **…** menu for **products.csv (1)**, select **Load data (2)** > **Spark (3)**. A new code cell containing the following code should be added to the notebook:
+
+   ![02](./Images/dp16.png)
 
     ```python
     df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -125,12 +151,14 @@ You can also create external tables for which the schema metadata is defined in 
     df.write.format("delta").saveAsTable("external_products", path="abfs_path/external_products")
     ```
 
-1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files** folder, select **Copy ABFS path**.
+1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files (1)** folder, select **Copy ABFS path (2)**.
+
+   ![02](./Images/dp17.png)
 
     >**Note:** The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
-    **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files**
+    **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files**
 
-1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files/external_products**
+1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files/external_products**
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that the **external_products (2)** table has been created.
 
