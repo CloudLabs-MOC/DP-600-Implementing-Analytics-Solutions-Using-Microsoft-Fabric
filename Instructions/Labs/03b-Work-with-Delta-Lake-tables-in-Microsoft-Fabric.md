@@ -73,7 +73,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 ### Task 2: Explore data in a dataframe
 
-1. Navigate to the **Home (1)** and then select **New notebook (2)**.
+1. Navigate to the **Home (1)** and then select **Notebook (2)**.
 
    ![02](./Images/dp10.png)
 
