@@ -257,7 +257,7 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
     - **Source**:
         - **Connection**: Your lakehouse
         - **File path type**: Wildcard file path
-        - **Folder path**: Files / new_data
+        - **Folder path**: new_data
         - **Wildcard file name**: *.csv
         - **Recursively**: Selected
     - **Logging settings**:
