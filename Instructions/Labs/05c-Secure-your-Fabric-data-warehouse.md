@@ -58,7 +58,6 @@ In this task you will setup the environment for the lab.
          
        ![](Images/lab7-image3.png)
 
-
 1. In the **Stay signed in to all your apps** tab, select **No, sign in to this app only**
 
       ![](Images/lab-6.3-6.png)
