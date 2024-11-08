@@ -75,7 +75,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 1. At the bottom left of the Data Engineering portal, select the **Data Engineering** icon and switch to the **Data Warehouse** experience.
 
 1. In the **Synapse Data Warehouse** home page, create a new **Warehouse** with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
-
+ 
     >**Note:** After a minute or so, a new warehouse will be created:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/warehouse1.png)
@@ -89,6 +89,12 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 ### Task 4: Create fact table, dimensions and view
 
 Let’s create the fact tables and dimensions for the Sales data. You’ll also create a view pointing to a lakehouse, this simplifies the code in the stored procedure we’ll use to load.
+
+1. In the warehouse page, click on **+ Warehouses** make sure to select your lakehouse **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** click on **Confirm**
+
+    ![02](./Images/01/dp-600-newimage41.png)
+
+    ![02](./Images/01/dp-600-newimage42.png)
 
 1. In the warehouse **Explorer**, select **New SQL query**, then copy and run the following query.
 
@@ -137,13 +143,13 @@ Let’s create the fact tables and dimensions for the Sales data. You’ll also 
 
 1. Open a new **New SQL query** editor, then copy and run the following query.
 
+   >**Note:** Update the **your lakehouse name** with the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**.
+
     ```Sql
     CREATE VIEW Sales.Staging_Sales
     AS
     SELECT * FROM [<your lakehouse name>].[dbo].[staging_sales];
     ```
-
-    >**Note:** Update the **your lakehouse name** with the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. In the **Explorer**, navigate to **Schemas » Sales » Views**. Note the **Staging_Sales** view you created.
 
@@ -218,6 +224,8 @@ Let’s run some analytical queries to validate the data in the warehouse.
 
     >**Note:** This query shows the customers by total sales for the year of 2021. The customer with the highest total sales for the specified year is Jordan Turner, with total sales of 14686.69.
 
+      ![02](./Images/01/dp-600-newimage39.png)
+
 1. On the top menu, select **New SQL query** or reuse the same editor, then copy and run the following query.
 
     ```Sql
@@ -231,6 +239,8 @@ Let’s run some analytical queries to validate the data in the warehouse.
     ```
 
     >**Note:** This query shows the top-seliing items by total sales for the year of 2021. These results suggest that the Mountain-200 bike model, in both black and silver colors, was the most popular item among customers in 2021.
+
+    >![02](./Images/01/dp-600-newimage40.png)
 
 1. On the top menu, select **New SQL query** or reuse the same editor, then copy and run the following query.
 
