@@ -34,7 +34,7 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![02](./Images/01/dp2-1.png)
+   ![02](./Images/dp2-1.png)
    
 2. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
 
