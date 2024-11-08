@@ -76,7 +76,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
-1. Navigate to the **Home** page and select **Notebook (2)**.
+1. Navigate to the **Home (1)** page and select **Notebook (2)**.
 
    ![](./Images/dp10.1.png)
 
