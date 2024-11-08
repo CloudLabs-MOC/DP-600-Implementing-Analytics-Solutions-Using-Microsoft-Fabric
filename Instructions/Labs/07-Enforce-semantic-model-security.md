@@ -277,7 +277,7 @@ In this task, you will add the **Salesperson** table to the model.
 
    ![](Images/dp7-16.png)
 
-6. In the **Applied Steps** list, right-click the **Removed Other Columns** step (third step), and then select **Delete Until End**.
+6. In the **Applied Steps** list, right-click the **Removed Other Columns (1)** step (third step), and then select **Delete Until End (2)**.
 
    ![](Images/dp7-17.png)
 
