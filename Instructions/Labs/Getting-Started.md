@@ -2,7 +2,7 @@
 
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![07](Images/labvm(1).png)
+   ![02](./Images/01/dp-600-newimage68.png)
 
 ### Virtual Machine & Lab Guide
  
