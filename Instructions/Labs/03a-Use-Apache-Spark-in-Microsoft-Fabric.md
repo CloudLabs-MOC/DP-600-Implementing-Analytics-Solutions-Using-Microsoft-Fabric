@@ -385,7 +385,9 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view.png)
 
-4. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**.
+4. In the **... (1)** menu for the **salesorders** table, select **Load data (2)** > **Spark (3)**.
+
+   ![](./Images/dpp1.png)
 
     A new code cell containing code similar to the following example is added to the notebook:
 
@@ -394,7 +396,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
    display(df)
     ```
 
-5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
+6. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
 #### Task 6.2: Run SQL code in a cell
 
@@ -634,9 +636,15 @@ Now that you've finished working with the data, you can save the notebook with a
 
 1. In the notebook menu bar, select **Notebook 1 | Saved**.
 
-2. Set the **Name** of the notebook to **Explore Sales Orders Notebook**, and press enter.
+   ![](./Images/dpp8.png)
 
-3. On the notebook menu, select **Stop session** to end the Spark session.
+3. Set the **Name** of the notebook to **Explore Sales Orders Notebook**, and press enter.
+
+    ![](./Images/dpp9.png)
+
+5. On the notebook menu, select **Stop session** to end the Spark session.
+
+   ![](./Images/dpp10.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
