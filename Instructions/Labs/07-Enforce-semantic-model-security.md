@@ -325,7 +325,7 @@ In this task, you will add the **Salesperson** table to the model.
 
 18. To load the table to the model, on the **Home** ribbon tab, select the **Close &amp; Apply** icon.
 
-	![](Images/dp500_09-54.png)
+    ![](Images/dp7-24.png)
 
 19. When the table has added to the model, notice that a relationship to the **Sales Territory** table was automatically created.
 
