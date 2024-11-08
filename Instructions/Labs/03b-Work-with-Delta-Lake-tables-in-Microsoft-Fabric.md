@@ -75,7 +75,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. Navigate to the **Home (1)** and then select **Notebook (2)**.
 
-   ![02](./Images/dp10.png)
+   ![02](./Images/dp10.1.png)
 
     >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
