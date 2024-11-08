@@ -162,7 +162,7 @@ You can also create external tables for which the schema metadata is defined in 
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that the **external_products (2)** table has been created.
 
-    ![02](./Images/tablesexternalproducts.png)
+    ![02](./Images/tablesexternalproducts1.png)
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files** folder, select **Refresh**. Then expand the **Files (1)** node and verify that the **external_products (2)** folder has been created for the table’s data files.
 
