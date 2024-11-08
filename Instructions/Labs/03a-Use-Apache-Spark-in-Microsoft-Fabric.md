@@ -127,7 +127,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 2. In the **orders (1)** folder, click on **... (2)** menu for **2019.csv**, select **Load data (3)** > **Spark (4)**.
 
-   ![](./Images/explore.png)
+   ![](./Images/explore1.png)
 
 3. A new code cell containing the following code should be added to the notebook:
 
