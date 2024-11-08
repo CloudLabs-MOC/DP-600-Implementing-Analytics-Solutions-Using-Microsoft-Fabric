@@ -101,7 +101,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
    
 1. Expand **Files** > **products** ,In the **…** menu for **products.csv (1)**, select **Load data (2)** > **Spark (3)**. A new code cell containing the following code should be added to the notebook:
 
-   ![02](./Images/dp16.png)
+   ![02](./Images/dp16.1.png)
 
     ```python
     df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
