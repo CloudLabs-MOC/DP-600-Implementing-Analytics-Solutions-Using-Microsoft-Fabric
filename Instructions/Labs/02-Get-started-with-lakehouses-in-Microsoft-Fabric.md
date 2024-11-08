@@ -322,7 +322,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
     - **Operation (3)**: Count distinct values
     - **Column(4)**: SalesOrderLineNumber
 
-        ![Screenshot of a Visual query with results.](./Images/01/Pg3-VisQuery-S4.01.png)
+        ![Screenshot of a Visual query with results.](./Images/dp2-gb.png)
 
 8. When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
