@@ -85,7 +85,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
 
-    ![](./Images/fabriclakehouse.png)
+    ![](./Images/fabriclakehouse1.png)
 
 2. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
@@ -97,7 +97,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 3. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
-    ![](./Images/salesorder.png)
+    ![](./Images/salesorder1.png)
 
 ### Task 3: Load data into a dataframe
 
