@@ -78,7 +78,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
 1. Navigate to the **Home** page and select **Notebook (2)**.
 
-   ![](./Images/dp10.png)
+   ![](./Images/dp10.1.png)
 
     >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
     >**Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
