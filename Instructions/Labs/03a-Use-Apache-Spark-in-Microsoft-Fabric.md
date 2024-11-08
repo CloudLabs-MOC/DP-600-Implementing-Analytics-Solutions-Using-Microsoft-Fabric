@@ -42,21 +42,29 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. In the **Synapse Data Engineering** home page, select **Lakehouse**.
 
+    ![02](./Images/dp-5.png)
+
 1. Follow these instructions to create a new **Lakehouse**:
 
-   - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
+   - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
 
-   - Click on **Create**
+   - Click on **Create (2)**
+  
+     ![02](./Images/dp-6.png)
 
-1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\orders** to the lakehouse, select **Upload**, and close the pane.
+1. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **Upload (2)** and **Upload folder (3)**.
 
-    >**Note:** When prompted, for uploading 3 files, select **Upload**.
+   ![02](./Images/dp-11.png)
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/filesupload.png)
+1. Then upload the **orders (1)** folder from **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\orders** to the lakehouse, select **Upload (2)**, and close the pane.
+
+   >**Note:** When prompted, for uploading 3 files, select **Upload**.
+
+    ![Screenshot of uploaded files in a lakehouse.](./Images/filesupload1.png)
 
 1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
@@ -68,17 +76,18 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
-1. On the **Home** page while viewing the contents of the **orders** folder in your datalake, in the **Open notebook (1)** menu, select **New notebook (2)**.
+1. Navigate to the **Home** page and select **Notebook (2)**.
 
-   ![](./Images/Pg7-Notebook-S1.png)
+   ![](./Images/dp10.1.png)
 
+    >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
     >**Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-2. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
+1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
 
-    ![](./Images/fabriclakehouse.png)
+    ![](./Images/fabriclakehouse2.png)
 
-3. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
+2. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
     ```
    # Sales order data exploration
@@ -86,9 +95,23 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
    Use the code in this notebook to explore sales order data.
     ```
 
-4. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
+3. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
-    ![](./Images/salesorder.png)
+    ![](./Images/salesorder2.png)
+
+1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
+
+   ![02](./Images/dp12.1.png)
+
+   ![02](./Images/dp-13.png)
+
+1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
+
+   ![02](./Images/dp14.png)
+
+1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
+
+   ![02](./Images/dp15.1.png)
 
 ### Task 3: Load data into a dataframe
 
@@ -104,7 +127,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 2. In the **orders (1)** folder, click on **... (2)** menu for **2019.csv**, select **Load data (3)** > **Spark (4)**.
 
-   ![](./Images/explore.png)
+   ![](./Images/explore1.png)
 
 3. A new code cell containing the following code should be added to the notebook:
 
@@ -362,7 +385,9 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view.png)
 
-4. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**.
+4. In the **... (1)** menu for the **salesorders** table, select **Load data (2)** > **Spark (3)**.
+
+   ![](./Images/dpp1.png)
 
     A new code cell containing code similar to the following example is added to the notebook:
 
@@ -371,7 +396,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
    display(df)
     ```
 
-5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
+6. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
 #### Task 6.2: Run SQL code in a cell
 
@@ -611,9 +636,15 @@ Now that you've finished working with the data, you can save the notebook with a
 
 1. In the notebook menu bar, select **Notebook 1 | Saved**.
 
-2. Set the **Name** of the notebook to **Explore Sales Orders Notebook**, and press enter.
+   ![](./Images/dpp9.png)
 
-3. On the notebook menu, select **Stop session** to end the Spark session.
+3. Set the **Name** of the notebook to **Explore Sales Orders Notebook**, and press enter.
+
+    ![](./Images/dpp8.png)
+
+5. On the notebook menu, select **Stop session** to end the Spark session.
+
+   ![](./Images/dpp10.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>

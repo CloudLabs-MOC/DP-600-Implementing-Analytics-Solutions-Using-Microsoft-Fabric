@@ -39,9 +39,9 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
     - Click on **Create (2)**.
 
-      ![02](./Images/dp5.png)
+      ![02](./Images/dp-5.png)
   
-      ![02](./Images/dp6.png)
+      ![02](./Images/dp-6.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
@@ -75,7 +75,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. Navigate to the **Home (1)** and then select **Notebook (2)**.
 
-   ![02](./Images/dp10.png)
+   ![02](./Images/dp10.1.png)
 
     >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
@@ -87,9 +87,9 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
 
-   ![02](./Images/dp12.png)
+   ![02](./Images/dp12.1.png)
 
-   ![02](./Images/dp13.png)
+   ![02](./Images/dp13.1.png)
 
 1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
 
@@ -97,11 +97,11 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
 
-   ![02](./Images/dp15.png)
+   ![02](./Images/dp15.1.png)
    
 1. Expand **Files** > **products** ,In the **…** menu for **products.csv (1)**, select **Load data (2)** > **Spark (3)**. A new code cell containing the following code should be added to the notebook:
 
-   ![02](./Images/dp16.png)
+   ![02](./Images/dp16.1.png)
 
     ```python
     df = spark.read.format("csv").option("header","true").load("Files/products/products.csv")
@@ -153,20 +153,20 @@ You can also create external tables for which the schema metadata is defined in 
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files (1)** folder, select **Copy ABFS path (2)**.
 
-   ![02](./Images/dp17.png)
+   ![02](./Images/dp17.1.png)
 
     >**Note:** The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
-    **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files**
+    **abfss://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@onelake.dfs.fabric.microsoft.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/Files**
 
-1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files/external_products**
+1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@onelake.dfs.fabric.microsoft.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/Files/external_products**
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that the **external_products (2)** table has been created.
 
-    ![02](./Images/tablesexternalproducts.png)
+    ![02](./Images/tablesexternalproducts1.png)
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files** folder, select **Refresh**. Then expand the **Files (1)** node and verify that the **external_products (2)** folder has been created for the table’s data files.
 
-    ![02](./Images/filesexternalproducts.png)
+    ![02](./Images/filesexternalproducts1.png)
 
 #### Task 3.3: Compare managed and external tables
 
@@ -206,7 +206,7 @@ Let’s explore the differences between managed and external tables.
 
 1. In the **Lakehouse explorer** pane, expand the **Files (1)** folder and verify that the **external_products (2)** has not been deleted. Select this folder to view the Parquet data files and **_delta_log (3)** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
-    ![02](./Images/deltalog.png)
+    ![02](./Images/deltalog1.png)
 
 #### Task 3.4: Use SQL to create a table
 
@@ -222,7 +222,7 @@ Let’s explore the differences between managed and external tables.
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that a new table named **products (2)** is listed. Then expand the table to verify that its schema matches the original dataframe that was saved in the **external_products** folder.
 
-    ![02](./Images/productslakehouse.png)
+    ![02](./Images/productslakehouse1.png)
 
 1. Add another code cell and run the following code:
 
