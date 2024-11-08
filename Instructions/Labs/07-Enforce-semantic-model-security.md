@@ -183,9 +183,11 @@ In this task, you will publish the report.
 
    ![](Images/dp9-19.png)
 
-3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then select **Select (2)**. 
+3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then select **Select (2)**.
+
+   ![](Images/dp7-12.png)
    
-4. When the publishing succeeds, select **Got it**.
+5. When the publishing succeeds, select **Got it**.
 
    ![](Images/dp9-20.png)
 
