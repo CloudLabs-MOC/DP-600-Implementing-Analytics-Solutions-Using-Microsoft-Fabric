@@ -636,11 +636,11 @@ Now that you've finished working with the data, you can save the notebook with a
 
 1. In the notebook menu bar, select **Notebook 1 | Saved**.
 
-   ![](./Images/dpp8.png)
+   ![](./Images/dpp9.png)
 
 3. Set the **Name** of the notebook to **Explore Sales Orders Notebook**, and press enter.
 
-    ![](./Images/dpp9.png)
+    ![](./Images/dpp8.png)
 
 5. On the notebook menu, select **Stop session** to end the Spark session.
 
