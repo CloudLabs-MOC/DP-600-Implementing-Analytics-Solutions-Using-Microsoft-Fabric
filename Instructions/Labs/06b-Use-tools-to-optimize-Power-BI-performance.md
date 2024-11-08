@@ -42,9 +42,15 @@ Download and install Tabular Editor 2 to enable the creation of calculation grou
 
 1. Upon completion, select **Open file** to run the installer.
 
+	![02](./Images/01/dp-600-newimage43.png)
+
 1. In the Tabular Editor installer window, select **Next >**.
 
+     ![02](./Images/01/dp-600-newimage44.png)
+
 1. At the **License Agreement** step, if you agree, select **I agree**, and then select **Next >**.
+
+     ![02](./Images/01/dp-600-newimage45.png)
 
 1. At the **Select Installation Folder** step, select **Next >**.
 
@@ -70,15 +76,17 @@ In this task, you will open a pre-developed Power BI Desktop solution.
 
 1. At the top-right corner of Power BI Desktop, if you're not already signed in, select **Sign In**. Use the lab credentials in the Environment details tab to complete the sign-in process.
 
-	![](Images/DP500-16-6new.png)
+	![02](./Images/01/dp-600-newimage46.png)
 	
 1. Enter the Lab username in the **Enter your email address** and click on **Continue**
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-      ![](Images/dp-up1.png)
+      ![02](./Images/01/dp-600-newimage47.png)
 
         >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
-	
+
+	  ![02](./Images/01/dp-600-newimage67.png)
+    
 1. Complete the sign up process by entering the **Email**, and select **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -92,19 +100,17 @@ In this task, you will open a pre-developed Power BI Desktop solution.
 
         >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
 
-1. Select the **External Tools** ribbon tab.
+1. Select the **External Tools** ribbon tab. Notice that you can launch Tabular Editor from this ribbon tab.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image8.png)
-
-1. Notice that you can launch Tabular Editor from this ribbon tab.
-
-    ![](Images/tabularformat.png)
+    ![02](./Images/01/dp-600-newimage48.png)
 
     >**Note:** Later in this exercise, you will use Tabular Editor to work with BPA.
 
 1. On the **There are pending changes in your queries that haven't been applied** pop-up, select **Discard changes**. On the **Discard your changes?** select **Discard**.
 
-    ![](Images/pendingchanges.png)
+    ![02](./Images/01/dp-600-newimage49.png)
+
+   ![02](./Images/01/dp-600-newimage50.png)
 
 ### Task 3: Review the data model
 
@@ -112,11 +118,11 @@ In this task, you will review the data model.
 
 1. In Power BI Desktop, at the left, switch to **Model** view.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image10.png)
+    ![02](./Images/01/dp-600-newimage52.png)
 
 2. Use the model diagram to review the model design.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image11.png)
+    ![02](./Images/01/dp-600-newimage51.png)
 
     >**Note:** The model comprises eight dimension tables and one fact table. The **Sales** fact table stores sales order details. It's a classic star schema design that includes snowflake dimension tables (**Category** > **Subcategory** > **Product**) for the product dimension.
 
@@ -130,7 +136,7 @@ In this task, you will load BPA rules.
 
 1. On the **External Tools (1)** ribbon, select **Tabular Editor (2)**.
 
-    ![](Images/externaltools.png)
+    ![02](./Images/01/dp-600-newimage53.png)
 
     >**Note:** Tabular Editor opens in a new window and connects live to the data model hosted in Power BI Desktop. Changes made to the model in Tabular Editor aren't propagated to Power BI Desktop until you save them.
 
@@ -138,7 +144,7 @@ In this task, you will load BPA rules.
 
     >**Note:** This may be called the Advanced Scripting tab in older versions of Tabular Editor.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image13.png)
+    ![02](./Images/01/dp-600-newimage54.png)
 
 3. Paste in the following script.
 
@@ -153,7 +159,7 @@ In this task, you will load BPA rules.
 
 4. To run the script, on the toolbar, select the **Run script** command.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image14.png)
+    ![02](./Images/01/dp-600-newimage55.png)
 
     **Note:** To use the BPA rules, you must close and then reopen Tabular Editor.
 
@@ -161,7 +167,7 @@ In this task, you will load BPA rules.
 
 6. To reopen Tabular Editor, in Power BI Desktop, on the **External Tools (1)** ribbon, select **Tabular Editor (2)**.
 
-    ![](Images/externaltools.png)
+    ![02](./Images/01/dp-600-newimage53.png)
 
 ### Task 5: Review the BPA rules
 
@@ -169,11 +175,11 @@ In this task, you will review the BPA rules that you loaded in the previous task
 
 1. In Tabular Editor, on the menu, select **Tools** > **Manage BPA Rules**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image16.png)
+    ![02](./Images/01/dp-600-newimage56.png)
 
 2. In the **Manage Best Practice Rules** window, in the **Rule collections** list, select **Rules for the local user**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image17.png)
+    ![02](./Images/01/dp-600-newimage57.png)
 
 3. In the **Rules in collection** list, scroll down the list of rules.
 
@@ -189,15 +195,11 @@ In this task, you will review the BPA rules that you loaded in the previous task
 
     > **Note:** The higher the number, the more important the rule.
 
-6. Scroll to the bottom of the list and ensure that the **Set IsAvailableInMdx to false on non-attribute columns** rule is unchecked.
+6. Scroll to the bottom of the list and ensure that the **Set IsAvailableInMdx to false on non-attribute columns** rule is unchecked. Select **OK**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image18.png)
+    ![02](./Images/01/dp-600-newimage58.png)
 
     > **Note:** You can disable individual rules or entire categories of rules. BPA won't check disabled rules against your model. The removal of this specific rule is to show you how to disable a rule.
-
-7. Select **OK**.
-
-    ![](Images/use-tools-to-optimize-power-bi-performance-image19.png)
 
 ### Task 6: Address BPA issues
 
@@ -205,7 +207,7 @@ In this task, you will open BPA and review the results of the checks.
 
 1. On the menu, select **Tools** > **Best Practice Analyzer** (or press **F10**).
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image20.png)
+    ![02](./Images/01/dp-600-newimage59.png)
 
 2. In the **Best Practice Analyzer** window, if necessary, maximize the window.
 
@@ -213,13 +215,13 @@ In this task, you will open BPA and review the results of the checks.
 
 4. In the first category, right-click the **'Product'** table, and then select **Ignore item**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image21.png)
+    ![02](./Images/01/dp-600-newimage60.png)
 
     > **Note:** When an issue isn't really an issue, you can ignore that item. You can always reveal ignored items by using the **Show ignored** command on the toolbar.
 
 5. Further down the list, in the **Use the DIVIDE function for division** category, right-click **[Profit Margin]**, and then select **Go to object**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image22.png)
+    ![02](./Images/01/dp-600-newimage61.png)
 
     >**Note:** This command switches to Tabular Editor and focuses on the object. It makes it easy to apply a fix to the issue.
 
@@ -245,7 +247,7 @@ In this task, you will open BPA and review the results of the checks.
 
 11. Right-click the **'Date'[Date]** issue, and then select **Generate fix script**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image25.png)
+    ![02](./Images/01/dp-600-newimage63.png)
 
     > **Note:** This command generates a C# script and copies it to the clipboard. You can also use the **Apply fix** command to generate and run the script, however it might be safer to review (and modify) the script before you run it.
 
@@ -361,7 +363,7 @@ In this task, you will optimize a query by using an improved measure formula.
 
 13. At line 72, replace the word **Bad** with **Better**.
 
-    ![](Images/use-tools-to-optimize-power-bi-performance-image39.png)
+    ![02](./Images/01/dp-600-newimage66.png)
 
 14. Run the query, and then review the server timing statistics.
 
