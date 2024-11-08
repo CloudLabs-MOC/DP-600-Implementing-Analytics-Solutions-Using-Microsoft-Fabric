@@ -166,7 +166,7 @@ You can also create external tables for which the schema metadata is defined in 
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files** folder, select **Refresh**. Then expand the **Files (1)** node and verify that the **external_products (2)** folder has been created for the table’s data files.
 
-    ![02](./Images/filesexternalproducts.png)
+    ![02](./Images/filesexternalproducts1.png)
 
 #### Task 3.3: Compare managed and external tables
 
@@ -206,7 +206,7 @@ Let’s explore the differences between managed and external tables.
 
 1. In the **Lakehouse explorer** pane, expand the **Files (1)** folder and verify that the **external_products (2)** has not been deleted. Select this folder to view the Parquet data files and **_delta_log (3)** folder for the data that was previously in the **external_products** table. The table metadata for the external table was deleted, but the files were not affected.
 
-    ![02](./Images/deltalog.png)
+    ![02](./Images/deltalog1.png)
 
 #### Task 3.4: Use SQL to create a table
 
@@ -222,7 +222,7 @@ Let’s explore the differences between managed and external tables.
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that a new table named **products (2)** is listed. Then expand the table to verify that its schema matches the original dataframe that was saved in the **external_products** folder.
 
-    ![02](./Images/productslakehouse.png)
+    ![02](./Images/productslakehouse1.png)
 
 1. Add another code cell and run the following code:
 
