@@ -381,7 +381,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
    >**Note**: This time, only one role needs to be created.
 
-5. Add a filter to the **UPN** column of the **Salesperson** table.
+5. In order to add a filter to the **UPN** column of the **Salesperson** table, select the ellipsis (1), and then select Add filter (2) > [UPN] (3).
 
    ![](Images/dp7-29.png)
 
