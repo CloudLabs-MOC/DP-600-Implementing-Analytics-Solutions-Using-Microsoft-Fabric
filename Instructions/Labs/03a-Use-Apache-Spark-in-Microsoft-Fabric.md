@@ -42,11 +42,15 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. In the **Synapse Data Engineering** home page, select **Lakehouse**.
 
+    ![02](./Images/dp-5.png)
+
 1. Follow these instructions to create a new **Lakehouse**:
 
-   - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
+   - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
 
-   - Click on **Create**
+   - Click on **Create (2)**
+  
+     ![02](./Images/dp-6.png)
 
 1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\orders** to the lakehouse, select **Upload**, and close the pane.
 
@@ -56,7 +60,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
