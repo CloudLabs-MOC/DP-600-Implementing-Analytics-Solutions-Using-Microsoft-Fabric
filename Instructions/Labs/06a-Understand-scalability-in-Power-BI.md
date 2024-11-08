@@ -26,7 +26,13 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 1. Open a new tab, open and download the **[Sales Analysis starter](https://aka.ms/fabric-relationships-starter)** file and save it on the Lab-VM (in any folder).
 
-1. Navigate to the downloaded file and open it in Power BI Desktop.
+1. Navigate to the downloaded file, right click on it then slect **Open with.. .** 
+
+	![](Images/dp-6a1.png)
+
+1. Open it in **Power BI Desktop.**    
+
+	![](Images/dp-6a2.png)
 
     >**Note**: Ignore and close the warning asking to apply changes.
 
@@ -34,8 +40,10 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 	![](Images/DP500-16-6new.png)
 	
-1. Enter the Lab username in the **Enter your email address** and click on **Continue**
+1. Enter the Lab username in the **Enter your email address (1)** and click on **Continue (2)**
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+	![](Images/dp-6a3.png)
 
     >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
 	
@@ -56,11 +64,11 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 1. In Power BI Desktop, at the left, switch to **Model** view.
 
-    ![02](./Images/workwithmodelrelationshipsimage2.png)
+    ![02](./Images/dp-6a23.png)
 
 1. Use the model diagram to review the model design.
 
-    ![02](./Images/workwithmodelrelationshipsimage3.png)
+    ![02](./Images/dp-6a4.png)
 
     >**Note:** The model comprises six dimension tables and one fact table. The **Sales** fact table stores sales order details. It’s a classic star schema design.
 
@@ -86,29 +94,31 @@ In this task, you will visualize sales data by date and switch the active status
 
 1. Switch to **Report** view.
 
-    ![02](./Images/workwithmodelrelationshipsimage5.png)
+    ![02](./Images/dp-6a24.png)
 
 1. To add a table visual, in the **Visualizations** pane, select the **Table** visual icon.
 
-    ![02](./Images/workwithmodelrelationshipsimage6.png)
+    ![02](./Images/dp-6a5.png)
 
 1. To add columns to the table visual, in the **Data** pane (located at the right), first expand the **Date** table.
 
-    ![02](./Images/workwithmodelrelationshipsimage7.png)
+    ![02](./Images/dp-6a6.png)
 
 1. Drag the **Fiscal Year** column and drop it into the table visual.
 
-    ![02](./Images/workwithmodelrelationshipsimage8.png)
+    ![02](./Images/dp-6a7.png)
 
 1. Expand open the **Sales** table, and then drag and drop the **Sales Amount** column into the table visual.
 
-    ![02](./Images/workwithmodelrelationshipsimage9.png)
+    ![02](./Images/dp-6a8.png)
 
 1. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
 	![Picture 8](Images/discard-changes-(1).png)
 
 1. Now you will see another pop up as shown below, select **Discard**.
+
+    ![02](./Images/dp-6a9.png)
 
 1. Review the table visual.
 
@@ -118,39 +128,35 @@ In this task, you will visualize sales data by date and switch the active status
 
     > To clarify which fiscal year, it’s a good idea to rename the visual field (or add a title to the visual).
 
-1. In the **Visualizations** pane for the table visual, from inside the **Values** well, select the down-arrow, and then select **Rename for this visual**.
+1. In the **Visualizations** pane for the table visual, from inside the **Columns** well, select the down-arrow **(1)** and then select **Rename for this visual (2)**.
 
-    ![02](./Images/workwithmodelrelationshipsimage11.png)
+    ![02](./Images/dp-6a10.png)
 
 1. Replace the text with **Order Year**, and then press **Enter**.
 
-    ![02](./Images/workwithmodelrelationshipsimage12.png)
+    ![02](./Images/dp-6a11.png)
 
     >**Note**: It’s quicker to rename a visual field by double-clicking its name.
 
 1. Notice that the table visual column header updates to the new name.
 
-    ![02](./Images/workwithmodelrelationshipsimage13.png)
+    ![02](./Images/dp-6a12.png)
 
 ### Task 4: Modify relationship active status
 
 In this task, you will modify the active status of two relationships.
 
-1. On the **Modeling** ribbon, select **Manage Relationships**.
+1. On the **Modeling (1)** ribbon, select **Manage Relationships (2)**.
 
-    ![02](./Images/workwithmodelrelationshipsimage14.png)
+    ![02](./Images/dp-6a13.png)
 
-1. In the **Manage relationships** window, for the relationship between the **Sales** and **Date** tables for the **OrderDateKey** column (third in the list), uncheck the **Active** checkbox.
+1. In the **Manage relationships** window, Uncheck the **Active** checkbox for the relationship between the Sales and Date tables for the **OrderDateKey** column (third in the list).
 
-    ![02](./Images/workwithmodelrelationshipsimage15.png)
+    ![02](./Images/dp-6a14.png)
 
-1. Check the Active checkbox for the relationship between the Sales and Date tables for the ShipDateKey column (last in the list).
+1. Check **(1)** the **Active** checkbox for the relationship between the Sales and Date tables for the **ShipDateKey** column (last in the list)  then select **Close (2).**
 
-    ![02](./Images/workwithmodelrelationshipsimage16.png)
-
-1. Select Close.
-
-    ![02](./Images/workwithmodelrelationshipsimage17.png)
+    ![02](./Images/dp-6a15.png)
 
     >**Note:** These configurations have switched the active relationship between the **Date** and **Sales** tables to the **ShipDateKey** column.
 
@@ -158,21 +164,23 @@ In this task, you will modify the active status of two relationships.
 
     ![02](./Images/workwithmodelrelationshipsimage18.png)
 
-1. Rename the first column as **Ship Year**.
+1. Click on the Visual table, Rename the first column as **Ship Year**.
 
-    ![02](./Images/work-with-model-relationships-image19.png)
+    ![02](./Images/dp-6a17.png)
 
     >**Note:** The first row represents a blank group because some orders have not yet shipped. In other words, there are BLANKs in the **ShipDateKey** column of the **Sales** table.
 
 7. In the **Manage relationships** window, revert the **OrderDateKey** relationship back to active by using the following steps:
 
-    - Open the **Manage relationships** window
+    - Open the **Manage relationships (1)** window
 
-    - Uncheck the **Active** checkbox for the **ShipDateKey** relationship (last in the list)
+    - Uncheck the **Active** checkbox for the **ShipDateKey** relationship (last in the list) **(2)**
 
-    - Check the **Active** checkbox for the **OrderDateKey** relationship (third in the list)
+    - Check the **Active** checkbox for the **OrderDateKey** relationship (third in the list) **(3)**
 
-    - Close the **Manage relationships** window
+    - **Close (4)** the *Manage relationships* window
+
+        ![](Images/dp-6a18.png)    
 
     - Rename the first visual field in the table visual as **Order Year**
 
@@ -190,7 +198,7 @@ In this task, you will use the USERELATIONSHIP function to make an inactive rela
 
 1. In the **Data** pane, right-click the **Sales** table, and then select **New measure**.
 
-    ![](Images/work-with-model-relationships-image21.png)
+    ![](Images/dp-6a19.png)
 
 2. In the formula bar (located beneath the ribbon), replace the text with the following measure definition, and then press **Enter**.
 
@@ -201,16 +209,17 @@ In this task, you will use the USERELATIONSHIP function to make an inactive rela
     USERELATIONSHIP ( 'Date'[DateKey], 'Sales'[ShipDateKey] )
     )
     ```
+    ![](Images/dp-6a20.png)    
 
     >**Note:** This formula uses the CALCULATE function to modify the filter context. It’s the USERELATIONSHIP function that, for the purpose of this calculation, makes the **ShipDateKey** relationship active.
 
 3. On the **Measure tools** contextual ribbon, from inside the **Formatting** group, set the decimals places to **2**.
 
-    ![](Images/work-with-model-relationships-image22.png)
+    ![](Images/dp-6a45.png)
 
 4. Add the **Sales Shipped** measure to the table visual.
 
-    ![](Images/work-with-model-relationships-image23.png)
+    ![](Images/dp-6a21.png)
 
 5. Widen the table visual so all columns are fully visible.
 
@@ -222,7 +231,7 @@ In this task, you will use the USERELATIONSHIP function to make an inactive rela
 
 6. To remove the measure from the table visual, in the **Visualizations** pane, from inside the **Values** well, for the **Sales Shipped** field, press **X**.
 
-    ![](Images/work-with-model-relationships-image25.png)
+    ![](Images/dp-6a22.png)
 
 ## Exercise 3: Add another Date table
 
@@ -234,11 +243,11 @@ In this task, you will remove the existing relationship to the **ShipDateKey** c
 
 1. Switch to **Model** view.
 
-    ![](Images/work-with-model-relationships-image26.png)
+    ![](Images/dp-6a23.png)
 
 2. In the model diagram, right-click the **ShipDateKey** relationship, and then select **Delete**.
 
-    ![](Images/work-with-model-relationships-image27.png)
+    ![](Images/dp-6a25.png)
 
 3. When prompted to confirm the deletion, select **Yes**.
 
@@ -248,73 +257,71 @@ In this task, you will remove the existing relationship to the **ShipDateKey** c
 
 In this task, you will disable two relationship options.
 
-1. On the **File** ribbon tab, select **Options and settings**, and then select **Options**.
+1. Click on the **File** ribbon tab.
 
-    ![](Images/work-with-model-relationships-image29.png)
+    ![](Images/dp-6a26.png)
 
-2. In the **Options** window, at the bottom-left, from inside the **CURRENT FILE** group, select **Data Load**.
+1. Select **Options and settings (1)** and then select **Options (2)**.
 
-    ![](Images/work-with-model-relationships-image30.png)
+    ![](Images/dp-6a27.png)
 
-3. In the **Relationships** section, uncheck the two enabled options.
+2. In the **Options** window at the bottom-left from inside the **CURRENT FILE** group, select **Data Load (1).** In the **Relationships** section, uncheck the two enabled options **(2)** and then click on **OK (3).** 
 
-    ![](Images/work-with-model-relationships-image31.png)
+    ![](Images/dp-6a29.png)
 
-    >**Note:** Generally, in your day-to-day work it’s okay to keep these options enabled. However, for the purposes of this lab, you will create relationships explicitly.
 
-4. Select **OK**.
-
-    ![](Images/work-with-model-relationships-image32.png)
 
 ### Task 3: Add another date table
 
 In this task, you will create a query to add another date table to the model.
 
-1. On the **Home** ribbon tab, from inside the **Queries** group, select the **Transform data** icon, which opens the **Power Query Editor**.
+1. On the **Home** ribbon tab, click on the **Transform data (1)** drop-down icon and then select **Transform data (2)**  which opens the **Power Query Editor**.
 
-    ![](Images/work-with-model-relationships-image33.png)
+    ![](Images/dp-6a30.png)
+
+1. Navigate to **Customer** table.    
 
     >**Note:** If you are prompted to specify how to connect, **Edit Credentials**.
 
-    ![](Images/work-with-model-relationships-image52.png)
+    ![](Images/dp-6a31.png)
 
-    >**Note:** Leave the default connection settings for Windows with "Use my current credentials", then **Connect**.*
+    >**Note:** Leave the default connection settings for Windows with **Use my current credentials (1)** then **Connect (2)**.
 
-     ![](Images/work-with-model-relationships-image53.png)
+     ![](Images/dp-6a32.png)
     
     >**Note:** Select **Yes** to close the warning message.
 
     >**Note:** When prompted, select **OK** on the **Encryption Support** pop-up.
 
-2. In the **Power Query Editor** window, in the **Queries** pane (located at the left), right-click the **Date** query, and then select **Reference**.
+1. In the **Power Query Editor** window, in the **Queries** pane (located at the left), right-click the **Date** query **(1)**, and then select **Reference (2)**.
 
-    ![](Images/work-with-model-relationships-image34.png)
+    ![](Images/dp-6a33.png)
 
     >**Note:** A referencing query is one that uses another query as its source. So, this new query sources its date from the **Date** query.
 
-3. In the **Query Settings** pane (located at the right), in the **Name** box, replace the text with **Ship Date**.
+1. In the **Query Settings** pane (located at the right), in the **Name** box, replace the text with **Ship Date**.
 
-    ![](Images/work-with-model-relationships-image35.png)
+    ![](Images/dp-6a34.png)
 
-4. To rename the **DateKey** column, double-click the **DateKey** column header.
+1. To rename the **DateKey** column, double-click the **DateKey** column header.
 
-5. Replace the text with **ShipDateKey**, and then press **Enter**.
+1. Replace the text with **ShipDateKey**, and then press **Enter**.
 
-    ![](Images/work-with-model-relationships-image36.png)
+    ![](Images/dp-6a35.png)
 
-6. Also rename the **Fiscal Year** column as **Ship Year**.
+1. Also rename the **Fiscal Year** column as **Ship Year**.
 
     >**Note:** If possible, it’s a good idea to rename all columns so they describe the role they’re playing. In this lab, to keep things simple you will rename only two columns.
 
-7. To load the table to the model, on the **Home** ribbon tab, select the **Close &amp; Apply** icon.
+1. To load the table to the model, on the **Home** ribbon tab, select the **Close &amp; Apply** icon.
 
-    ![](Images/work-with-model-relationships-image37.png)
+    ![](Images/dp-6a36.png)
 
-8. When the table has added to the model, to create a relationship, from the **Ship Date** table drag the **ShipDateKey** column to the **ShipDateKey** column of the **Sales** table.
+1. When the table has added to the model, to create a relationship, from the **Ship Date** table drag the **ShipDateKey** column to the **ShipDateKey** column of the **Sales** table.
 
-    ![](Images/work-with-model-relationships-image38.png)
+    ![](Images/dp-6a37.png)
 
-9. Notice that an active relationship now exists between the **Ship Date** and **Sales** tables.
+1. Notice that an active relationship now exists between the **Ship Date** and **Sales** tables.
 
 ### Task 4: Visualize ship date data
 
@@ -322,31 +329,33 @@ In this task, you will visualize the ship date data in a new table visual.
 
 1. Switch to **Report** view.
 
-    ![](Images/work-with-model-relationships-image39.png)
+    ![](Images/dp-6a24.png)
 
-2. To clone the table visual, first select the visual.
+2. To clone the table visual, first select the table visual.
 
 3. On the **Home** ribbon tab, from inside the **Clipboard** group, select **Copy**.
 
-    ![](Images/work-with-model-relationships-image40.png)
+    ![](Images/dp-6a38.png)
 
 4. To paste the copied visual, on the **Home** ribbon tab, from inside the **Clipboard** group, select **Paste**.
 
     *Tip: You can also use the **Ctrl+C** and **Ctrl+V** shortcuts.*
 
-    ![](Images/work-with-model-relationships-image41.png)
+    ![](Images/dp-6a39.png)
 
 5. Move the new table visual to the right of the existing table visual.
 
-6. Select the new table visual, and then in the **Visualizations** pane, from inside the **Values** well, remove the **Order Year** field.
+    ![](Images/dp-6a40.png)
 
-    ![](Images/work-with-model-relationships-image42.png)
+6. Select the new table visual, and then in the **Visualizations** pane, from inside the **Columns** well, remove the **Order Year** field.
+
+    ![](Images/dp-6a41.png)
 
 7. In the **Data** pane, expand open the **Ship Date** table.
 
-8. To add a new field to the new table visual, from the **Ship Date** table, drag the **Ship Year** field to the **Values** well, above the **Sales Amount** field.
+8. To add a new field to the new table visual, from the **Ship Date** table, drag the **Ship Year** field to the **Columns** well above the **Sales Amount** field.
 
-    ![](Images/work-with-model-relationships-image43.png)
+    ![](Images/dp-6a42.png)
 
 9. Verify that the new table visual shows sales amount grouped by ship year.
 
@@ -366,9 +375,9 @@ In this exercise, you will work with other DAX relationship functions.
 
 In this task, you will work with the CROSSFILTER and TREATAS functions to modify relationship behavior during calculations.
 
-1. In the **Data** pane, from inside the **Sales** table, select the **Sales Shipped** measure.
+1. In the **Data** pane from inside the **Sales** table, select the **Sales Shipped** measure.
 
-    ![](Images/work-with-model-relationships-image45.png)
+    ![](Images/dp-6a43.png)
 
 2. In the formula base, replace the text with the following definition, and press **Enter**:
 
@@ -384,11 +393,13 @@ In this task, you will work with the CROSSFILTER and TREATAS functions to modify
     )
     ```
 
+    ![](Images/dp-6a44.png)    
+
     >**Note:** This formula uses the CALCULATE function to sum the **Sales Amount** column by using modified relationship behaviors. The CROSSFILTER function disables the active relationship to the **OrderDateKey** column (this function can also modify filter direction). The TREATAS function creates a virtual relationship by applying the in-context **DateKey** values to the **ShipDateKey** column.
 
 3. Add the revised **Sales Shipped** measure to the first table visual.
 
-    ![](Images/work-with-model-relationships-image46.png)
+    ![](Images/dp-6a46.png)
 
 4. Review the first table visual.
 
@@ -402,7 +413,9 @@ In this task, you will work with the CROSSFILTER and TREATAS functions to modify
 
 In this task, you will create a measure to show the unshipped sales amount.
 
-1. Create a measure named **Sales Unshipped** in the **Sales** table by using the following definition:
+1. Create a measure named **Sales Unshipped** in the **Sales** table by using the following definition: **(1)**
+
+    >**Note:** Right click on the **Sales** table and select **New measure.**
 
     ```DAX
     Sales Unshipped =
@@ -414,17 +427,19 @@ In this task, you will create a measure to show the unshipped sales amount.
 
     >**Note:** This formula sums the **Sales Amount** column where the **ShipDateKey** column is BLANK.
 
-2. Format the measure to use two decimal places.
+2. Format the measure to use two decimal places. **(2)**
+
+    ![](Images/dp-6a47.png)
 
 3. To add a new visual to the page, first select a blank area of the report page.
 
 4. In the **Visualizations** pane, select the **Card** visual icon.
 
-    ![](Images/work-with-model-relationships-image48.png)
+    ![](Images/dp-6a48.png)
 
 5. Drag the **Sales Unshipped** measure into the card visual.
 
-    ![](Images/work-with-model-relationships-image49.png)
+    ![](Images/dp-6a49.png)
 
 6. Verify that the final report page layout looks like the following.
 
