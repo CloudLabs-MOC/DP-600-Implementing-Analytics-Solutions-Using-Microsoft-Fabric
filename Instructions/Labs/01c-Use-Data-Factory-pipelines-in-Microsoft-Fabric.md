@@ -41,21 +41,26 @@ Now that you have a workspace, it’s time to create a data lakehouse into which
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-3. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)** and create a subfolder named **new_data**
-
+3. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)**.
    ![02](./Images/01/01.png)
 
+4. Create a subfolder named **new_data**.
+
+    ![02](./Images/01/dp-600-newimage24.png)
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 2: Create a pipeline
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
 1. At the bottom left of the Power BI portal, select **Data Engineering** icon , and select **Data Engineering** again.
+
+     ![02](./Images/01/dp-600-newimage25.png)
 
 1. On the **Home** page for your lakehouse, select **Data pipeline**.
 
@@ -73,15 +78,15 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![Screenshot of the Choose data source page.](./Images/dp-600-lab03-2.png)
 
-5. Select **Next** and then select **Create new connection (1)** and enter the following settings for the connection to your data source:
-    - **URL (2)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
-    - **Connection (3)**: Create new connection
-    - **Connection name (4)**: *Specify a unique name*
-    - **Authentication kind (5)**: Basic (*Leave the username and password blank*)
-    - **Username (6)**: Provide the username
-    - Click on **Next (7)**
+5. Select **Next** and enter the following settings for the connection to your data source:
+    - **URL (1)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
+    - **Connection (2)**: Create new connection
+    - **Connection name (3)**: *Specify a unique name*
+    - **Authentication kind (4)**: Basic (*Leave the username and password blank*)
+    - **Username (5)**: Provide the username
+    - Click on **Next (6)**
   
-        ![04](./Images/fabric3.png)
+        ![02](./Images/01/dp-600-newimage26.png)
     
 6. Select **Next**. Make sure the following settings are selected:
     - **Relative URL**: *Leave blank*
@@ -112,18 +117,18 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **Folder path (2)**: new_data
     - **File name (3)**: sales.csv
    
-        ![08](./Images/fabric9.png)
+       ![02](./Images/01/dp-600-newimage27.png)
 
 12. Set the following file format options and then select **Next (4)**:
     - **File format (1)**: DelimitedText
     - **Column delimiter (2)**: Comma (,)
     - **Row delimiter (3)**: Line feed (\n)
    
-      ![09](./Images/fabric10.png)
+      ![02](./Images/01/dp-600-newimage28.png)
 
 13. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
-    ![09](./Images/fabric11.png)
+    ![02](./Images/01/dp-600-newimage29.png)
 
     - A new pipeline containing a **Copy data** activity is created, as shown here:
 
@@ -137,25 +142,35 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 16. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
-    ![10](./Images/01/10.png)
+    ![02](./Images/01/dp-600-newimage30.png)
 
     >**Note:** If the **sales.csv** file doesn't show up, refresh the **new_data** subfolder and verify.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
 
 ### Task 3: Create a notebook
 
-1. On the **Home** page for your lakehouse, in the **Open notebook (1)** menu, select **New notebook (2)**.
+1. Navigate back to the **Home** page , select **New notebook**.
 
-      ![11](./Images/01/11.png)
+      ![02](./Images/01/dp-600-newimage31.png)
 
-    After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+1. Under **Explorer** select **Lakehouses**.
 
-2. Select the existing cell in the notebook, which contains some simple code, and then replace the default code with the following variable declaration and click on **&#9655; Run**.
+    ![02](./Images/01/dp-600-newimage32.png)
+
+1. Select **+ Lakehouse** > **Existing Lakehouse** then click **Add**.
+
+    ![02](./Images/01/dp-600-newimage33.png)
+
+1. Select your Lakehouse click on **Add**.
+
+    ![02](./Images/01/dp-600-newimage34.png)
+
+1. Select the existing cell in the notebook, which contains some simple code, and then replace the default code with the following variable declaration and click on **&#9655; Run**.
 
     ```python
    table_name = "sales"
@@ -163,11 +178,11 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![11](./Images/01/Pg3-Notebook-S2.png) 
 
-3. In the **... (1)** menu for the cell (at its top-right) select **Toggle parameter cell (2)**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
+1. In the **... (1)** menu for the cell (at its top-right) select **Toggle parameter cell (2)**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
      ![12](./Images/01/12.png)
 
-4. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
+1. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
 
     ```python
    from pyspark.sql.functions import *
@@ -191,13 +206,15 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
 
-5. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
+1. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains and review the output.
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/notebook.png)
 
-    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
+    ![02](./Images/01/dp-600-newimage35.png)
 
-6. (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
+   > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
+
+1. (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
     ```python
     df.write.format("delta").saveAsTable("external_sales", path="<abfs_path>/external_sales")
@@ -208,18 +225,19 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     #abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files
     ```
-    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
+    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path you can find <abfs_path> by selecting (...) icon copy ADFS path.
 
+      ![02](./Images/01/dp-600-newimage36.png)
 
-7. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+8. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-8. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
+9. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
    ![.](./Images/01/Pg3-Notebook-S10.png)
  
-9. In the hub menu bar on the left, select your lakehouse.
+10. In the hub menu bar on the left, select your lakehouse.
 
-10. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+11. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
 ### Task 4: Modify the pipeline
 
@@ -229,7 +247,9 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
 
 1. On the **Activities** tab, in the **More activities** list, select **Delete data**. Then position the new **Delete data** activity to the left of the **Copy data** activity and connect its **On completion** output to the Copy data activity.
 
-    ![.](./Images/deletedataactivity(1).png)
+     ![02](./Images/01/dp-600-newimage37.png)
+
+     ![.](./Images/deletedataactivity(1).png)
 
 1. Select the **Delete data** activity, and in the pane below the design canvas, set the following properties:
     - **General**: 
@@ -237,7 +257,7 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
     - **Source**:
         - **Connection**: Your lakehouse
         - **File path type**: Wildcard file path
-        - **Folder path**: Files / new_data
+        - **Folder path**: new_data
         - **Wildcard file name**: *.csv
         - **Recursively**: Selected
     - **Logging settings**:
@@ -271,6 +291,8 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
 1. In the hub menu bar on the left edge of the portal, select your lakehouse.
 
 1. In the **Explorer** pane, expand **Tables** and select the **new_sales** table to see a preview of the data it contains. This table was created by the notebook when it was run by the pipeline.
+
+     ![02](./Images/01/dp-600-newimage38.png)
 
 In this exercise, you implemented a data ingestion solution that uses a pipeline to copy data to your lakehouse from an external source, and then uses a Spark notebook to transform the data and load it into a table.
 

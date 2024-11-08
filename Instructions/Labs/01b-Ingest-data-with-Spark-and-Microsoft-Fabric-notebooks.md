@@ -55,13 +55,25 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 ### Task 2: Create a Fabric notebook and load external data
 
-1. Create a new Fabric notebook and connect to external data source with PySpark.
+1. Navigate back to the **Home** page , select **New notebook**.
 
-2. From the top menu in the lakehouse, select **Open notebook** > **New notebook**, which will open once created.
+      ![02](./Images/01/dp-600-newimage31.png)
 
-3. In the default cell, notice that the code is set to **PySpark (Python)**.
+1. Under **Explorer** select **Lakehouses**.
 
-4. Insert the following code into the code cell, which will:
+    ![02](./Images/01/dp-600-newimage32.png)
+
+1. Select **+ Lakehouse** > **Existing Lakehouse** then click **Add**.
+
+    ![02](./Images/01/dp-600-newimage33.png)
+
+1. Select your Lakehouse click on **Add**.
+
+    ![02](./Images/01/dp-600-newimage34.png)
+
+1. In the default cell, notice that the code is set to **PySpark (Python)**.
+
+1. Insert the following code into the code cell, which will:
 
     > **Note**: If an unexpected indent error occurs while declaring the file name, it may be due to hidden spaces or paragraphs. Revise this by creating new cells, making sure there are no empty spaces, and pasting the content after thorough verification.
 
@@ -83,13 +95,13 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
     blob_df = spark.read.parquet(wasbs_path)
     ```
 
-5. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
+1. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
 
     >**Note:** Expected outcome: Your command should succeed and print **wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow**
 
-6. To write the data to a file, you now need that **ABFS Path** for your **RawData** folder.
+1. To write the data to a file, you now need that **ABFS Path** for your **RawData** folder.
 
-7. Insert the following code into a new code cell:
+1. Insert the following code into a new code cell:
 
     ```
     # Declare file name    
@@ -105,13 +117,13 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
      >**Note:** In the **InsertABFSPathHere**, paste the ABFS path that you copied.
 
-8. Select **▷ Run Cell** to write 1000 rows to a yellow_taxi.parquet file.
+1. Select **▷ Run Cell** to write 1000 rows to a yellow_taxi.parquet file.
 
     >**Note:** Your output_parquet_path should look similar to: **abfss://Spark@onelake.dfs.fabric.microsoft.com/DPDemo.Lakehouse/Files/RawData/yellow_taxi**
 
-9. To confirm data load from the Lakehouse Explorer, select **Files** > **…** > **Refresh**.
+1. To confirm data load from the Lakehouse Explorer, select **Files** > **…** > **Refresh**.
 
-10. You should now see your new folder **RawData** with a **yellow_taxi.parquet** “file” - which shows as a folder with partition files within.
+1. You should now see your new folder **RawData** with a **yellow_taxi.parquet** “file” - which shows as a folder with partition files within.
 
 ### Task 3: Transform and load data to a Delta table
 
