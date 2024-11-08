@@ -205,7 +205,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
    table_name = "sales"
     ```
 
-   ![11](./Images/01/Pg3-Notebook-S2.png) 
+   ![11](./Images/dp2-fl.png) 
 
 4. In the **... (1)** menu for the cell (at its top-right) select **Toggle parameter cell (2)**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
@@ -266,7 +266,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-  ![.](./Images/dp2-16.png)
+   ![.](./Images/dp2-16.png)
 
 ### Task 5: Use SQL to query tables
 
@@ -332,7 +332,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
 The tables in your lakehouse are automatically added to a default dataset that defines a data model for reporting with Power BI.
 
-1. At the bottom of the SQL analytics endpoint page, select the **Model layout** tab. The data model schema for the dataset is shown.
+1. At the bottom of the SQL analytics endpoint page, select the **Model layouts** tab. The data model schema for the dataset is shown.
 
     ![Screenshot of a data model.](./Images/dp2-20.png)
 

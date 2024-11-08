@@ -38,8 +38,10 @@ In this task, you will set up Power BI Desktop.
 
 	![](Images/DP500-16-6new.png)
 	
-1. Enter the Lab username in the **Enter your email address** and click on **Continue**
+1. Enter the Lab username in the **Enter your email address (1)** and click on **Continue (2)** 
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+      ![](Images/dp7-1.png)
 
       >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
 	
@@ -56,6 +58,8 @@ In this task, you will set up Power BI Desktop.
 
     >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
 1. At top-right corner, select the profile icon, select **Power BI service**.
+
+   ![](Images/dp7-3.png)
 
 1. Enter the Lab username:- * Email/Username: <inject key="AzureAdUserEmail"></inject>.
 
@@ -85,6 +89,8 @@ In this task, you will review the data model.
 
 1. Notice that the table includes a **Region** column.
 
+   ![](Images/dp7-4.png)
+
    >**Note**: The **Region** column stores the Adventure Works sales regions. At this organization, salespeople are only allowed to see data related to their assigned sales region. In this lab, you will implement two different row-level security techniques to enforce data permissions.
 
 ## Exercise 1: Create static roles
@@ -111,15 +117,15 @@ In this task, you will create two static roles.
 
 4. In the **Manage roles** window, select **Create**.
 
-   ![](Images/dp500_09-15.png)
+   ![](Images/dp7-5.png)
 
 5. To name the role, replace the selected text with **Australia**, and then press **Enter**.
 
-   ![](Images/dp500_09-16.png)
+   ![](Images/dp7-6.png)
 
-6. In the **Tables** list, for the **Sales Territory** table, select the ellipsis, and then select **Add filter** > **[Region]**.
+6. In the **Tables** list, for the **Sales Territory** table, select the **ellipsis (1)**, and then select **Add filter (2)** > **[Region] (3)**.
 
-   ![](Images/dp9-12.png)
+   ![](Images/dp7-7.png)
 
 7. In the **Table filter DAX expression** box, replace **Value** with **Australia (1)**.
 
@@ -129,7 +135,7 @@ In this task, you will create two static roles.
 
 8. To create another role, press **Create**.
 
-   ![](Images/dp500_09-19.png)
+   ![](Images/dp7-8.png)
 
 9. Repeat the steps in this task to create a role named **Canada** that filters the **Region** column by **Canada**.
 
@@ -139,7 +145,7 @@ In this task, you will create two static roles.
 
 10. Select **Save**.
 
-    ![](Images/dp500_09-21.png)
+    ![](Images/dp7-9.png)
 
 ### Task 2: Validate the static roles
 
@@ -147,16 +153,11 @@ In this task, you will validate one of the static roles.
 
 1. On the **Modeling** ribbon tab, from inside the **Security** group, select **View as**.
 
-   ![](Images/dp500_09-22.png)
+   ![](Images/dp7-10.png)
 
+2. In the **View as roles** window, select the **Australia (1)** role. Then Select **OK (2)**.
 
-2. In the **View as roles** window, select the **Australia** role.
-
-   ![](Images/dp500_09-23.png)
-
-3. Select **OK**.
-
-   ![](Images/dp500_09-24.png)
+   ![](Images/dp7-11.png)
 
 4. On the report page, notice that the stacked column chart visual shows only data for Australia.
 
@@ -182,9 +183,11 @@ In this task, you will publish the report.
 
    ![](Images/dp9-19.png)
 
-3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/>**, and then select **Select**.
+3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then select **Select (2)**.
+
+   ![](Images/dp7-12.1.png)
    
-4. When the publishing succeeds, select **Got it**.
+5. When the publishing succeeds, select **Got it**.
 
    ![](Images/dp9-20.png)
 
@@ -244,11 +247,13 @@ In this task, you will add the **Salesperson** table to the model.
 
 1. Switch to **Model** view.
 
-   ![](Images/dp500_09-38.png)
+   ![](Images/dp7-13.png)
 
-2. On the **Home** ribbon tab, from inside the **Queries** group, select the **Transform data** icon.
+2. On the **Home** ribbon tab, from inside the **Queries** group, select the **Transform data** icon. And Then select **Transform data** from the drop-down.
 
    ![](Images/dp9-23.png)
+
+   ![](Images/dp7-14.png)
 
    >**Note**: If you are prompted to specify how to connect, **Edit Credentials** and specify how to sign-in.
 
@@ -262,19 +267,19 @@ In this task, you will add the **Salesperson** table to the model.
 	
    ![](Images/dp500_09-42.png)
 
-3. In the **Power Query Editor** window, in the **Queries** pane (located at the left), right-click the **Customer** query, and then select **Duplicate**.
+4. In the **Power Query Editor** window, in the **Queries** pane (located at the left), right-click the **Customer (1)** query, and then select **Duplicate (2)**.
 
-   ![](Images/dp500_09-43.png)
+   ![](Images/dp7-15.png)
 
    >**Note**: Because the **Customer** query already includes steps to connect the data warehouse, duplicating it is an efficient way to commence the development of a new query.
 
-4. In the **Query Settings** pane (located at the right), in the **Name** box, replace the text with **Salesperson**.
+5. In the **Query Settings** pane (located at the right), in the **Name** box, replace the text with **Salesperson**.
 
-   ![](Images/dp500_09-44.png)
+   ![](Images/dp7-16.png)
 
-5. In the **Applied Steps** list, right-click the **Removed Other Columns** step (third step), and then select **Delete Until End**.
+6. In the **Applied Steps** list, right-click the **Removed Other Columns (1)** step (third step), and then select **Delete Until End (2)**.
 
-   ![](Images/dp500_09-45.png)
+   ![](Images/dp7-17.png)
 
 7. When prompted to confirm deletion of the step, select **Delete**.
 
@@ -282,25 +287,23 @@ In this task, you will add the **Salesperson** table to the model.
 
 8. To source data from a different data warehouse table, in the **Applied Steps** list, in the **Navigation** step (second step), select the gear icon (located at the right).
 
-   ![](Images/dp500_09-47.png)
+   ![](Images/dp7-18.png)
 
-9. In the **Navigation** window, select the **DimEmployee** table.
+   >**Note:** If you are prompted to specify how to connect, Click on **Connect** followed by **OK** on the Encryption Support Pop-up.
 
-   ![](Images/dp9-31.png)
+10. In the **Navigation** window, select the **DimEmployee (1)** table.Then Select **OK (2)**.
 
-10. Select **OK**.
+    ![](Images/dp7-19.png)
 
-    ![](Images/dp500_09-49.png)
+12. To remove unnecessary columns, on the **Home (1)** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns (2)** icon and slect **Choose Columns (3)** from the drop-down.
 
-11. To remove unnecessary columns, on the **Home** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns** icon.
+     ![](Images/dp7-20.png)
 
-     ![](Images/dp9-32.png)
+13. In the **Choose Columns** window, uncheck the **(Select All Columns)** item.
 
-12. In the **Choose Columns** window, uncheck the **(Select All Columns)** item.
+     ![](Images/dp7-21.png)
 
-     ![](Images/dp500_09-51.png)
-
-13. Check the following three columns, and select **OK**:
+14. Check the following three columns, and select **OK**:
 
 	- EmployeeKey
 
@@ -312,17 +315,21 @@ In this task, you will add the **Salesperson** table to the model.
 
 15. To rename the **EmailAddress** column, double-click the **EmailAddress** column header.
 
-16. Replace the text with **UPN**, and then press **Enter**.
+    ![](Images/dp7-22.png)
+
+17. Replace the text with **UPN**, and then press **Enter**.
 
     >**Note**: UPN is an acronym for User Principal Name. The values in this column match the Azure AD account names.
 
-    ![](Images/dp500_09-53.png)
+    ![](Images/dp7-23.png)
 
-17. To load the table to the model, on the **Home** ribbon tab, select the **Close &amp; Apply** icon.
+18. To load the table to the model, on the **Home** ribbon tab, select the **Close &amp; Apply** icon.
 
-	![](Images/dp500_09-54.png)
+    ![](Images/dp7-24.png)
 
-18. When the table has added to the model, notice that a relationship to the **Sales Territory** table was automatically created.
+19. When the table has added to the model, notice that a relationship to the **Sales Territory** table was automatically created.
+
+    ![](Images/dp7-25.png)
 
 ### Task 2: Configure the relationship
 
@@ -330,7 +337,7 @@ In this task, you will configure properties of the new relationship.
 
 1. Right-click the relationship between the **Salesperson** and **Sales Territory** tables, and then select **Properties**.
 
-   ![](Images/dp500_09-55.png)
+   ![](Images/dp7-26.png)
 
 2. In the **Edit relationship** window, in the **Cross filter direction** dropdown list, select **Both (1)**. Check the **Apply security filter in both directions (2)** checkbox.
 
@@ -346,11 +353,11 @@ In this task, you will configure properties of the new relationship.
 
 4. Select **OK**.
 
-    ![](Images/dp500_09-57.png)
+    ![](Images/dp7-27.png)
 
 5. To hide the table, at the top-right of the **Salesperson** table, select the eye icon.
 
-   ![](Images/dp500_09-58.png)
+   ![](Images/dp7-28.png)
 
    >**Note**: The purpose of the **Salesperson** table is to enforce data permissions. When hidden, report authors and the Q&A experience won't see the table or its fields.
  
@@ -358,9 +365,9 @@ In this task, you will configure properties of the new relationship.
 
 In this task, you will create a dynamic role, which enforces permissions based on data in the model.
 
-1. Switch to **Report** view.
+1. Switch to **Report (1)** view.
 
-2. To add a security role, on the **Modeling** ribbon tab, from inside the **Security** group, select **Manage roles**.
+2. To add a security role, on the **Modeling** ribbon tab, from inside the **Security** group, select **Manage roles (2)**.
 
    ![](Images/dp9-39.png)
 
@@ -374,17 +381,17 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
    >**Note**: This time, only one role needs to be created.
 
-5. Add a filter to the **UPN** column of the **Salesperson** table.
+5. In order to add a filter to the **UPN** column of the **Salesperson** table, select the ellipsis (1), and then select Add filter (2) > [UPN] (3).
 
-   ![](Images/dp500_09-63.png)
+   ![](Images/dp7-29.png)
 
-6. In the **Table filter DAX expression** box, replace **"Value"** with **USERPRINCIPALNAME()**, and select **Save**.
+6. In the **Table filter DAX expression** box, replace **"Value"** with **USERPRINCIPALNAME() (1)**, and select **Save (2)**.
 
-   ![](Images/dp500_09-64.png)
+   ![](Images/dp7-30.png)
 
    >**Note**: This expression filters the **UPN** column by the USERPRINCIPALNAME function, which returns the user principal name (UPN) of the authenticated user.
 
-7. Now, being under the **Salespeople** role, add a filter to the **Region** column of the **Sales Territory** table.
+7. Navigate back to **Managed Roles** under **Modelling** Tab. Now, being under the **Salespeople** role, add a filter to the **Region** column of the **Sales Territory** table.
 
    ![](Images/salespeople1.png)
 
@@ -396,7 +403,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
 7. Select **Save**.
 
-   ![](Images/dp500_09-67.png)
+   ![](Images/dp7-31.png)
 
 ### Task 4: Validate the dynamic role
 
@@ -406,15 +413,11 @@ In this task, you will validate the dynamic role.
 
    ![](Images/dp9-44.png)
 
-1. In the **View as roles** window, check **Other user**, and then in the corresponding box, enter: **michael9@adventure-works.com**
+1. In the **View as roles** window, check **Other user (1)**, and then in the corresponding box, enter: **michael9@adventure-works.com (2)**. Check the **Salespeople (3)** role, and select **OK (4)**.
 
-   ![](Images/dp500_09-69.png)
+   ![](Images/dp7-32.png)
 	
    >**Note**: For testing purposes, **Other user** is the value that will be returned by the USERPRINCIPALNAME function. Note that this salesperson is assigned to the **Northeast** region.
-
-1. Check the **Salespeople** role, and select **OK**.
-
-   ![](Images/dp9-46.png)
 
 1. On the report page, notice that the stacked column chart visual shows only data for Northeast.
 
