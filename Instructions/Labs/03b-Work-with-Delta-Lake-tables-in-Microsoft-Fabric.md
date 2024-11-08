@@ -87,9 +87,9 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
 
-   ![02](./Images/dp12.png)
+   ![02](./Images/dp12.1.png)
 
-   ![02](./Images/dp13.png)
+   ![02](./Images/dp13.1.png)
 
 1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
 
@@ -97,7 +97,7 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
 1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
 
-   ![02](./Images/dp15.png)
+   ![02](./Images/dp15.1.png)
    
 1. Expand **Files** > **products** ,In the **…** menu for **products.csv (1)**, select **Load data (2)** > **Spark (3)**. A new code cell containing the following code should be added to the notebook:
 
