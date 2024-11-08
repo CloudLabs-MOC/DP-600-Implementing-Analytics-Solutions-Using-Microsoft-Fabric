@@ -185,7 +185,7 @@ In this task, you will publish the report.
 
 3. In the **Publish to Power BI** window, select your workspace that is **Fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, and then select **Select (2)**.
 
-   ![](Images/dp7-12.png)
+   ![](Images/dp7-12.1.png)
    
 5. When the publishing succeeds, select **Got it**.
 
