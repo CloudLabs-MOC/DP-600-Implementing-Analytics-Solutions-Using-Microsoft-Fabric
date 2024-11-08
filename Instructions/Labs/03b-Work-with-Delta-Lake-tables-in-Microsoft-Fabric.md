@@ -39,9 +39,9 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 
     - Click on **Create (2)**.
 
-      ![02](./Images/dp5.png)
+      ![02](./Images/dp-5.png)
   
-      ![02](./Images/dp6.png)
+      ![02](./Images/dp-6.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
