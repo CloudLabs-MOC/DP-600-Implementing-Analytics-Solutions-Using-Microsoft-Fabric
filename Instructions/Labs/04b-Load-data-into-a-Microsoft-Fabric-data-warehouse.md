@@ -224,6 +224,8 @@ Let’s run some analytical queries to validate the data in the warehouse.
 
     >**Note:** This query shows the customers by total sales for the year of 2021. The customer with the highest total sales for the specified year is Jordan Turner, with total sales of 14686.69.
 
+      ![02](./Images/01/dp-600-newimage39.png)
+
 1. On the top menu, select **New SQL query** or reuse the same editor, then copy and run the following query.
 
     ```Sql
@@ -237,6 +239,8 @@ Let’s run some analytical queries to validate the data in the warehouse.
     ```
 
     >**Note:** This query shows the top-seliing items by total sales for the year of 2021. These results suggest that the Mountain-200 bike model, in both black and silver colors, was the most popular item among customers in 2021.
+
+    >![02](./Images/01/dp-600-newimage40.png)
 
 1. On the top menu, select **New SQL query** or reuse the same editor, then copy and run the following query.
 
