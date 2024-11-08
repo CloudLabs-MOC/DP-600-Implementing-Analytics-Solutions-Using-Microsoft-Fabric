@@ -387,7 +387,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
 6. In the **Table filter DAX expression** box, replace **"Value"** with **USERPRINCIPALNAME() (1)**, and select **Save (2)**.
 
-   ![](Images/dp7-30png)
+   ![](Images/dp7-30.png)
 
    >**Note**: This expression filters the **UPN** column by the USERPRINCIPALNAME function, which returns the user principal name (UPN) of the authenticated user.
 
