@@ -64,11 +64,11 @@ In many scenarios, the data you need to work within your lakehouse may be stored
 
 1. In the **... (1)** menu for the **Files** folder, select **New shortcut (2)**.
 
-   ![02](./Images/01/dp2-2.png)
+   ![02](./Images/dp2-2.png)
 
 3. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
-   ![02](./Images/01/dp2-3.png)
+   ![02](./Images/dp2-3.png)
    
 ### Task 3: Create a pipeline
 
