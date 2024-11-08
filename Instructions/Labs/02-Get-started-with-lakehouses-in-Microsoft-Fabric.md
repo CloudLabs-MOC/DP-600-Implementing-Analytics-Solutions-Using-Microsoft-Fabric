@@ -34,7 +34,7 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
 
-   ![02](./Images/dp2-1.png)
+   ![02](./Images/dp2-1.1.png)
    
 2. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
 
@@ -76,7 +76,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. Select **Data Engineering (1)**, and select **Data Engineering (2)** again.
 
-   ![03](./Images/dp2-4.png)
+   ![03](./Images/dp2-4.4.png)
 
 1. Navigate to next page on the **Recommended items to create.**
 
@@ -92,7 +92,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
    
 5. If the **Copy data** wizard doesn't open automatically, select **Copy data assistant** in the pipeline editor page.
 
-   ![03](./Images/dp-600-lab03-1.png)
+   ![03](./Images/dp2-copy.png)
 
 6. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **Http**.
 
@@ -103,7 +103,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **Connection (2)**: Create new connection
     - **Connection name (3)**: *Specify a unique name*
     - **Data Gateway (4)**: Leave it to **(none)**
-    - **Authentication kind (5)**: Basic (*Leave the username and password blank*)
+    - **Authentication kind (5)**: Basic (*Leave password blank*)
     - **Username (6)**: Provide the username 
     - Click on **Next (7)**
   
@@ -117,7 +117,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
   
-        ![05](./Images/dp2-8.png)
+        ![05](./Images/dp2-8.8.png)
    
 9. Wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format (1)**: DelimitedText
@@ -133,7 +133,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. On the **Choose data destination** page, search **(1)** and select your lakehouse **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-   ![05](./Images/dp-600-lab03-4.png)
+   ![05](./Images/dp2-lk.png)
 
 1. Set the following data destination options, and then select **Next (4)**:
     - **Root folder (1)**: Files
@@ -159,11 +159,11 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/dp2-12.png)
+    ![Screenshot of a pipeline with a Copy Data activity.](./Images/dp2-12.png)
 
 1. In the menu bar on the left, select your lakehouse i.e., **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/dp2-13.png)
+   ![Screenshot of a pipeline with a Copy Data activity.](./Images/dp2-13.png)
 
 1. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
@@ -179,12 +179,26 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. Navigate to the **Home (1)** page, then select **Notebook (2)**.
 
-   ![11](./Images/01/dp10.1.png)
+   ![11](./Images/dp10.1.png)
 
      >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+   
+1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
 
+   ![02](./Images/dp12.1.png)
+
+   ![02](./Images/dp13.1.png)
+
+1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
+
+   ![02](./Images/dp14.png)
+
+1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
+
+   ![02](./Images/dp15.1.png)
+   
 3. Select the existing cell in the notebook, which contains some simple code, and then replace the default code with the following variable declaration and click on **&#9655; Run cell**.
 
     ```python
@@ -244,15 +258,15 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 1. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-   ![.](./Images/01/dp2-14.png)
+   ![.](./Images/dp2-14.png)
 
 1. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
-   ![.](./Images/01/dp2-15.png)
+   ![.](./Images/dp2-15.png)
 
 1. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-  ![.](./Images/01/dp2-16.png)
+  ![.](./Images/dp2-16.png)
 
 ### Task 5: Use SQL to query tables
 
@@ -260,7 +274,7 @@ When you create a lakehouse and define tables in it, an SQL analytics endpoint i
 
 1. Navigate to the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** on the left pane.
 
-   ![.](./Images/01/dp2-17.png)
+   ![.](./Images/dp2-17.png)
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
@@ -301,12 +315,12 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     ![Screenshot of a Visual query with results.](./Images/01/Pg3-VisQuery-S4.0.png)
 
-7. Then group the data by using the following **Basic** settings and click on **OK**.
+7. Then group the data by using the following **Basic** settings and click on **OK (5)**.
 
-    - **Group by**: SalesOrderNumber
-    - **New column name**: LineItems
-    - **Operation**: Count distinct values
-    - **Column**: SalesOrderLineNumber
+    - **Group by (1)**: SalesOrderNumber
+    - **New column name (2)**: LineItems
+    - **Operation (3)**: Count distinct values
+    - **Column(4)**: SalesOrderLineNumber
 
         ![Screenshot of a Visual query with results.](./Images/01/Pg3-VisQuery-S4.01.png)
 
@@ -346,7 +360,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
 
     ![Screenshot of a report containing a table.](./Images/dp2-22.png)
 
-1. Then **Save (1)** the report as **Item Sales Report** in the workspace you created previously.
+1. Then **Save** the report as **Item Sales Report** in the workspace you created previously.
 
    ![Screenshot of a report containing a table.](./Images/dp2-23.png)
 
@@ -356,7 +370,7 @@ The tables in your lakehouse are automatically added to a default dataset that d
     - A default dataset for the tables in your lakehouse.
     - The **Item Sales Report** report.
   
-    ![Screenshot of a report containing a table.](./Images/dp2-24.png)  
+      ![Screenshot of a report containing a table.](./Images/dp2-24.png)  
 
 ### Review
  In this lab, you have completed the following :
