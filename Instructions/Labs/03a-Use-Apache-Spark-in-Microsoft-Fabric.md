@@ -52,9 +52,13 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
   
      ![02](./Images/dp-6.png)
 
-1. Return to the web browser tab containing your lakehouse, and in the **...** menu for the **Files** folder in the **Explorer** pane, select **Upload** and **Upload folder**, and then upload the **orders** folder from **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\orders** to the lakehouse, select **Upload**, and close the pane.
+1. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **Upload (2)** and **Upload folder (3)**.
 
-    >**Note:** When prompted, for uploading 3 files, select **Upload**.
+   ![02](./Images/dp-11.png)
+
+1. Then upload the **orders (1)** folder from **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\orders** to the lakehouse, select **Upload (2)**, and close the pane.
+
+   >**Note:** When prompted, for uploading 3 files, select **Upload**.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/filesupload1.png)
 
@@ -72,17 +76,18 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
-1. On the **Home** page while viewing the contents of the **orders** folder in your datalake, in the **Open notebook (1)** menu, select **New notebook (2)**.
+1. Navigate to the **Home** page and select **Notebook (2)**.
 
-   ![](./Images/Pg7-Notebook-S1.png)
+   ![](./Images/dp10.png)
 
+    >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
     >**Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
-2. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
+1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
 
     ![](./Images/fabriclakehouse.png)
 
-3. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
+2. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
     ```
    # Sales order data exploration
@@ -90,7 +95,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
    Use the code in this notebook to explore sales order data.
     ```
 
-4. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
+3. Click anywhere in the notebook outside of the cell to stop editing it and see the rendered markdown.
 
     ![](./Images/salesorder.png)
 
