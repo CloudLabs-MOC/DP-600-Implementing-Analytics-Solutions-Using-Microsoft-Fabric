@@ -123,7 +123,7 @@ In this task, you will create two static roles.
 
    ![](Images/dp7-6.png)
 
-6. In the **Tables** list, for the **Sales Territory** table, select the **ellipsis (1)**, and then select **Add filter (2)** > **[Region] (2)**.
+6. In the **Tables** list, for the **Sales Territory** table, select the **ellipsis (1)**, and then select **Add filter (2)** > **[Region] (3)**.
 
    ![](Images/dp7-7.png)
 
