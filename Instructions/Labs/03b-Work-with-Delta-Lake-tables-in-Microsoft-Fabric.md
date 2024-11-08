@@ -153,12 +153,12 @@ You can also create external tables for which the schema metadata is defined in 
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Files (1)** folder, select **Copy ABFS path (2)**.
 
-   ![02](./Images/dp17.png)
+   ![02](./Images/dp17.1.png)
 
     >**Note:** The ABFS path is the fully qualified path to the **Files** folder in the OneLake storage for your lakehouse - similar to this:
-    **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files**
+    **abfss://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@onelake.dfs.fabric.microsoft.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/Files**
 
-1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://6155fefc-704a-45e2-ba11-cdbeeb0b4a01@onelake.dfs.fabric.microsoft.com/a4a7c03e-fe4d-4cc8-a3a8-62a6fd0a693c/Files/external_products**
+1. In the code you entered into the code cell, replace **abfs_path** with the path you copied to the clipboard and run the code, so that the code saves the dataframe as an external table with data files in a folder named **external_products** in your **Files** folder location. The full path should look similar to this: **abfss://xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@onelake.dfs.fabric.microsoft.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/Files/external_products**
 
 1. In the **Lakehouse explorer** pane, in the **…** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables (1)** node and verify that the **external_products (2)** table has been created.
 
