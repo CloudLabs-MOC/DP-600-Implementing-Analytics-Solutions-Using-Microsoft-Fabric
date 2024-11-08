@@ -56,7 +56,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     >**Note:** When prompted, for uploading 3 files, select **Upload**.
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/filesupload.png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/filesupload1.png)
 
 1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
