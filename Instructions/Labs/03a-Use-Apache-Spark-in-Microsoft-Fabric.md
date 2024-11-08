@@ -103,7 +103,7 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
    ![02](./Images/dp12.1.png)
 
-   ![02](./Images/dp13.1.png)
+   ![02](./Images/dp-13.png)
 
 1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
 
