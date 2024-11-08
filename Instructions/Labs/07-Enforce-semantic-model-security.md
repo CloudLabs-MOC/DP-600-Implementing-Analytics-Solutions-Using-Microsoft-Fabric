@@ -293,7 +293,7 @@ In this task, you will add the **Salesperson** table to the model.
 
 10. In the **Navigation** window, select the **DimEmployee (1)** table.Then Select **OK (2)**.
 
-   ![](Images/dp7-19.png)
+    ![](Images/dp7-19.png)
 
 12. To remove unnecessary columns, on the **Home (1)** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns (2)** icon and slect **Choose Columns (3)** from the drop-down.
 
