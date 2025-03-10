@@ -60,9 +60,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 ### Task 2: Create a Fabric notebook and load external data
 
-1. Navigate back to the **Home** page , select **New notebook**.
-
-      ![02](./Images/01/dp-600-newimage31.png)
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Notebook** to create a new notebook.
 
 1. Under **Explorer** select **Lakehouses**.
 
