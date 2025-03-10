@@ -11,13 +11,13 @@ Because you’re also working with a sample dataset, the optimization doesn’t 
 ## Lab objectives
 In this lab, you will perform:
 
-- Create workspace and lakehouse destination
-- Create a Fabric notebook and load external data
-- Transform and load data to a Delta table
-- Optimize Delta table writes
-- Analyze Delta table data with SQL queries
+- Task 1: Create workspace and lakehouse destination
+- Task 2: Create a Fabric notebook and load external data
+- Task 3: Transform and load data to a Delta table
+- Task 4: Optimize Delta table writes
+- Task 5: Analyze Delta table data with SQL queries
 
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Architecture Diagram
 
@@ -27,17 +27,19 @@ In this lab, you will perform:
 
 Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/01/Pg3-T1-S1.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
    
-1. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
+2. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Lakehouse** to create a new Lakehouse.
 
     - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
     - Click on **Create**.
 
-      ![02](./Images/fabric20.png)
+      ![02](./Images/01/dp-600-newimage40.png)
+  
+      ![02](./Images/01/dp-600-newimage5.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
@@ -47,11 +49,12 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 1. Select **RawData** > **...** > **Properties** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="b4693cb6-ec88-4474-994f-1bbc3ad35441" />
 
 ### Task 2: Create a Fabric notebook and load external data
 
