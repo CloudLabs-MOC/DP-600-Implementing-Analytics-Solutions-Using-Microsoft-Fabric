@@ -43,11 +43,13 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
-1. From **Files**, select the **[…] (2)** to create **New subfolder** named **RawData (3)**.
+1. From the left panel select the **Lakehouse (1)** and from **Files**, select the **[…] (2)** to create **New subfolder (3)** named **RawData**.
 
     ![New dataflow](./Images/lakehousefiles(1).png)
 
-1. Select **RawData** > **...** > **Properties** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**
+1. Select **RawData** > **...** > **Properties** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**.
+
+   ![New dataflow](./Images/lakehousefiles(10).png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -66,9 +68,9 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
     ![02](./Images/01/dp-600-newimage32.png)
 
-1. Select **+ Lakehouse** > **Existing Lakehouse** then click **Add**.
+1. Select **+ Lakehouse** > **Existing lakehouse(s) without Schema (1)** then click **Add (2)**.
 
-    ![02](./Images/01/dp-600-newimage33.png)
+    ![02](./Images/01/dp-600-newimage3333.png)
 
 1. Select your Lakehouse click on **Add**.
 
@@ -101,6 +103,8 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 1. Select **▷ Run Cell** next to the code cell to connect and read data into a DataFrame.
 
     >**Note:** Expected outcome: Your command should succeed and print **wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow**
+    
+    ![02](./Images/01/dp-600-newimage344.png)
 
 1. To write the data to a file, you now need that **ABFS Path** for your **RawData** folder.
 
@@ -118,11 +122,11 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
     blob_df.limit(1000).write.mode("overwrite").parquet(output_parquet_path)
     ```
 
-     >**Note:** In the **InsertABFSPathHere**, paste the ABFS path that you copied.
+1. In the **InsertABFSPathHere**, paste the ABFS path that you copied.
 
 1. Select **▷ Run Cell** to write 1000 rows to a yellow_taxi.parquet file.
 
-    >**Note:** Your output_parquet_path should look similar to: **abfss://Spark@onelake.dfs.fabric.microsoft.com/DPDemo.Lakehouse/Files/RawData/yellow_taxi**
+    >**Note:** Your output_parquet_path should look similar to: **abfss://Spark@onelake.dfs.fabric.microsoft.com/DPDemo.Lakehouse/Files/RawData/yellow_taxi**, The code execution may take approximately 3 to 5 minutes to complete.
 
 1. To confirm data load from the Lakehouse Explorer, select **Files** > **…** > **Refresh**.
 
@@ -132,7 +136,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 Likely, your data ingestion task doesn’t end with only loading a file. Delta tables in a lakehouse allows scalable, flexible querying and storage, so we’ll create one as well.
 
-1. Create a new code cell, and insert the following code:
+1. Create a **new code cell**, and insert the following code:
 
     ```python
     from pyspark.sql.functions import col, to_timestamp, current_timestamp, year, month
@@ -172,7 +176,7 @@ Likely, your data ingestion task doesn’t end with only loading a file. Delta t
 
 You’re probably using big data in your organization and that’s why you chose Fabric notebooks for data ingestion, so let’s also cover how to optimize the ingestion and reads for your data. First, we’ll repeat the steps to transform and write to a Delta table with write optimizations included.
 
-1. Create a new code cell and insert the following code:
+1. Create a **new code cell** and insert the following code:
 
     ```python
     from pyspark.sql.functions import col, to_timestamp, current_timestamp, year, month
@@ -199,6 +203,8 @@ You’re probably using big data in your organization and that’s why you chose
     # Display results
     display(opt_df.limit(1))
     ```
+
+1. Select **▷ Run Cell** next to the code cell.
 
 1. Confirm you have the same results as before the optimization code.
 
@@ -254,4 +260,4 @@ This lab is focused on data ingestion, which really explains the extract, transf
 - Optimized Delta table writes
 - Analyzed Delta table data with SQL queries
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
