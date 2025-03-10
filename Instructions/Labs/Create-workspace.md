@@ -28,7 +28,7 @@ In this lab, you will complete the following tasks:
 
       ![06](./Images/gs/06-1.png)
 
-1. Complete the sign in process by clicking on **Continue**
+1. **If** prompted to complete the sign-in process, click **Continue** or proceed directly with the lab from **Step 7**.
 
    ![](Images/dp-600-lab01-2.png)
    
