@@ -63,7 +63,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 1. In the home page for your **fabric (1)** workspace, select **Dataflow Gen2** to create. After a few seconds, the Power Query editor for your new dataflow opens as shown in second image.
 
-    ![02](./Images/01/dp-600-newimage60.png)
+    ![02](./Images/01/dp-600-newimage600.png)
 
     ![New dataflow.](./Images/new-dataflow.png)
 
@@ -95,7 +95,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 ### Task 3: Add data destination for Dataflow
 
-1. On the toolbar ribbon, select the **Home** tab. from the right side of the screen under **Query Settings** click on **+** of **Data Destination** and from the Drop down select **Lakehouse**.
+1. On the toolbar ribbon, select the **Home** tab. On the right side under **Query Settings**, click the **+** icon next to **Data Destination**, then choose **Lakehouse** from the dropdown.
 
    > **Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
