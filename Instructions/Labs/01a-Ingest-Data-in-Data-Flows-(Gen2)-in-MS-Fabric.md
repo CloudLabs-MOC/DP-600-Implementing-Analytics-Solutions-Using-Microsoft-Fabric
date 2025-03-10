@@ -53,7 +53,7 @@ Now that you have created a workspace in the previous step, it's time to switch 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 <validation step="89ea37a7-e342-4b93-a9bf-15272721afea" />
 
@@ -61,9 +61,9 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 Now that you have a lakehouse, you need to ingest some data into it. One way to do this is to define a dataflow that encapsulates an *extract, transform, and load* (ETL) process.
 
-1. In the home page for your workspace, select **New Dataflow Gen2**. After a few seconds, the Power Query editor for your new dataflow opens as shown in second image.
+1. In the home page for your **fabric (1)** workspace, select **Dataflow Gen2** to create. After a few seconds, the Power Query editor for your new dataflow opens as shown in second image.
 
-    ![02](./Images/01/dp-600-newimage6.png)
+    ![02](./Images/01/dp-600-newimage60.png)
 
     ![New dataflow.](./Images/new-dataflow.png)
 
@@ -74,6 +74,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
     - **data gateway**: (none)
     - **Authentication kind**: Anonymous
 
+    ![02](./Images/01/dp-600-newimage70.png)
     ![02](./Images/01/dp-600-newimage7.png)
 
 1. Click on **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown here:
@@ -94,11 +95,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 ### Task 3: Add data destination for Dataflow
 
-1. On the toolbar ribbon, select the **Home** tab. Then in the **Add data destination** drop-down menu, select **Lakehouse**.
+1. On the toolbar ribbon, select the **Home** tab. from the right side of the screen under **Query Settings** click on **+** of **Data Destination** and from the Drop down select **Lakehouse**.
 
    > **Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-     ![02](./Images/01/dp-600-newimage11.png)
+     ![02](./Images/01/dp-600-newimage111.png)
 
 1. Select settings option data destination at the bottom of the Query settings pane. In the **Connect to data destination** dialog box, select **Edit the connection** and sign in using your Power BI organizational account if already signed in click on **Next** to set the identity that the dataflow uses to access the lakehouse.
 
@@ -110,7 +111,7 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
    ![Data destination configuration page.](./Images/lakehouse.png)
 
-1. If the Use automatic settings is On, toggle button to switch it off. Select the OrderDate and MonthNo columns in Power Query online. Now, change the Source type by selecting the drop-down, follow these instructions:
+1. If the **Use automatic settings is On**, toggle button to **switch it off**. Select the **OrderDate** and **MonthNo** columns in Power Query online. Now, change the Source type by selecting the drop-down, follow these instructions:
 
     - OrderDate = Date/Time
     - MonthNo = Whole number
@@ -135,11 +136,11 @@ Now that you have a lakehouse, you need to ingest some data into it. One way to 
 
 You can include a dataflow as an activity in a pipeline. Pipelines are used to orchestrate data ingestion and processing activities, enabling you to combine dataflows with other kinds of operations in a single, scheduled process. Pipelines can be created in a few different experiences, including the Data Factory experience.
 
-1. From your Fabric-enabled workspace, select **Data Engineering (1)**. Select **Data pipeline (2)**, then when prompted, create a new pipeline named **Load Orders pipeline**.
+1. From your Fabric-enabled workspace, select **+ New Item (1)**. Select **Data pipeline (2)** from the pop-up, then when prompted, create a new pipeline named **Load Orders pipeline**.
 
    The pipeline editor opens.
 
-   ![02](./Images/01/dp-600-newimage17.png)
+   ![02](./Images/01/dp-600-newimage170.png)
 
    ![02](./Images/01/dp-600-newimage18.png)
 
@@ -161,7 +162,7 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/dataflow-pipeline-succeeded.png)
 
-1. In the menu bar on the left edge, select your lakehouse.
+1. In the menu bar on the left edge, select your **lakehouse**.
 
 1. In the **...** menu for **Tables**, select **Refresh**. Then expand **Tables** and select the **orders** table, which has been created by your dataflow.
 
@@ -174,4 +175,4 @@ You can include a dataflow as an activity in a pipeline. Pipelines are used to o
 - Added data destination for Dataflow
 - Added a dataflow to a pipeline
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
