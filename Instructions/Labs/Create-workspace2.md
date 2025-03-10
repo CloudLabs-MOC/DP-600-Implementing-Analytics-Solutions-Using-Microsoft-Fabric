@@ -85,4 +85,4 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
-   <validation step="b436ded8-94b2-4cfd-af19-917c141a25e6" />
+   <validation step="7a8bbef3-b328-4093-9b81-4fdd532db423" />
