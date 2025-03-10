@@ -49,7 +49,7 @@ Start by creating a new lakehouse, and a destination folder in the lakehouse.
 
 1. Select **RawData** > **...** > **Properties** > **Copy ABFS path** for the **RawData** folder to an empty notepad for later use, which should look something like: **abfss://{workspace_name}@onelake.dfs.fabric.microsoft.com/{lakehouse_name}.Lakehouse/Files/{folder_name}/{file_name}**.
 
-   ![New dataflow](./Images/lakehousefiles(10).png)
+   ![New dataflow](./Images/01/lakehousefiles(10).png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
