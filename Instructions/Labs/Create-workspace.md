@@ -31,10 +31,6 @@ In this lab, you will complete the following tasks:
 
    ![Account-manager-start](./Images/dp6001.png)
 
-1. A new prompt will appear asking you to **Upgrade to a free Microsoft Fabric trial**, click on **Start trial (1)**.
-
-   ![Start-trial](./Images/ws/08.png)
-
 1. On **Activate your 60-day free Fabric trial capacity** click on **Activate**.
 
     ![02](./Images/01/dp-600-newimage1.png)
@@ -65,17 +61,18 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
       ![name-and-desc-of-workspc](Images/fabric.png)
 
-   - **Advanced:** Expand it and Under **License mode**, select **Trial capacity (1)** and click on **Apply (2)** to create and open the workspace.
+   - **Advanced:** Expand it and Under **License mode**, select **Trial (1)** and click on **Apply (2)** to create and open the workspace.
 
       ![advanced-and-apply](Images/fabric(2).png)
 
       >**Note:** On the **Introducing task flows** select **Got it**.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+   <validation step="b436ded8-94b2-4cfd-af19-917c141a25e6" />
 
    
 
