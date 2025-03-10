@@ -17,7 +17,7 @@ In this lab, you will complete the following tasks:
 
 1. Enter the **Email: <inject key="AzureAdUserEmail"></inject>** (1) to check if you need to create a new account and click on **Submit (2)**.
 
-   ![](Images/dp-600-lab01-40.png)
+   ![](Images/01/dp-600-lab01-40.png)
 
 1. Now enter the following password and click on **Sign in**.
    * Password: <inject key="AzureAdUserPassword"></inject>
