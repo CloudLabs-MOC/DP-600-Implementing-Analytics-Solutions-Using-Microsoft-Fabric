@@ -154,17 +154,15 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 ### Task 3: Create a notebook
 
-1. Navigate back to the **Home** page , select **New notebook**.
-
-      ![02](./Images/01/dp-600-newimage31.png)
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Notebook** to create a new notebook.
 
 1. Under **Explorer** select **Lakehouses**.
 
     ![02](./Images/01/dp-600-newimage32.png)
 
-1. Select **+ Lakehouse** > **Existing Lakehouse** then click **Add**.
+1. Select **+ Lakehouse** > **Existing lakehouse(s) without Schema (1)** then click **Add (2)**.
 
-    ![02](./Images/01/dp-600-newimage33.png)
+    ![02](./Images/01/dp-600-newimage3333.png)
 
 1. Select your Lakehouse click on **Add**.
 
@@ -253,7 +251,7 @@ Now that you’ve implemented a notebook to transform data and load it into a ta
 
 1. Select the **Delete data** activity, and in the pane below the design canvas, set the following properties:
     - **General**: 
-        - Name: Delete old files
+        - **Name**: Delete old files
     - **Source**:
         - **Connection**: Your lakehouse
         - **File path type**: Wildcard file path
