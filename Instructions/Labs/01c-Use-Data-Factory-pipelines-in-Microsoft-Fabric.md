@@ -12,10 +12,10 @@ This lab will take approximately **60** minutes to complete.
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a lakehouse
-- Create a pipeline
-- Create a notebook
-- Modify the pipeline
+- Task 1: Create a lakehouse
+- Task 2: Create a pipeline
+- Task 3: Create a notebook
+- Task 4: Modify the pipeline
 
 ## Estimated timing: 60 minutes
 
@@ -27,17 +27,19 @@ In this lab, you will perform:
 
 Now that you have a workspace, it’s time to create a data lakehouse into which you will ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/01/Pg3-T1-S1.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
    
-2. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
+2. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Lakehouse** to create a new Lakehouse.
 
     - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
     - Click on **Create**.
 
-      ![02](./Images/fabric20.png)
+      ![02](./Images/01/dp-600-newimage40.png)
+  
+      ![02](./Images/01/dp-600-newimage5.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
