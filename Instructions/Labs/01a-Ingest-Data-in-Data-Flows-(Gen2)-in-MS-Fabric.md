@@ -7,12 +7,12 @@ In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perfor
 This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise.
 
 ## Lab objectives
-In this lab, you will perform:
+In this lab, you will perform the below tasks:
 
-- Create a Lakehouse
-- Create a Dataflow (Gen2) to ingest data
-- Add data destination for Dataflow
-- Add a dataflow to a pipeline
+- Task 1: Create a Lakehouse
+- Task 2: Create a Dataflow (Gen2) to ingest data
+- Task 3: Add data destination for Dataflow
+- Task 4: Add a dataflow to a pipeline
 
 ## Estimated timing: 30 minutes
 
@@ -29,17 +29,17 @@ In Microsoft Fabric, a lakehouse provides highly scalable file storage in a *One
 
 Now that you have created a workspace in the previous step, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/01/Pg3-T1-S1.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
    
-2. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
+2. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Lakehouse** to create a new Lakehouse.
 
     - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
     - Click on **Create**.
 
-      ![02](./Images/01/dp-600-newimage4.png)
+      ![02](./Images/01/dp-600-newimage40.png)
   
       ![02](./Images/01/dp-600-newimage5.png)
 
@@ -48,11 +48,14 @@ Now that you have created a workspace in the previous step, it's time to switch 
 3. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)** and create a subfolder named **new_data**
 
    ![02](./Images/01/01.png)
+   ![02](./Images/01/dp-600-newimage41.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="89ea37a7-e342-4b93-a9bf-15272721afea" />
 
 ### Task 2: Create a Dataflow (Gen2) to ingest data
 
