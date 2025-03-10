@@ -9,11 +9,24 @@ In this lab, you will complete the following tasks:
 
 #### Task 1: Sign up for Microsoft Fabric Trial
 
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
+1. Copy the **Power BI homepage link**, and open this link inside the VM in a microsoft edge new tab.
 
    ```
    https://powerbi.com
    ```
+
+1. Enter the **Email: <inject key="AzureAdUserEmail"></inject>** (1) to check if you need to create a new account and click on **Submit (2)**.
+
+   ![](Images/dp-600-lab01-40.png)
+
+1. Now enter the following password and click on **Sign in**.
+   * Password: <inject key="AzureAdUserPassword"></inject>
+   
+     ![05](./Images/gs/05.png)
+
+   > **Note**: If you see the **Action Required** dialog box, then select the **Ask Later** option.
+
+      ![06](./Images/gs/06-1.png)
 
 1. Complete the sign in process by clicking on **Continue**
 
