@@ -61,17 +61,13 @@ Now that you have a workspace, it’s time to create a data lakehouse into which
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. At the bottom left of the Power BI portal, select **Data Engineering** icon , and select **Data Engineering** again.
+1. From your Fabric-enabled workspace, select **+ New Item**. Select **Data pipeline** from the pop-up, then when prompted, create a new pipeline named **Ingest Sales Data Pipeline**.
 
-     ![02](./Images/01/dp-600-newimage25.png)
+   The pipeline editor opens.
 
-1. On the **Home** page for your lakehouse, select **Data pipeline**.
-
-    ![03](./Images/fabric21.png)
-
-2. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
+   >**Note** : If your not able to see **Data pipeline** use > button to see **Data pipeline** option 
    
-   ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
+   > **Tip**: If the Copy Data wizard opens automatically, close it!
    
 3. If the **Copy data** wizard doesn't open automatically, select **Copy data assistant** in the pipeline editor page.
 
@@ -84,9 +80,9 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 5. Select **Next** and enter the following settings for the connection to your data source:
     - **URL (1)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection (2)**: Create new connection
-    - **Connection name (3)**: *Specify a unique name*
+    - **Connection name (3)**: **datasource-<inject key="DeploymentID" enableCopy="false"/>**
     - **Authentication kind (4)**: Basic (*Leave the username and password blank*)
-    - **Username (5)**: Provide the username
+    - **Username (5)**: **demouser**
     - Click on **Next (6)**
   
         ![02](./Images/01/dp-600-newimage26.png)
@@ -149,11 +145,12 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     >**Note:** If the **sales.csv** file doesn't show up, refresh the **new_data** subfolder and verify.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="7301ee02-78cf-4d09-bd40-28c99e069f37" />
 
 ### Task 3: Create a notebook
 
