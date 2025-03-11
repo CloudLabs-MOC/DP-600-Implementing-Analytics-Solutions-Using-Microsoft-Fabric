@@ -52,11 +52,12 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
    ![02](./Images/01/01.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="e57fa5a2-8d9b-4b74-822b-7f3775d3fa13" />
 
 ### Task 2: Explore shortcuts
 
@@ -169,11 +170,12 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     ![10](./Images/01/10.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="b849afaa-9add-4584-b93b-8c8bbce53379" />
 
 ### Task 4: Create a notebook
 
