@@ -75,8 +75,6 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![02](./Images/01/dp-600-newimage170.png)
 
-   ![02](./Images/01/dp-600-newimage18.png)
-
    >**Note** : If your not able to see **Data pipeline** use > button to see **Data pipeline** option 
    
    > **Tip**: If the Copy Data wizard opens automatically, close it!
@@ -92,10 +90,10 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 1. One the **Connect to data source** section, enter the following settings for the connection to your data source:
     - **URL (1)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection (2)**: Create new connection
-    - **Connection name (3)**: *Specify a unique name*
+    - **Connection name (3)**: **github**
     - **Data Gateway (4)**: Leave it to **(none)**
     - **Authentication kind (5)**: Basic (*Leave password blank*)
-    - **Username (6)**: Provide the username 
+    - **Username (6)**: **demouser**
     - Click on **Next (7)**
   
         ![04](./Images/dp2-7.png)
@@ -122,7 +120,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
      ![06](./Images/fabric6.png)
 
-1. On the **Choose data destination** page, search **(1)** and select your lakehouse **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**.
+1. On the **Choose data destination** page, search **(1)** and scroll down and select your lakehouse **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
    ![05](./Images/dp2-lk.png)
 
@@ -162,23 +160,23 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 ### Task 4: Create a notebook
 
-1. Navigate to the **Home (1)** page, then select **Notebook (2)**.
-
-   ![11](./Images/dp10.1.png)
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Notebook** to create a new notebook.
 
      >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
     After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
    
-1. In the **Explorer** pane on the left, expand **Lakehouses** and click on  **Add** to add the existing Lakehouse.
+1. Under **Explorer** select **Lakehouses**.
 
-   ![02](./Images/dp12.1.png)
+    ![02](./Images/01/dp-600-newimage32.png)
 
-   ![02](./Images/dp13.1.png)
+1. Select **+ Lakehouse** > **Existing lakehouse(s) without Schema (1)** then click **Add (2)**.
 
-1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
+    ![02](./Images/01/dp-600-newimage3333.png)
 
-   ![02](./Images/dp14.png)
+1. Select your Lakehouse click on **Add**.
+
+    ![02](./Images/01/dp-600-newimage34.png)
 
 1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
 
@@ -237,7 +235,9 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
     #abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files
     ```
-    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
+    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path you can find <abfs_path> by selecting (...) icon copy ADFS path.
+
+      ![02](./Images/01/dp-600-newimage36.png)
 
 1. In the hub menu bar on the left, select your lakehouse.
 
@@ -245,21 +245,17 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
    ![.](./Images/dp2-14.png)
 
-1. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
+1. Select the **notebook menu** bar from left panel, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
    ![.](./Images/dp2-15.png)
 
-1. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+1. Switch back to **lakehouse** and under the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
 
-   ![.](./Images/dp2-16.png)
+   ![.](./Images/dp2-160.png)
 
 ### Task 5: Use SQL to query tables
 
 When you create a lakehouse and define tables in it, an SQL analytics endpoint is automatically created through which the tables can be queried using SQL `SELECT` statements. 
-
-1. Navigate to the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** on the left pane.
-
-   ![.](./Images/dp2-17.png)
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
@@ -286,7 +282,7 @@ While many data professionals are familiar with SQL, data analysts with Power BI
 
     ![Screenshot of a SQL query with results.](./Images/dp2-18.png)
 
-3. Drag the **sales** table to the new visual query editor pane that opens to create a Power Query as shown here: 
+3. Drag the **sales** table to the new visual query editor pane from path **Schemas > dbo > Tables > Sales**, that opens to create a Power Query as shown here: 
 
     ![Screenshot of a Visual query.](./Images/visual-query.png)
 
@@ -367,5 +363,5 @@ The tables in your lakehouse are automatically added to a default dataset that d
 - Created a visual query
 - Created a report
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
 
