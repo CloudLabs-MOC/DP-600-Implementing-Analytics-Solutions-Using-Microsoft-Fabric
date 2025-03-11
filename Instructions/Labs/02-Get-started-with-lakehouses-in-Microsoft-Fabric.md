@@ -9,13 +9,13 @@ Fabric also supports Apache Spark, enabling you to write and run code to process
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a lakehouse
-- Explore shortcuts
-- Create a pipeline
-- Create a notebook
-- Use SQL to query tables
-- Create a visual query
-- Create a report
+- Task 1: Create a lakehouse
+- Task 2: Explore shortcuts
+- Task 3: Create a pipeline
+- Task 4: Create a notebook
+- Task 5: Use SQL to query tables
+- Task 6: Create a visual query
+- Task 7: Create a report
 
 ## Estimated timing: 60 minutes
 
@@ -32,32 +32,26 @@ In Microsoft Fabric, a lakehouse provides highly scalable file storage in a *One
 
 Now that you have created a workspace in the previous step, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/dp2-1.1.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
    
-2. In the **Data engineering** home page, click on **Lakehouse** to create a new lakehouse.
+2. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Lakehouse** to create a new Lakehouse.
 
-    - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
-    - Click on **Create (2)**.
+    - Click on **Create**.
 
-      ![02](./Images/dp-5.png)
+      ![02](./Images/01/dp-600-newimage40.png)
   
-      ![02](./Images/dp-6.png)
+      ![02](./Images/01/dp-600-newimage5.png)
 
         >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
 3. On the **Lakehouse<inject key="DeploymentID" enableCopy="false"/>** tab in the pane on the left, in the **...** menu for the **Files (1)** node, select **New subfolder (2)** and create a subfolder named **new_data**
 
    ![02](./Images/01/01.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
-<validation step="e57fa5a2-8d9b-4b74-822b-7f3775d3fa13" />
+   ![02](./Images/01/dp-600-newimage41.png)
 
 ### Task 2: Explore shortcuts
 
@@ -169,13 +163,6 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 1. On the **Home** page, in the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** pane, expand **Files** and select the **new_data (2)** folder to verify that the **sales.csv (3)** file has been copied.
 
     ![10](./Images/01/10.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
-<validation step="b849afaa-9add-4584-b93b-8c8bbce53379" />
 
 ### Task 4: Create a notebook
 
