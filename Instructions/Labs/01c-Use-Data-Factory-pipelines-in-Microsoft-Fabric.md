@@ -73,7 +73,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 5. Select **Next** and enter the following settings for the connection to your data source:
     - **URL (1)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection (2)**: Create new connection
-    - **Connection name (3)**: **datasource-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Connection name (3)**: **github**
     - **Authentication kind (4)**: Basic (*Leave the username and password blank*)
     - **Username (5)**: **demouser**
     - Click on **Next (6)**
@@ -215,7 +215,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
 8. When the notebook run has completed, in the **Lakehouse explorer** pane on the left, in the **...** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 
-9. In the notebook menu bar, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
+9. Select the **notebook menu** bar from left panel, use the ⚙️ **Settings (1)** icon to view the notebook settings. Then set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
    ![.](./Images/01/Pg3-Notebook-S10.png)
  
