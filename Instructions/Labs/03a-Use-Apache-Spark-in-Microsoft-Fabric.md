@@ -7,24 +7,24 @@ Apache Spark is an open-source engine for distributed data processing and is wid
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a lakehouse and upload files
-- Create a notebook
-- Load data into a dataframe
-- Explore data in a dataframe
-- Filter a dataframe
-- Aggregate and group data in a dataframe
-- Use Spark to transform data files
-- Use dataframe methods and functions to transform data
-- Save the transformed data
-- Save data in partitioned files
-- Work with tables and SQL
-- Create a table
-- Run SQL code in a cell
-- Visualize data with Spark
-- View results as a chart
-- Get started with **matplotlib**
-- Use the **seaborn** library
-- Save the notebook and end the Spark session
+- Task 1: Create a lakehouse and upload files
+- Task 2: Create a notebook
+- Task 3: Load data into a dataframe
+- Task 4: Explore data in a dataframe
+- Task 5: Filter a dataframe
+- Task 6: Aggregate and group data in a dataframe
+- Task 7: Use Spark to transform data files
+- Task 8: Use dataframe methods and functions to transform data
+- Task 9: Save the transformed data
+- Task 10: Save data in partitioned files
+- Task 11: Work with tables and SQL
+- Task 12: Create a table
+- Task 13: Run SQL code in a cell
+- Task 14: Visualize data with Spark
+- Task 15: View results as a chart
+- Task 16: Get started with **matplotlib**
+- Task 17: Use the **seaborn** library
+- Task 18: Save the notebook and end the Spark session
 
 ## Estimated timing: 45 minutes
 
@@ -36,21 +36,21 @@ In this lab, you will perform:
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Engineering (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/dataeng.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
+   
+2. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Lakehouse** to create a new Lakehouse.
 
-1. In the **Synapse Data Engineering** home page, select **Lakehouse**.
+    - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
-    ![02](./Images/dp-5.png)
+    - Click on **Create**.
 
-1. Follow these instructions to create a new **Lakehouse**:
-
-   - **Name:** Enter **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
-
-   - Click on **Create (2)**
+      ![02](./Images/01/dp-600-newimage40.png)
   
-     ![02](./Images/dp-6.png)
+      ![02](./Images/01/dp-600-newimage5.png)
+
+        >**Note:** After a minute or so, a new lakehouse with no **Tables** or **Files** will be created.
 
 1. Return to the web browser tab containing your lakehouse, and in the **... (1)** menu for the **Files** folder in the **Explorer** pane, select **Upload (2)** and **Upload folder (3)**.
 
@@ -66,22 +66,15 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files1.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
-
 ### Task 2: Create a notebook
 
 To work with data in Apache Spark, you can create a *notebook*. Notebooks provide an interactive environment in which you can write and run code (in multiple languages), and add notes to document it.
 
-1. Navigate to the **Home (1)** page and select **Notebook (2)**.
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Notebook** to create a new notebook.
 
-   ![](./Images/dp10.1.png)
+     >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
 
-    >**Note:** If a pop up appears New data sources and languages now available click on skip tour.
-    >**Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+    After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell. When the cell changes to a markdown cell, the text it contains is rendered.
 
@@ -105,9 +98,9 @@ To work with data in Apache Spark, you can create a *notebook*. Notebooks provid
 
    ![02](./Images/dp-13.png)
 
-1. A pompt appears, make sure to select **Existing Lakehouse (1)** and then click on **Add (2)**.
+1. Select **Existing lakehouse(s) without Schema (1)** then click **Add (2)**.
 
-   ![02](./Images/dp14.png)
+    ![02](./Images/01/dp-600-newimage3333.png)
 
 1. On the **Discover data from your org and beyond and use it to create reports** page , select the **Lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and then click on **Add (2).**
 
@@ -119,7 +112,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 
 > **Note**: Spark supports multiple coding languages, including Scala, Java, and others. In this exercise, we'll use *PySpark*, which is a Spark-optimized variant of Python. PySpark is one of the most commonly used languages on Spark and is the default language in Fabric notebooks.
 
-1. In the hub menu bar on the left, select your lakehouse.
+1. In the hub menu bar on the left, select your **Notebook**.
 
 1. With the notebook visible, expand the **Files** list and select the **orders** folder so that the CSV files are listed next to the notebook editor, like this:
 
@@ -646,12 +639,6 @@ Now that you've finished working with the data, you can save the notebook with a
 
    ![](./Images/dpp10.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
-
 ### Review
  In this lab, you have completed the following :
 - Created a lakehouse and upload files
@@ -673,5 +660,5 @@ Now that you've finished working with the data, you can save the notebook with a
 - Used the **seaborn** library
 - Saved the notebook and end the Spark session
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
 
