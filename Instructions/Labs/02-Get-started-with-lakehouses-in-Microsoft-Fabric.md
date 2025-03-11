@@ -69,31 +69,27 @@ In many scenarios, the data you need to work within your lakehouse may be stored
 
 A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
-1. Select **Data Engineering (1)**, and select **Data Engineering (2)** again.
+1. From your Fabric-enabled workspace, select **+ New Item (1)**. Select **Data pipeline (2)** from the pop-up, then when prompted, create a new pipeline named **Ingest Sales Data Pipeline** and click on **Create (2)**
 
-   ![03](./Images/dp2-4.4.png)
+   The pipeline editor opens.
 
-1. Navigate to next page on the **Recommended items to create.**
+   ![02](./Images/01/dp-600-newimage170.png)
 
-   ![03](./Images/dp2-5.png)
-  
-3. Now, On the **Synapse Data Engineering**, select **Data pipeline**.
+   ![02](./Images/01/dp-600-newimage18.png)
 
-    ![03](./Images/dp2-6.png)
-
-4. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
+   >**Note** : If your not able to see **Data pipeline** use > button to see **Data pipeline** option 
    
-   ![03](./Images/01/Pg3-TCreatePipeline-S1.1.png)
+   > **Tip**: If the Copy Data wizard opens automatically, close it!
    
-5. If the **Copy data** wizard doesn't open automatically, select **Copy data assistant** in the pipeline editor page.
+1. If the **Copy data** wizard doesn't open automatically, select **Copy data assistant** in the pipeline editor page.
 
    ![03](./Images/dp2-copy.png)
 
-6. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **Http**.
+1. In the **Copy Data** wizard, on the **Choose a data source** page, search and then select **Http**.
 
    ![Screenshot of the Choose data source page.](./Images/dp-600-lab03-2.png)
 
-7. One the **Connect to data source** section, enter the following settings for the connection to your data source:
+1. One the **Connect to data source** section, enter the following settings for the connection to your data source:
     - **URL (1)**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
     - **Connection (2)**: Create new connection
     - **Connection name (3)**: *Specify a unique name*
@@ -104,7 +100,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
   
         ![04](./Images/dp2-7.png)
     
-8. Select **Next**. Make sure the following settings are selected:
+1. Select **Next**. Make sure the following settings are selected:
     - **Relative URL**: *Leave blank*
     - **Request method**: GET
     - **Additional headers**: *Leave blank*
@@ -114,7 +110,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
   
         ![05](./Images/dp2-8.8.png)
    
-9. Wait for the data to be sampled and then ensure that the following settings are selected:
+1. Wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format (1)**: DelimitedText
     - **Column delimiter (2)**: Comma (,)
     - **Row delimiter (3)**: Line feed (\n)
@@ -122,7 +118,7 @@ A simple way to ingest data is to use a **Copy data** activity in a pipeline to 
 
       ![05](./Images/fabric5.png)
 
-10. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+1. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
      ![06](./Images/fabric6.png)
 
