@@ -9,15 +9,15 @@ Tables in a Microsoft Fabric lakehouse are based on the open source Delta Lake f
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a lakehouse and upload files
-- Explore data in a dataframe
-- Create delta tables
-- Create a managed table
-- Create an external table
-- Compare managed and external tables
-- Use SQL to create a table
-- Explore table versioning
-- Use delta tables for streaming data
+- Task 1: Create a lakehouse and upload files
+- Task 2: Explore data in a dataframe
+- Task 3: Create delta tables
+- Task 4: Create a managed table
+- Task 5: Create an external table
+- Task 6: Compare managed and external tables
+- Task 7: Use SQL to create a table
+- Task 8: Explore table versioning
+- Task 9: Use delta tables for streaming data
 
 ## Estimated timing: 40 minutes
 
@@ -64,13 +64,6 @@ It’s time to create a data lakehouse for the data you’re going to analyze.
 1. After the file has been uploaded, select the **products (1)** folder, and verify that the **products.csv (2)** file has been uploaded, as shown here:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/dp8.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
-<validation step="174811f9-aa4c-4f2a-adf3-a31939d55d52" />
 
 ### Task 2: Explore data in a dataframe
 
@@ -379,4 +372,4 @@ Delta lake supports streaming data. Delta tables can be a sink or a source for d
 - Explored table versioning
 - Used delta tables for streaming data
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
