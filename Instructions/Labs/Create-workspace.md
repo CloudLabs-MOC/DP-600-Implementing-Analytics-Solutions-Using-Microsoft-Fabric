@@ -44,9 +44,9 @@ In this lab, you will complete the following tasks:
 
    ![Account-manager-start](./Images/dp6001.png)
 
-1. On **Activate your 60-day free Fabric trial capacity** click on **Activate**.
+1. On **Activate your 60-day free Fabric trial capacity**, select the **Default (1)** Trial capacity in the Trial capacity region and click on **Activate (2)**.
 
-    ![02](./Images/01/dp-600-newimage1.png)
+    ![02](./Images/01/activate-freetrial-1203.png)
 
     >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
 
