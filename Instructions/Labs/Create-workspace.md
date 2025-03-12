@@ -44,9 +44,9 @@ In this lab, you will complete the following tasks:
 
    ![Account-manager-start](./Images/dp6001.png)
 
-1. On **Activate your 60-day free Fabric trial capacity** click on **Activate**.
+1. On **Activate your 60-day free Fabric trial capacity**, select the **Default (1)** Trial capacity in the Trial capacity region and click on **Activate (2)**.
 
-    ![02](./Images/01/dp-600-newimage1.png)
+    ![02](./Images/01/activate-freetrial-1203.png)
 
     >**Note:** On the **Successfully upgraded to Microsoft Fabric** pop-up, select **Stay on current page**.
 
@@ -79,3 +79,10 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
       ![advanced-and-apply](Images/fabric(2).png)
 
       >**Note:** On the **Introducing task flows** select **Got it**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
+<validation step="cdbb0f3a-826d-42b9-957c-c5fec07f354f" />
