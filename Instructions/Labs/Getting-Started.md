@@ -42,6 +42,11 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
 
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
+
+   ![02](./Images/01/zoomin-1203.jpg)
 
 ## Login to Azure Portal
 
