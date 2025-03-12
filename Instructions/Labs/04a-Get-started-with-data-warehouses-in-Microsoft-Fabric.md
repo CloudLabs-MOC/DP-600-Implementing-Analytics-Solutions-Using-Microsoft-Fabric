@@ -7,14 +7,14 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a data warehouse
-- Create tables and insert data
-- Define a data model
-- Query data warehouse tables
-- Query fact and dimension tables
-- Create a view
-- Create a visual query
-- Visualize your data
+- Task 1: Create a data warehouse
+- Task 2: Create tables and insert data
+- Task 3: Define a data model
+- Task 4: Query data warehouse tables
+- Task 5: Query fact and dimension tables
+- Task 6: Create a view
+- Task 7: Create a visual query
+- Task 8: Visualize your data
 
 ## Estimated timing: 30 minutes
 
@@ -35,13 +35,6 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
     >**Note:** After a minute or so, a new warehouse will be created:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/create-warehouse-1203.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
-<validation step="35e684af-d817-4bb9-96e5-1f76992b4473" />
 
 ### Task 2: Create tables and insert data
 
@@ -291,4 +284,4 @@ You can easily visualize the data in either a single query, or in your data ware
 - Created a visual query
 - Visualized your data
 
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## You have successfully completed this lab.
