@@ -26,28 +26,30 @@ In this lab, you will perform:
 
 Now that you have a workspace, it’s time to create a data warehouse. The Synapse Data Warehouse home page includes a shortcut to create a new warehouse:
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Warehouse (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/data-warehouse.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
 
-1. In the **Synapse Data Warehouse** home page, create a new **Warehouse** with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Warehouse** to create a new Warehouse with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
     >**Note:** After a minute or so, a new warehouse will be created:
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/warehouse1.png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/create-warehouse-1203.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
+<validation step="35e684af-d817-4bb9-96e5-1f76992b4473" />
 
 ### Task 2: Create tables and insert data
 
 A warehouse is a relational database in which you can define tables and other objects.
 
 1. In your new warehouse, select the **Create tables with T-SQL** tile, and replace the default SQL code with the following CREATE TABLE statement:
+
+   ![02](./Images/t-sql-1203.png)
 
     ```Sql
     CREATE TABLE dbo.DimProduct
@@ -69,6 +71,8 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. On the **Home** menu tab, use the **New SQL Query** button to create a new query, and enter the following INSERT statement:
 
+    ![](./Images/new-sql-query-1203.png)
+
     ```Sql
     INSERT INTO dbo.DimProduct
     VALUES
@@ -80,7 +84,7 @@ A warehouse is a relational database in which you can define tables and other ob
 
 1. Run the new query to insert three rows into the **DimProduct** table.
 
-1. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct (1)** table and verify that the **three rows (2)** have been added to the table.
+1. When the query has finished, in the **Explorer** pane, select the **DimProduct (1)** table and verify that the **three rows (2)** have been added to the table.
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/dimproduct.png)
 
@@ -109,11 +113,11 @@ A warehouse is a relational database in which you can define tables and other ob
 
 A relational data warehouse typically consists of fact and dimension tables. The fact tables contain numeric measures you can aggregate to analyze business performance (for example, sales revenue), and the dimension tables contain attributes of the entities by which you can aggregate the data (for example, product, customer, or time). In a Microsoft Fabric data warehouse, you can use these keys to define a data model that encapsulates the relationships between the tables.
 
-1. At the bottom of the page in the data warehouse, select the **Model** tab.
+1. From the left pane at the bottom, select the **Model layouts** tab.
 
 1. In the model pane, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
-    ![02](./Images/modeldw(1).png)
+    ![02](./Images/select-model-1203.png)
 
 1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details and click on **Save**.
 
@@ -136,7 +140,7 @@ A relational data warehouse typically consists of fact and dimension tables. The
 
 1. When all of the relationships have been defined, the model should look like this:
 
-    ![02](./Images/dwrelationships(1).png)
+    ![02](./Images/model-layout-1203.png)
 
 ### Task 4: Query data warehouse tables
 
@@ -212,7 +216,9 @@ A data warehouse in Microsoft Fabric has many of the same capabilities you may b
 
 Instead of writing SQL code, you can use the graphical query designer to query the tables in your data warehouse. This experience is similar to Power Query online, where you can create data transformation steps with no code. For more complex tasks, you can use Power Query’s M (Mashup) language.
 
-1. On the **Home** menu, select **New visual query**.
+1. On the **Home** menu, click on **v** next to New SQL Query and select **New visual query**.
+
+    ![02](./Images/new-visual-query-1203.png)
 
 1. Drag **FactSalesOrder** onto the **canvas**. Notice that a **preview** of the table is displayed in the Preview pane below.
 
@@ -236,7 +242,7 @@ Instead of writing SQL code, you can use the graphical query designer to query t
 
 You can easily visualize the data in either a single query, or in your data warehouse. Before you visualize, hide columns and/or tables that aren’t friendly to report designers.
 
-1. In the **Explorer** pane, select the **Model** view.
+1. In the **Explorer** pane, select the **Model layouts**.
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model, it simply hides them from view on the report canvas.
     - FactSalesOrder
@@ -253,7 +259,8 @@ You can easily visualize the data in either a single query, or in your data ware
         - ProductKey
         - ProductAltKey
 
-1. Now you’re ready to build a report and make this dataset available to others. On the **Home** menu, select **New report**. On the **New report with all available data** select **Continue**. This will open a new window, where you can create a Power BI report.
+1. Now you’re ready to build a report and make this dataset available to others. On the **Reporting** tab, select **New report**. On the **New report with all available data** select **Continue**. This will open a new window, where you can create a Power BI report.
+    ![02](./Images/new-report-1203.png)
 
 1. In the **Data** pane, expand **FactSalesOrder**. Note that the columns you hide are no longer visible.
 
