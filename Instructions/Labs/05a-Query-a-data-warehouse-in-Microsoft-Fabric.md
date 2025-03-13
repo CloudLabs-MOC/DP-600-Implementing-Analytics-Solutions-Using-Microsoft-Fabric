@@ -8,7 +8,7 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a sample data warehouse
+- Create a sample Data warehouse
 - Query the data warehouse
 - Verify data consistency
 - Save as view
@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ![](Images/Arch-09.png)
 
-### Task 1: Create a sample data warehouse
+### Task 1: Create a sample Data warehouse
 
 Now that you have a workspace, it’s time to create a data warehouse. The Synapse Data Warehouse home page includes a shortcut to create a new warehouse:
 
@@ -32,7 +32,10 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
     >**Note:** After a minute or so, a new warehouse will be created:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/create-warehouse-1203.png)
-   
+
+1. Once you create the Data warehouse, please load sample data by selecting **Sample Data** under the **Build a warehouse** section.
+
+   ![02](./Images/01/dp-600-new-5.jpg)
     
 **Congratulations** on completing the task! Please go to the next tsk.
 
