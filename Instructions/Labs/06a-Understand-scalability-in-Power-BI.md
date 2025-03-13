@@ -45,20 +45,24 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 	![](Images/dp-6a3.png)
 
-    >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account**, and select **continue** on the pop-up.
+    >**Note:** When prompted, on the **Let's get you signed in**, select **Work or school account (1)**, and select **continue (2)** on the pop-up.
 	
+      ![](Images/1.png)
+
 1. Complete the sign up process by entering the **Email**, and select **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-      ![](Images/dp-up1.png)
+      ![](Images/2.png)
 
-1. Enter the Password provided in the Environment Details tab and click on **Sign-in**
+1. Enter the Password provided in the Environment Details tab and click on **Sign-in (2)**
 
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Password: **<inject key="AzureAdUserPassword"></inject> (2)**
 
-        ![](Images/dp-up(4).png)
+      ![](Images/3.png)
 
-    >**Note:** On the **Stay Signed in to all your apps**, select **No, sign in to this app only**.
+    >**Note:** On the **Stay Signed in to all your apps**, select **No, this app only**.
+
+      ![](Images/4.png)
 
 ### Task 2: Review the data model
 
@@ -74,7 +78,7 @@ In this exercise, you will open a pre-developed Power BI Desktop solution to lea
 
 1. Notice that there are three relationships between the **Date** and **Sales** tables.
 
-    ![02](./Images/workwithmodelrelationshipsimage4.png)
+    ![02](./Images/5.png)
 
     >**Note:** The **DateKey** column in the **Date** table is a unique column representing the “one” side of the relationships. Filters applied to any column of the **Date** table propagate to the **Sales** table using one of the relationships.
 
@@ -198,7 +202,7 @@ In this task, you will use the USERELATIONSHIP function to make an inactive rela
 
 1. In the **Data** pane, right-click the **Sales** table, and then select **New measure**.
 
-    ![](Images/dp-6a19.png)
+    ![](Images/6.png)
 
 2. In the formula bar (located beneath the ribbon), replace the text with the following measure definition, and then press **Enter**.
 
@@ -215,7 +219,7 @@ In this task, you will use the USERELATIONSHIP function to make an inactive rela
 
 3. On the **Measure tools** contextual ribbon, from inside the **Formatting** group, set the decimals places to **2**.
 
-    ![](Images/dp-6a45.png)
+    ![](Images/7.png)
 
 4. Add the **Sales Shipped** measure to the table visual.
 
@@ -269,8 +273,6 @@ In this task, you will disable two relationship options.
 
     ![](Images/dp-6a29.png)
 
-
-
 ### Task 3: Add another date table
 
 In this task, you will create a query to add another date table to the model.
@@ -322,6 +324,8 @@ In this task, you will create a query to add another date table to the model.
     ![](Images/dp-6a37.png)
 
 1. Notice that an active relationship now exists between the **Ship Date** and **Sales** tables.
+
+    ![](Images/8.png)
 
 ### Task 4: Visualize ship date data
 

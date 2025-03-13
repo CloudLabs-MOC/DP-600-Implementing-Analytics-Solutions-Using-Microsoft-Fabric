@@ -7,7 +7,7 @@ In this lab, you will complete the following tasks:
 - Task 1: Sign up for Microsoft Fabric Trial
 - Task 2: Create a workspace
 
-#### Task 1: Sign up for Microsoft Fabric Trial
+### Task 1: Sign up for Microsoft Fabric Trial
 
 1. Copy the **Power BI homepage link**, and open this link inside the VM in a microsoft edge new tab.
 
@@ -58,9 +58,7 @@ In this lab, you will complete the following tasks:
 
    >**Note:** If the **Welcome to Power BI** pop-up appears, close it.
 
-----
-
-#### Task 2: Create a workspace
+### Task 2: Create a workspace
 
 Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
