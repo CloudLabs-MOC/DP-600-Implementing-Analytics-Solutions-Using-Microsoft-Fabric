@@ -25,11 +25,14 @@ In this lab, you will perform:
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for the data files you're going to analyze.
 
-1. At the bottom left of the portal, select **Power BI** and select **Data Engineering** experience. In the **Synapse Data Engineering** home page, select **Lakehouse**.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-2.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
 
-    ![Screenshot of uploaded files in a lakehouse.](./Images/lab-5.2-3.png)
+1. Select the workspace you have created before the lab, then select +New Item and select **Lakehouse**.
+
+   ![new](./Images/01/dp-600-new-1.jpg)
+   
 
 1. Follow these instructions to create a new **Lakehouse**:
 
