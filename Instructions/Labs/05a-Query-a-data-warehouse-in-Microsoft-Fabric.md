@@ -37,7 +37,7 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
 
    ![02](./Images/01/dp-600-new-5.jpg)
 
-1. After completing the sample data loading, please expand Schema, then expand dbo and tables, you can find number tables there.
+1. After completing the sample data loading, please expand Schema, then expand dbo and tables, you can find available tables there.
 
    ![02](./Images/01/dp-600-new-6.jpg)
     
