@@ -315,11 +315,26 @@ In this task, you will optimize a query by using an improved measure formula.
 
 >**Note:** Note that it's difficult to optimize a query when the data model volumes are small. This exercise focuses on using DAX Studio rather than optimizing DAX queries.
 
-1. Open Microsoft Edge. In a browser window download the [Monthly Profit Growth.dax](https://aka.ms/fabric-optimize-dax) files from and save it in the Lab-VM as **Monthly Profit Growth.dax**.
+To follow the instructions you've provided, here’s a step-by-step guide:
+
+1. **Open Microsoft Edge**: Launch the Microsoft Edge browser on your device.
+  
+2. **Download the File**:
+   - In the browser window, open the link to the [Monthly Profit Growth.dax](https://aka.ms/fabric-optimize-dax) file.
+   - Once the file link opens, **right-click** on the file download link (or the page) and choose **"Save as..."**.
+   - Select the location to save the file and save it with the name **"Monthly Profit Growth.dax"**.
+
+3. **Save the File in Lab-VM**: Ensure you are saving the file in the **Lab-VM** (the virtual machine you're working on) as shown below:
+
+    - File name : Keep default **(1)**
+    - Save as type : **All Files (2)**
+    - Click on **Save**
+
+    ![](Images/10.png)
 
 3. Switch to the Dax Studio window and from the **File** menu, select **Browse** to navigate to the **Monthly Profit Growth.dax** file and **Open** the file.
 
-    ![](Images/dp6006.png)
+    ![](Images/9.png)
 
 6. Read the comments at the top of the file, and then review the query that follows.
 
