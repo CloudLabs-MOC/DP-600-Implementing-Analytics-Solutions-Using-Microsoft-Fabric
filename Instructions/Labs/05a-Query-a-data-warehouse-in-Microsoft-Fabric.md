@@ -185,7 +185,7 @@ Let’s create a view based on the query we used earlier, and add a filter to it
 
 1. In the **Explorer**, navigate to **Schemas » dbo » Views**. Note the vw_JanTrip view you just created.
 
-    ![02](./Images/sqlqueryresult.png)
+    ![02](./Images/01/dp-600-new-7.jpg)
 
 1. Close all query tabs.
 
