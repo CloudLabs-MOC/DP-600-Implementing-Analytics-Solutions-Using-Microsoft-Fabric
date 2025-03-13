@@ -21,25 +21,20 @@ In this lab, you will perform:
 
 ### Task 1: Create a sample data warehouse
 
-Now that you have a workspace, it’s time to create a data warehouse.
+Now that you have a workspace, it’s time to create a data warehouse. The Synapse Data Warehouse home page includes a shortcut to create a new warehouse:
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Warehouse (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](./Images/data-warehouse.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
 
-1. On the Home page, select **Sample warehouse** and create a new data warehouse named **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Warehouse** to create a new Warehouse with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
-    >**Note:** After a minute or so, a new warehouse will be created and populated with sample data for a taxi ride analysis scenario.
+    >**Note:** After a minute or so, a new warehouse will be created:
 
-    ![02](./Images/sampledatawarehouse.png)
-
-    >**Note:** If the Sample Warehouse option does not appear, please wait for at least 15 minutes and ensure that you have not selected the Warehouse option.
+    ![Screenshot of uploaded files in a lakehouse.](./Images/create-warehouse-1203.png)
+   
     
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+**Congratulations** on completing the task! Please go to the next tsk.
 
 ### Task 2: Query the data warehouse
 
