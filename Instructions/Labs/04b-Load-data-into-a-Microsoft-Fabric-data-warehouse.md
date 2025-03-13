@@ -231,7 +231,7 @@ Let’s run some analytical queries to validate the data in the warehouse.
 
     >**Note:** This query shows the top-seliing items by total sales for the year of 2021. These results suggest that the Mountain-200 bike model, in both black and silver colors, was the most popular item among customers in 2021.
 
-    >![02](./Images/01/dp-600-newimage40.png)
+    ![02](./Images/01/dp-600-new-4.jpg)
 
 1. On the top menu, select **New SQL query** or reuse the same editor, then copy and run the following query.
 
