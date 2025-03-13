@@ -36,6 +36,10 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
 1. Once you create the Data warehouse, please load sample data by selecting **Sample Data** under the **Build a warehouse** section.
 
    ![02](./Images/01/dp-600-new-5.jpg)
+
+1. After completing the sample data loading, please expand Schema, then expand dbo and tables, you can find number tables there.
+
+   ![02](./Images/01/dp-600-new-6.jpg)
     
 **Congratulations** on completing the task! Please go to the next tsk.
 
