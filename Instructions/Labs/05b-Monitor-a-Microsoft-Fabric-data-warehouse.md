@@ -21,23 +21,27 @@ In this lab, you will perform:
 
 ### Task 1: Create a sample data warehouse
 
-Now that you have a workspace, it’s time to create a data warehouse.
+Now that you have a workspace, it’s time to create a data warehouse. The Synapse Data Warehouse home page includes a shortcut to create a new warehouse:
 
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Data Warehouse (2)** experience.
+1. In the bottom left corner of the Power BI portal, click the **Power BI** icon and select **Fabric** to switch to the Fabric experience.
 
-   ![02](Images/data-warehouse.png)
+   ![02](./Images/01/Pg3-T1-S10.png)
 
-1. On the Home page, select **Sample warehouse** and create a new data warehouse named **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
+1. From the left pane, click on **Fabric (1)**, select **+ New item (2)**, then scroll down in the pop-up and choose **Warehouse** to create a new Warehouse with a name **Warehouse<inject key="DeploymentID" enableCopy="false"/>**.
 
-    >**Note:** After a minute or so, a new warehouse will be created and populated with sample data for a taxi ride analysis scenario.
+    >**Note:** After a minute or so, a new warehouse will be created:
 
-    ![02](Images/sampledatawarehouse.png)
+    ![Screenshot of uploaded files in a lakehouse.](./Images/create-warehouse-1203.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:<br>
-      - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.<br>
-      - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.<br>
-      - If not, carefully read the error message and retry the step, following the instructions in the lab guide.<br>
-      - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help!
+1. Once you create the Data warehouse, please load sample data by selecting **Sample Data** under the **Build a warehouse** section.
+
+   ![02](./Images/01/dp-600-new-5.jpg)
+
+1. After completing the sample data loading, please expand Schema, then expand dbo and tables, you can find available tables there.
+
+   ![02](./Images/01/dp-600-new-6.jpg)
+    
+**Congratulations** on completing the task! Please go to the next task.
 
 ### Task 2: Explore dynamic management views
 
