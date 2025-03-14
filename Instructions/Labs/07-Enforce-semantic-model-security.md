@@ -243,7 +243,7 @@ In this exercise, you will add a table to the model, create and validate a dynam
 
 ### Task 1: Add the Salesperson table
 
-In this task, you will add the **Salesperson** table to the model.
+In this task, you will add the **Salesperson** table to the model. Please switch to PowerBI Desktop.
 
 1. Switch to **Model** view.
 
