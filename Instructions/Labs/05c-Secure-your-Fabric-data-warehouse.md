@@ -32,7 +32,7 @@ In this task you will setup the environment for the lab.
 
 **Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+1. To open the Power BI Desktop, on the Desktop, click the Microsoft Power BI Desktop shortcut.
 
 	![Picture 8](Images/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
 
