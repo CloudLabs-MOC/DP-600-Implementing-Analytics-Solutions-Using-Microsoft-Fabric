@@ -215,7 +215,7 @@ In this task, you will open BPA and review the results of the checks.
 
 4. In the first category, right-click the **'Product'** table, and then select **Ignore item**.
 
-    ![02](./Images/01/dp-600-newimage60.png)
+    ![02](./Images/01/dp-600-new-8.jpg)
 
     > **Note:** When an issue isn't really an issue, you can ignore that item. You can always reveal ignored items by using the **Show ignored** command on the toolbar.
 
