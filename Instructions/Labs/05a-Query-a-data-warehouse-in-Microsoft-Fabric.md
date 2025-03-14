@@ -41,7 +41,7 @@ Now that you have a workspace, it’s time to create a data warehouse. The Synap
 
    ![02](./Images/01/dp-600-new-6.jpg)
     
-**Congratulations** on completing the task! Please go to the next tsk.
+**Congratulations** on completing the task! Please go to the next task.
 
 ### Task 2: Query the data warehouse
 
