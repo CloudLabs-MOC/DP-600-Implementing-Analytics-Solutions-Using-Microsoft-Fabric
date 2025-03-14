@@ -38,8 +38,6 @@ In this task you will setup the environment for the lab.
 
 1. To close the getting started window, at the top-left of the window, click **X**.
 
-	![Picture 7](Images/lab10-image2.png)
-	
 1. To sign in to the Power BI service, at the top-right, click **Sign In**.
 
 	![Picture 8](Images/lab10-image6.png)
