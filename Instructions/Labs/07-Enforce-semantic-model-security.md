@@ -474,8 +474,17 @@ In this task, you will finalize the design by publishing the report and mapping 
 
 ### Review
 In this lab, you have completed:
-- Create static and dynamic roles
-- Validate roles
-- Map security principals to dataset roles
+
+- Installed Power BI Desktop.
+- Reviewed the data model structure.
+- Created static roles for user access.
+- Validated static roles before publishing.
+- Published the report for stakeholder access.
+- Implemented row-level security (RLS) for data control.
+- Created dynamic roles for flexible data access.
+- Added and configured the Salesperson table.
+- Set up relationships for data interaction.
+- Finalized the report design and access settings.
+
   
 ## You have successfully completed this lab, please proceed with the upcoming modules.
