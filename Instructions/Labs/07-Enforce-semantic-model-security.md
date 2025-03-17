@@ -9,23 +9,21 @@ In this lab, you will update a pre-developed data model to enforce security. Spe
 In this lab, you will perform:
 
 - Exercise 0: Set up the prerequisites
-- Task 1: Set up Power BI Desktop
-- Task 2: Review the data model
+  - Task 1: Set up Power BI Desktop
+  - Task 2: Review the data model
 
 - Exercise 1: Create static roles
-- Task 1: Create static roles
-- Task 2: Validate the static roles
-- Task 3: Publish the report
-- Task 4: Configure row-level security (*Read-only*)
+  - Task 1: Create static roles
+  - Task 2: Validate the static roles
+  - Task 3: Publish the report
+  - Task 4: Configure row-level security (*Read-only*)
 
 - Exercise 2: Create a dynamic role
-- Task 1: Add the Salesperson table
-- Task 2: Configure the relationship
-- Task 3: Create a dynamic role
-- Task 4: Validate the dynamic role
-- Task 5: Finalize the design (*Read-only*)
-
-- Map security principals to dataset roles
+  - Task 1: Add the Salesperson table
+  - Task 2: Configure the relationship
+  - Task 3: Create a dynamic role
+  - Task 4: Validate the dynamic role
+  - Task 5: Finalize the design (*Read-only*)
 
 ## Estimated timing: 60 minutes
 
