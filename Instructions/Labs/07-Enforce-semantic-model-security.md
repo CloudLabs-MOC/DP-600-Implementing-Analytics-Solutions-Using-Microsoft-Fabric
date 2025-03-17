@@ -16,14 +16,14 @@ In this lab, you will perform:
   - Task 1: Create static roles
   - Task 2: Validate the static roles
   - Task 3: Publish the report
-  - Task 4: Configure row-level security (*Read-only*)
+  - Task 4: Configure row-level security 
 
 - Exercise 2: Create a dynamic role
   - Task 1: Add the Salesperson table
   - Task 2: Configure the relationship
   - Task 3: Create a dynamic role
   - Task 4: Validate the dynamic role
-  - Task 5: Finalize the design (*Read-only*)
+  - Task 5: Finalize the design 
 
 ## Estimated timing: 60 minutes
 
