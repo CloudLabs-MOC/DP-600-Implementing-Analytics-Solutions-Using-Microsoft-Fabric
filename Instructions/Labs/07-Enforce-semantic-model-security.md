@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](Images/lab9-archy.png)
+![](Images/lab-07arc.png)
 
 ## Exercise 0: Set up the prerequisites
 
