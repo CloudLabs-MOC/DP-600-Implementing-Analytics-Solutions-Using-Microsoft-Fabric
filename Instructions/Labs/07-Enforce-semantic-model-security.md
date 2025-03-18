@@ -8,15 +8,28 @@ In this lab, you will update a pre-developed data model to enforce security. Spe
 
 In this lab, you will perform:
 
-- Create static and dynamic roles
-- Validate roles
-- Map security principals to dataset roles
+- Exercise 0: Set up the prerequisites
+  - Task 1: Set up Power BI Desktop
+  - Task 2: Review the data model
+
+- Exercise 1: Create static roles
+  - Task 1: Create static roles
+  - Task 2: Validate the static roles
+  - Task 3: Publish the report
+  - Task 4: Configure row-level security 
+
+- Exercise 2: Create a dynamic role
+  - Task 1: Add the Salesperson table
+  - Task 2: Configure the relationship
+  - Task 3: Create a dynamic role
+  - Task 4: Validate the dynamic role
+  - Task 5: Finalize the design 
 
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
-![](Images/lab9-archy.png)
+![](Images/lab-07arc.png)
 
 ## Exercise 0: Set up the prerequisites
 
@@ -461,8 +474,17 @@ In this task, you will finalize the design by publishing the report and mapping 
 
 ### Review
 In this lab, you have completed:
-- Create static and dynamic roles
-- Validate roles
-- Map security principals to dataset roles
+
+- Installed Power BI Desktop.
+- Reviewed the data model structure.
+- Created static roles for user access.
+- Validated static roles before publishing.
+- Published the report for stakeholder access.
+- Implemented row-level security (RLS) for data control.
+- Created dynamic roles for flexible data access.
+- Added and configured the Salesperson table.
+- Set up relationships for data interaction.
+- Finalized the report design and access settings.
+
   
 ## You have successfully completed this lab, please proceed with the upcoming modules.
