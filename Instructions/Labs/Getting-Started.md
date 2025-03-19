@@ -78,7 +78,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 1. On the **Keep your account secure** page, select Next twice.
 
->**Note**: If you don’t have the Microsoft Authenticator app installed on your mobile device:
+1. Note: If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
    - Open Google Play Store (Android) or App Store (iOS).
 
