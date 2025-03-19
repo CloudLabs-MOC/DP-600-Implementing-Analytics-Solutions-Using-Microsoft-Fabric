@@ -86,7 +86,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
    - Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
 
-   - A QR code will be displayed on your computer screen.
+1. A QR code will be displayed on your computer screen.
 
 1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
 
