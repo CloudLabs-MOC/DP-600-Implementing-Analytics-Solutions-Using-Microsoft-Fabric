@@ -6,7 +6,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![02](./Images/01/dp-600-newimage68.png)
+   ![02](./Images/Dp-600-1.png)
 
 ### **Virtual Machine & Lab Guide**
  
@@ -14,11 +14,11 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 ## Exploring Your Lab Resources
  
-1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
    ![08](Images/env.png)
  
-    >**Note:** You will see the DeploymentID value on the **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+    >**Note:** You will see the DeploymentID value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 ## Utilizing the Split Window Feature
  
@@ -78,12 +78,15 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 1. On the **Keep your account secure** page, select Next twice.
 
->**Note**: If you don’t have the Microsoft Authenticator app installed on your mobile device:
+1. Note: If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
-- Open Google Play Store (Android) or App Store (iOS).
-- Search for Microsoft Authenticator and tap Install.
-- Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
-- A QR code will be displayed on your computer screen.
+   - Open Google Play Store (Android) or App Store (iOS).
+
+   - Search for Microsoft Authenticator and tap Install.
+
+   - Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
+
+1. A QR code will be displayed on your computer screen.
 
 1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
 
@@ -94,7 +97,20 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 1. If prompted to stay signed in, you can click **No**.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Maybe Later** to skip the tour.
-      
-1. Now, click on the **Next** from the lower right corner to move to the next page.
 
-1. Avoid closing any logon script running in the background, as it will cause issues with lab performance.
+### Support Contact
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+ 
+Learner Support Contacts:
+ 
+- Email Support: labs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on the **Next** from the lower right corner to move to the next page.
+
+
+   ![Launch Azure Portal](./Images/sc900-image(3).png)
+
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way.
+
+### Happy learning !
