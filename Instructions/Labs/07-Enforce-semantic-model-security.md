@@ -487,4 +487,4 @@ In this lab, you have completed:
 - Finalized the report design and access settings.
 
   
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## Congratulations you have successfully completed this lab.
