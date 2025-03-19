@@ -1,4 +1,4 @@
-# Getting Started with DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric
+# Getting Started with DP-600: Implementing Analytics Solutions Using Microsoft Fabric
 
 Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric workshop!We've prepared a seamless environment for you to explore and learn Microsoft Fabric Services. Let's begin by making the most of this experience:
 
@@ -14,11 +14,11 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 ## Exploring Your Lab Resources
  
-1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
    ![08](Images/env.png)
  
-    >**Note:** You will see the DeploymentID value on the **Environment Details** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+    >**Note:** You will see the DeploymentID value on the **Environment ** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 ## Utilizing the Split Window Feature
  
@@ -80,10 +80,13 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 >**Note**: If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
-- Open Google Play Store (Android) or App Store (iOS).
-- Search for Microsoft Authenticator and tap Install.
-- Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
-- A QR code will be displayed on your computer screen.
+ - Open Google Play Store (Android) or App Store (iOS).
+
+ - Search for Microsoft Authenticator and tap Install.
+
+ - Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
+
+ - A QR code will be displayed on your computer screen.
 
 1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
 
