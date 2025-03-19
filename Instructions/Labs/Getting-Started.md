@@ -101,7 +101,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 1. Now, click on the **Next** from the lower right corner to move to the next page.
 
 
-   ![Launch Azure Portal](../media/sc900-image(3).png)
+   ![Launch Azure Portal](./Images/sc900-image(3).png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way.
 
