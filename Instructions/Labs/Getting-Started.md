@@ -1,4 +1,4 @@
-# Getting Started with DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric
+# Getting Started with DP-600: Implementing Analytics Solutions Using Microsoft Fabric
 
 Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric workshop!We've prepared a seamless environment for you to explore and learn Microsoft Fabric Services. Let's begin by making the most of this experience:
 
