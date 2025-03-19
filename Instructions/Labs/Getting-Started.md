@@ -18,7 +18,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
    ![08](Images/env.png)
  
-    >**Note:** You will see the DeploymentID value on the **Environment ** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+    >**Note:** You will see the DeploymentID value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 ## Utilizing the Split Window Feature
  
