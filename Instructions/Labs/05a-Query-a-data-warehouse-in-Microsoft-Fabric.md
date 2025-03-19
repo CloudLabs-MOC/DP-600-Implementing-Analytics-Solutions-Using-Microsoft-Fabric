@@ -8,10 +8,10 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a sample Data warehouse
-- Query the data warehouse
-- Verify data consistency
-- Save as view
+- Task 1: Create a sample Data warehouse
+- Task 2: Query the data warehouse
+- Task 3: Verify data consistency
+- Task 4: Save as view
 
 ## Estimated timing: 30 minutes
 
