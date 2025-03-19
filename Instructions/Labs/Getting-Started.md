@@ -6,7 +6,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![02](./Images/01/dp-600-newimage68.png)
+   ![02](./Images/01/labguide-10-1.png)
 
 ### **Virtual Machine & Lab Guide**
  
