@@ -465,4 +465,4 @@ In this lab, you have completed:
 - Validate roles
 - Map security principals to dataset roles
   
-## You have successfully completed this lab, please proceed with the upcoming modules.
+## Congratulations you have successfully completed this lab.
