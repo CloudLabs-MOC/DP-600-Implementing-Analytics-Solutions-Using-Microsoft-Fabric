@@ -6,7 +6,7 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![02](./Images/01/labguide-10-1.png)
+   ![02](./Images/Dp-600-1.png)
 
 ### **Virtual Machine & Lab Guide**
  
@@ -80,13 +80,13 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 
 >**Note**: If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
- - Open Google Play Store (Android) or App Store (iOS).
+   - Open Google Play Store (Android) or App Store (iOS).
 
- - Search for Microsoft Authenticator and tap Install.
+   - Search for Microsoft Authenticator and tap Install.
 
- - Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
+   - Open the Microsoft Authenticator app, select **Add account**, then choose **Work or school account**.
 
- - A QR code will be displayed on your computer screen.
+   - A QR code will be displayed on your computer screen.
 
 1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
 
