@@ -9,9 +9,9 @@ In Microsoft Fabric, a data warehouse provides a relational database for large-s
 ## Lab objectives
 In this lab, you will perform:
 
-- Create a sample data warehouse
-- Explore dynamic management views
-- Explore query insights
+- Task 1: Create a sample data warehouse
+- Task 2: Explore dynamic management views
+- Task 3: Explore query insights
 
 ## Estimated timing: 30 minutes
 
