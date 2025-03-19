@@ -79,6 +79,3 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
       >**Note:** On the **Introducing task flows** select **Got it**.
 
 #### Congratulations on completing the task! Please move to the next page to access the next lab.
-
-
-
