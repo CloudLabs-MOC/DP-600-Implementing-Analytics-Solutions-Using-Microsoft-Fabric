@@ -97,11 +97,6 @@ Welcome to your DP-600: Implementing Analytics Solutions Using Microsoft Fabric 
 1. If prompted to stay signed in, you can click **No**.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Maybe Later** to skip the tour.
-      
-1. Now, click on the **Next** from the lower right corner to move to the next page.
-
-
-   ![Launch Azure Portal](./Images/sc900-image(3).png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way.
 
@@ -112,6 +107,11 @@ Learner Support Contacts:
  
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
+
+1. Now, click on the **Next** from the lower right corner to move to the next page.
+
+
+   ![Launch Azure Portal](./Images/sc900-image(3).png)
  
 ### Happy learning !
 
