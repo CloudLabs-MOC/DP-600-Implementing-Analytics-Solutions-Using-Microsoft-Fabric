@@ -6,9 +6,8 @@ In this lab you will create a many-to-many relationship between the **Salesperso
 
 In this lab you learn how to:
 
-- Configure many-to-many relationships
-
-- Enforce row-level security
+- Task 1: Configure many-to-many relationships
+- Task 2: Enforce row-level security
 
 ## Lab objectives
 In this lab, you will perform:
