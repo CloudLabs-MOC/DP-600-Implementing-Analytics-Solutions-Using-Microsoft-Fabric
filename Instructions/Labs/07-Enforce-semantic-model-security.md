@@ -41,11 +41,11 @@ In this task, you will set up Power BI Desktop.
 
 	![](Images/dp9-1new.png)
 
-1. Go to the **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\09\Starter** folder.
+1. Go to the **C:\LabFiles\DP-600-Implementing-Analytics-Solutions-Using-Microsoft-Fabric\Allfiles\LabFiles\09\Starter (1)** folder.
 
-1. To open a pre-developed Power BI Desktop file, double-click the **Sales Analysis - Enforce model security.pbix** file.
+1. To open a pre-developed Power BI Desktop file, double-click the **Sales Analysis - Enforce model security.pbix (2)** file.
 	
-	![](Images/dp9-2.png)
+	![](Images/dp9-2-1.png)
 
 1. At the top-right corner of Power BI Desktop, if you're not already signed in, select **Sign In**. Use the lab credentials in the Environment details tab to complete the sign-in process.
 
@@ -216,9 +216,9 @@ This task relies on the existence of a **Salespeople_Australia** security group 
 
    ![](Images/dp6003.png)
 
-3. Hover the cursor over the Semantic model, and when the ellipsis appears, select the ellipsis, and then select **Security**.
+3. Hover the cursor over the Semantic model, and when the ellipsis appears, select the **ellipsis (1)**, and then select **Security (2)**.
 
-   ![](Images/dp500_09-33.png)
+   ![](Images/dp500_09-33-1.png)
 	
    >**Note**: The **Security** option supports mapping Microsoft Azure Active Directory (Azure AD) security principals, which includes security groups and users.
 
@@ -390,7 +390,7 @@ In this task, you will create a dynamic role, which enforces permissions based o
 
 4. To name the role, replace the selected text with **Salespeople**.
 
-   ![](Images/salespeople.png)
+   ![](Images/salespeople1.png)
 
    >**Note**: This time, only one role needs to be created.
 
